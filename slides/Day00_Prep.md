@@ -9,7 +9,7 @@ SC本部メンバーが。。。
 
 | Gitの基本                                  | GitHubの基本                                     | ハンズオン                                                                                                |
 | ------------------------------------------ | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| <img src="img/Git_Logo.png" width=179px /> | <img src="img/GitHub_CatLogo.png" width=179px /> | <ul><li>Gitをインストールする。</li><li>GitHubアカウントを作成する</li><li>リポジトリを作成する</li></ul> |
+| <img src="../img/Git_Logo.png" width=179px /> | <img src="../img/GitHub_CatLogo.png" width=179px /> | <ul><li>Gitをインストールする。</li><li>GitHubアカウントを作成する</li><li>リポジトリを作成する</li></ul> |
 
 ## GitHubアカウントを作成する
   - GitHubアカウントを作成する --> [github.com](https://github.com/)
