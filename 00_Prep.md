@@ -10,10 +10,14 @@ SC本部メンバーが。。。
   2. GitHub でコードを管理できるようになった
 
 ### 概要 <!-- omit in toc -->
-
-| Gitの基本                                                | GitHubの基本                                                        | ハンズオン                                                                          |
-| -------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [![Git_Logo](assets/Git_Logo.png)](https://git-scm.com/) | [![GitHub_CatLogo](assets/GitHub_CatLogo.png)](https://github.com/) | Gitをインストールする <br><br> GitHubアカウントを作成する <br><br> リポジトリを作成する |
+  * Gitの基本
+    * [![Git_Logo](assets/Git_Logo.png)](https://git-scm.com/)
+  * GitHubの基本
+    * [![GitHub_CatLogo](assets/GitHub_CatLogo.png)](https://github.com/)
+  * ハンズオン
+    * Gitをインストールする
+    * GitHubアカウントを作成する
+    * リポジトリを作成する
 
 ---
 
