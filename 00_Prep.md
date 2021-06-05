@@ -1,5 +1,7 @@
 # Git, GitHubとは？ - 準備
 
+These instructions are also viewable as slides: [Slide View](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Git_GitHub_Slides/master/00_Prep.md&justify=left#/)
+
 ## Overview
 
 ### コンテンツの目的 <!-- omit in toc -->
@@ -11,7 +13,9 @@ SC本部メンバーが。。。
 
 | Gitの基本                                                | GitHubの基本                                                        | ハンズオン                                                                          |
 | -------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [![Git_Logo](assets/Git_Logo.png)](https://git-scm.com/) | [![GitHub_CatLogo](assets/GitHub_CatLogo.png)](https://github.com/) | Gitをインストールする<br><br>GitHubアカウントを作成する<br><br>リポジトリを作成する |
+| [![Git_Logo](assets/Git_Logo.png)](https://git-scm.com/) | [![GitHub_CatLogo](assets/GitHub_CatLogo.png)](https://github.com/) | Gitをインストールする <br><br> GitHubアカウントを作成する <br><br> リポジトリを作成する |
+
+---
 
 ### Table of Content <!-- omit in toc -->
   * [Overview](#overview)
@@ -249,8 +253,8 @@ See "man sudo_root" for details.
 ```
 
 #### Resources <!-- omit in toc -->
-  - Microsoft Docs: [Linux ディストリビューションのユーザー アカウントを作成する](https://docs.microsoft.com/ja-jp/windows/wsl/user-support)
-  - Microsoft Docs: [Create user account for Linux distribution](https://docs.microsoft.com/en-us/windows/wsl/user-support)
+  * Microsoft Docs: [Linux ディストリビューションのユーザー アカウントを作成する](https://docs.microsoft.com/ja-jp/windows/wsl/user-support)
+  * Microsoft Docs: [Create user account for Linux distribution](https://docs.microsoft.com/en-us/windows/wsl/user-support)
 
 ---
 
@@ -274,7 +278,7 @@ See "man sudo_root" for details.
 1. [wslgit](https://github.com/hangxingliu/wslgit)リポジトリをダウンロードする
    * `wslgit` はgitのすべてのリクエストをWSLに転送するツール
 2. wslgit フォルダー内に移動
-  * `wslgit.sh` ファイルを `/usr/bin` のWSL実行可能ファイルの場所に移動します
+   * `wslgit.sh` ファイルを `/usr/bin` のWSL実行可能ファイルの場所に移動します
 3. ホームフォルダーに戻る
 
 ```sh
