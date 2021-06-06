@@ -1,53 +1,22 @@
 # Git, GitHubとは？ - 準備
 
-These instructions are also viewable as slides: [Slide View](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Git_GitHub_Slides/master/00_Prep.md&justify=left#/)
+これは、Git, GitHub の導入レクチャーに向けて準備するためのガイドです。
 
-## Overview
+GitHub アカウントを持っていない場合は、[GitHubアカウント](#githubアカウント) セクションに従って作成してください。
 
-### コンテンツの目的 <!-- omit in toc -->
-SC本部メンバーが。。。
-  1. Git と GitHub について理解できた
-  2. GitHub でコードを管理できるようになった
-
-### 概要 <!-- omit in toc -->
-  * Gitの基本
-    * [![Git_Logo](assets/Git_Logo.png)](https://git-scm.com/)
-  * GitHubの基本
-    * [![GitHub_CatLogo](assets/GitHub_CatLogo.png)](https://github.com/)
-  * ハンズオン
-    * Gitをインストールする
-    * GitHubアカウントを作成する
-    * リポジトリを作成する
+PC に Git がインストールされていない場合は, [macOS](#macos---gitのインストール) または [Windows](#windows-10---gitのインストール) のインストール ガイドに従ってください。
 
 ---
 
-### Table of Content <!-- omit in toc -->
-  * [Overview](#overview)
+## 概要 <!-- omit in toc -->
   * [GitHubアカウント](#githubアカウント)
     * [Step 1 - GitHubアカウントを作成する](#step-1---githubアカウントを作成する)
     * [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
     * [Step 3 - コマンドラインの個人アクセストークン](#step-3---コマンドラインの個人アクセストークン)
   * [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
   * [MacOS - Gitのインストール](#macos---gitのインストール)
-    * [Step 0: Homebrewの確認](#step-0-homebrewの確認)
-    * [Step 1: 新しいパッケージをインストールする前にはアップデートとアップグレードしましょう](#step-1-新しいパッケージをインストールする前にはアップデートとアップグレードしましょう)
-    * [Step 2: Homebrew で git をインストール](#step-2-homebrew-で-git-をインストール)
-    * [Step 3: インストールの確認](#step-3-インストールの確認)
-    * [Gitのバージョンが表示されれば成功です](#gitのバージョンが表示されれば成功です)
-    * [Debugging](#debugging)
   * [Windows 10 - Gitのインストール](#windows-10---gitのインストール)
-    * [インストール Windows Subsystem for Linux (WSL)](#インストール-windows-subsystem-for-linux-wsl)
-    * [WSLの初期化](#wslの初期化)
-    * [Gitをインストールする](#gitをインストールする)
-    * [WSLを構成する](#wslを構成する)
-    * [WSL & VS Code](#wsl--vs-code)
-    * [Ubuntuの日本語版](#ubuntuの日本語版)
-    * [Git + GitHub設定](#git--github設定)
-    * [設定を確認](#設定を確認)
-    * [VS Code + Explorer](#vs-code--explorer)
-    * [Windows + WLS と GitHub](#windows--wls-と-github)
-  * [Git Setup](#git-setup)
-    * [Gitの設定をする](#gitの設定をする)
+  * [Gitの設定](#git-setup)
 
 ---
 
@@ -105,12 +74,20 @@ Visual Studio Code Download Link:
 
 ## MacOS - Gitのインストール
 
-### Step 0: Homebrewの確認
-  * インストールされていなければ、最初に [Homebrew (brew.sh)](https://brew.sh/) をインストールします。
+手順:
+  * [Step 0: Homebrewの確認](#step-0-homebrewの確認)
+  * [Step 1: 新しいパッケージをインストールする前にはアップデートとアップグレードしましょう](#step-1-新しいパッケージをインストールする前にはアップデートとアップグレードしましょう)
+  * [Step 2: Homebrew で git をインストール](#step-2-homebrew-で-git-をインストール)
+  * [Step 3: インストールの確認](#step-3-インストールの確認)
+  * [Gitのバージョンが表示されれば成功です](#gitのバージョンが表示されれば成功です)
+  * [Debugging](#debugging)
 
-    ```sh
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
+### Step 0: Homebrewの確認
+インストールされていなければ、最初に [Homebrew (brew.sh)](https://brew.sh/) をインストールします。
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ### Step 1: 新しいパッケージをインストールする前にはアップデートとアップグレードしましょう
 
@@ -146,14 +123,31 @@ git version 2.31.1
 
 詳細: [Git - Gitのインストール](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 
+### これで、Git をインストールする準備が整いました
+[Git セットアップ](#git-setup) セクションまでスキップして、プロセスを完了してください!
+
 ---
 
 ## Windows 10 - Gitのインストール
 
-|                        Step 1                         |                           Step 2                            |                Step 3                 |
-| :---------------------------------------------------: | :---------------------------------------------------------: | :-----------------------------------: |
-| Linux用のWindowsサブシステム (WSL) をインストールする |                        WSLを構成する                        |             Gitを構成する             |
-|                   Ubuntu 18\.04 LTS                   | [hangxingliu/wslgit](https://github.com/hangxingliu/wslgit) | `git clone git@github.com:user/a.git` |
+手順:
+  * [インストール Windows Subsystem for Linux (WSL)](#インストール-windows-subsystem-for-linux-wsl)
+    * [Step 1: Linux 用 Windows サブシステムを有効にする](#step-1-linux-用-windows-サブシステムを有効にする)
+    * [Step 2: WSL 2 の実行に関する要件を確認する](#step-2-wsl-2-の実行に関する要件を確認する)
+    * [Step 3: 仮想マシンの機能を有効にする](#step-3-仮想マシンの機能を有効にする)
+    * [Step 4: Linux カーネル更新プログラム パッケージをダウンロードする](#step-4-linux-カーネル更新プログラム-パッケージをダウンロードする)
+    * [Step 5: WSL 2 を既定のバージョンとして設定する](#step-5-wsl-2-を既定のバージョンとして設定する)
+    * [Step 6: 選択した Linux ディストリビューションをインストールする](#step-6-選択した-linux-ディストリビューションをインストールする)
+  * [WSLの初期化](#wslの初期化)
+  * [Gitをインストールする](#gitをインストールする)
+  * [WSLを構成する](#wslを構成する)
+  * [WSL & VS Code](#wsl--vs-code)
+  * [Ubuntuの日本語版](#ubuntuの日本語版)
+  * [Git + GitHub設定](#git--github設定)
+  * [設定を確認](#設定を確認)
+  * [VS Code + Explorer](#vs-code--explorer)
+  * [Windows + WLS と GitHub](#windows--wls-と-github)
+  * [これで、Git をインストールする準備が整いました](#これでgit-をインストールする準備が整いました-1)
 
 ---
 
@@ -400,6 +394,9 @@ git clone git@github.com:.../a.git
 ```
 
 ![Gif_GitHub_SSH_Download](assets/Gif_GitHub_SSH_Download.gif)
+
+### これで、Git をインストールする準備が整いました
+[Git セットアップ](#git-setup) セクションまでスキップして、プロセスを完了してください!
 
 ---
 
