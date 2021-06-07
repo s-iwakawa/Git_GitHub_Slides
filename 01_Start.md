@@ -135,6 +135,39 @@ Repository (リポジトリ) は, Repo と短縮されて呼ばれることも�
 
 ---
 
+### git フォルダー内を確認する
+
+```sh
+$ pwd
+/Users/g001494/Documents/learning_js
+
+$ ls -la
+total 8
+drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 .
+drwx------@ 20 g001494  staff  640 Jun  8 16:22 ..
+drwxr-xr-x  12 g001494  staff  384 Jun  9 14:56 .git
+-rw-r--r--   1 g001494  staff   85 Jun  9 14:54 README.md
+
+$ cd .git
+
+$ ls -la
+total 40
+drwxr-xr-x  12 g001494  staff  384 Jun  9 14:56 .
+drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 ..
+-rw-r--r--   1 g001494  staff   20 Jun  9 14:54 COMMIT_EDITMSG
+-rw-r--r--   1 g001494  staff   23 Jun  9 14:54 HEAD
+-rw-r--r--   1 g001494  staff  316 Jun  9 14:56 config
+-rw-r--r--   1 g001494  staff   73 Jun  9 14:54 description
+drwxr-xr-x  14 g001494  staff  448 Jun  9 14:54 hooks
+-rw-r--r--   1 g001494  staff  137 Jun  9 14:54 index
+drwxr-xr-x   3 g001494  staff   96 Jun  9 14:54 info
+drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 logs
+drwxr-xr-x   7 g001494  staff  224 Jun  9 14:54 objects
+drwxr-xr-x   5 g001494  staff  160 Jun  9 14:56 refs
+```
+
+---
+
 ### README.mdファイルの追加
 
 README.mdファイルを作成します.
@@ -286,51 +319,7 @@ Documentation:
 
 ---
 
-## Appendix
 
-```sh
-pwd
-```
-
-```sh
-/Users/g001494/Documents/learning_js
-```
-
-```sh
-ls -la
-```
-
-```sh
-total 8
-drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 .
-drwx------@ 20 g001494  staff  640 Jun  8 16:22 ..
-drwxr-xr-x  12 g001494  staff  384 Jun  9 14:56 .git
--rw-r--r--   1 g001494  staff   85 Jun  9 14:54 README.md
-```
-
-```sh
-cd .git
-```
-
-```sh
-ls -la
-```
-
-```sh
-total 40
-drwxr-xr-x  12 g001494  staff  384 Jun  9 14:56 .
-drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 ..
--rw-r--r--   1 g001494  staff   20 Jun  9 14:54 COMMIT_EDITMSG
--rw-r--r--   1 g001494  staff   23 Jun  9 14:54 HEAD
--rw-r--r--   1 g001494  staff  316 Jun  9 14:56 config
--rw-r--r--   1 g001494  staff   73 Jun  9 14:54 description
-drwxr-xr-x  14 g001494  staff  448 Jun  9 14:54 hooks
--rw-r--r--   1 g001494  staff  137 Jun  9 14:54 index
-drwxr-xr-x   3 g001494  staff   96 Jun  9 14:54 info
-drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 logs
-drwxr-xr-x   7 g001494  staff  224 Jun  9 14:54 objects
-drwxr-xr-x   5 g001494  staff  160 Jun  9 14:56 refs
-```
 
 ```sh
 git remote --verbose
