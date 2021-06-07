@@ -332,7 +332,7 @@ Example w/ `a01234` and `panda`
 
 ### Git + GitHub設定
 
-1. SSHキーを生成する
+1. Ubuntu 中で SSHキーを生成する
    * GitHubとのリンクが必要です
    * 質問は空白のままにして、そのまま入力してください
 
@@ -353,7 +353,7 @@ Example w/ `a01234` and `panda`
    * これは、GitHub.comの設定ページに貼り付ける必要があります。
 
    ```sh
-   cat ~/.ssh/id_rsa.pub | clip.exe 
+   cat ~/.ssh/id_rsa.pub | clip.exe
    ```
 
 3. GitHub で新しい SSH キー を生成する
