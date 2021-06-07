@@ -427,3 +427,7 @@ git config --global --list
 ```
 
 詳細: [Git - 最初のGitの構成](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90)
+
+---
+
+## 次の [基本と設定 - 01_Start.md](01_Start.md) へ!
