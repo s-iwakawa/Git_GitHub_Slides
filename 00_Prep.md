@@ -16,7 +16,7 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
   * [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
   * [MacOS - Gitのインストール](#macos---gitのインストール)
   * [Windows 10 - Gitのインストール](#windows-10---gitのインストール)
-  * [Gitの設定](#git-setup)
+  * [Gitの設定をする](#gitの設定をする)
 
 ---
 
@@ -132,6 +132,7 @@ git version 2.31.1
 
 手順:
   * [インストール Windows Subsystem for Linux (WSL)](#インストール-windows-subsystem-for-linux-wsl)
+    * [手順](#手順)
     * [Step 1: Linux 用 Windows サブシステムを有効にする](#step-1-linux-用-windows-サブシステムを有効にする)
     * [Step 2: WSL 2 の実行に関する要件を確認する](#step-2-wsl-2-の実行に関する要件を確認する)
     * [Step 3: 仮想マシンの機能を有効にする](#step-3-仮想マシンの機能を有効にする)
@@ -139,6 +140,7 @@ git version 2.31.1
     * [Step 5: WSL 2 を既定のバージョンとして設定する](#step-5-wsl-2-を既定のバージョンとして設定する)
     * [Step 6: 選択した Linux ディストリビューションをインストールする](#step-6-選択した-linux-ディストリビューションをインストールする)
   * [WSLの初期化](#wslの初期化)
+  * [Windows と WSL の間でコピーと貼り付けを有効にする (Ubuntu)](#windows-と-wsl-の間でコピーと貼り付けを有効にする-ubuntu)
   * [Gitをインストールする](#gitをインストールする)
   * [WSLを構成する](#wslを構成する)
   * [WSL & VS Code](#wsl--vs-code)
@@ -147,7 +149,6 @@ git version 2.31.1
   * [設定を確認](#設定を確認)
   * [VS Code + Explorer](#vs-code--explorer)
   * [Windows + WLS と GitHub](#windows--wls-と-github)
-  * [これで、Git をインストールする準備が整いました](#これでgit-をインストールする準備が整いました-1)
 
 ---
 
@@ -283,16 +284,30 @@ Ubuntu ウインドウの上タブの部分で右クリックします．
 ---
 
 ### WSLを構成する
-1. [wslgit](https://github.com/hangxingliu/wslgit)リポジトリをダウンロードする
-   * `wslgit` はgitのすべてのリクエストをWSLに転送するツール
-2. wslgit フォルダー内に移動
-   * `wslgit.sh` ファイルを `/usr/bin` のWSL実行可能ファイルの場所に移動します
-3. ホームフォルダーに戻る
+[wslgit](https://github.com/hangxingliu/wslgit) は Git のすべてのリクエストをWSLに転送するツールです．
+
+1. [wslgit](https://github.com/hangxingliu/wslgit) リポジトリをダウンロードする
+
+   ```sh
+   git clone https://github.com/hangxingliu/wslgit
+   ```
+
+2. `wslgit` フォルダー内に移動
+
+   ```sh
+   cd wslgit/
+   ```
+
+3. `wslgit.sh` ファイルを `/usr/bin` のWSL実行可能ファイルの場所に移動します
+
+   ```sh
+   sudo mv wslgit.sh /usr/bin/wslgit.sh
+   ```
+
+4. ホームフォルダーに戻る
 
 ```sh
-git clone https://github.com/hangxingliu/wslgit
-cd wslgit/
-sudo mv wslgit.sh /usr/bin/wslgit.sh
+cd
 ```
 
 ---
@@ -300,10 +315,12 @@ sudo mv wslgit.sh /usr/bin/wslgit.sh
 ### WSL & VS Code
 1. [Remote - WSL VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)をインストール
    * ![Remote_WSL.png](assets/Remote_WSL.png)
+
 2. VSコード設定に移動して、`git.path` オブジェクトを変更します。
    * VS Code > File > Preferences > Setting
    * `git.path` を検索
    * `Edit in settings.json` をクリック
+
 3. `REPLACE_WITH_WindowsUSER` と `REPLACE_WITH_UbuntuUSER` を独自のものに置き換えます。
 
 テンプレート
@@ -421,9 +438,7 @@ git clone git@github.com:.../a.git
 
 ---
 
-## Git Setup
-
-### Gitの設定をする
+## Gitの設定をする
   * `git config` コマンドを使用して、Gitのユーザー名とメールを設定します。
   * `GitHub_UserName` と `example@email.com` 以下を自分のものに置き換えてください
   * Mac : Terminalを使用
@@ -433,6 +448,11 @@ git clone git@github.com:.../a.git
 git config --global user.name "GitHub_UserName"
 git config --global user.email "example@email.com"
 git config --global color.ui auto
+```
+
+設定が有効になったことを確認しましょう
+
+```sh
 git config --global --list
 ```
 
