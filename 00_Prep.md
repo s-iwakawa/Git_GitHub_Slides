@@ -218,17 +218,15 @@ wsl --set-default-version 2
 
 
 #### Step 6: 選択した Linux ディストリビューションをインストールする
-1. [Microsoft Store](https://aka.ms/wslstore) を開きます
-   * ![Windows_Store_Ubuntu](assets/Windows_Store_Ubuntu.png)
-2. `Ubuntu 18.04 LTS`で検索してLinux ディストリビューションをインストール
-   * [Ubuntu 18.04 LTS を入手 - Microsoft Store](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+`Ubuntu 18.04 LTS`で検索してLinux ディストリビューションをインストール
+  * [Ubuntu 18.04 LTS を入手 - Microsoft Store](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
 
 ---
 
 ### WSLの初期化
 
 1. ディストリビューションを起動します（Ubuntu 18.04）
-   * `Microsoft Store`アプリの `Launch` ボタンをクリックします
+   * `Microsoft Store`アプリの `起動` ボタンをクリックします
      * 新しくインストールした Linux ディストリビューションを初めて起動すると、コンソール ウィンドウが開き、ファイルが圧縮解除されて PC に格納されるまで 1~2 分待つように求められます。
      * 今後のすべての起動には、1 秒もかかりません。
 2. 新しいLinuxユーザーアカウントの設定
