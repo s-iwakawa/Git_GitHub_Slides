@@ -290,21 +290,23 @@ sudo mv wslgit.sh /usr/bin/wslgit.sh
    * ![Remote_WSL.png](assets/Remote_WSL.png)
 2. VSコード設定に移動して、`git.path` オブジェクトを変更します。
    * VS Code > File > Preferences > Setting
-   * Search `git.path` 
-   * Click `Edit in settings.json`
-3. _WindowsUSER_ と _UbuntuUSER_ を独自のものに置き換えます。
+   * `git.path` を検索
+   * `Edit in settings.json` をクリック
+3. `REPLACE_WITH_WindowsUSER` と `REPLACE_WITH_UbuntuUSER` を独自のものに置き換えます。
 
-Template
+テンプレート
+
 ```sh
 {
-    "git.path": "C:\Users\WindowsUSER\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\UbuntuUSER\wslgit\git.bat"
+    "git.path": "C:\Users\REPLACE_WITH_WindowsUSER\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\REPLACE_WITH_UbuntuUSER\wslgit\git.bat"
 }
 ```
 
-Example w/ `a01234` and `panda`
+Windows ユーザー名として `a01234`, Ubuntu ユーザー名として `PANDA` を使用する例
+
 ```sh
 {
-    "git.path": "C:\Users\a01234\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\panda\wslgit\git.bat"
+    "git.path": "C:\Users\a01234\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\PANDA\wslgit\git.bat"
 }
 ```
 
@@ -353,7 +355,7 @@ Example w/ `a01234` and `panda`
    * これは、GitHub.comの設定ページに貼り付ける必要があります。
 
    ```sh
-   cat ~/.ssh/id_rsa.pub | clip.exe
+   cat ~/.ssh/id_rsa.pub|clip.exe
    ```
 
 3. GitHub で新しい SSH キー を生成する
@@ -376,6 +378,7 @@ ssh -T git@github.com
 The authenticity of host 'github.com (13.114.40.48)' can't be established.
 RSA key fingerprint is SHA256:xxx.
 Are you sure you want to continue connecting (yes/no)? yes
+
 Warning: Permanently added 'github.com,13.114.40.48' (RSA) to the list of known hosts.
 Hi ahandsel! You've successfully authenticated, but GitHub does not provide shell access.
 ```
