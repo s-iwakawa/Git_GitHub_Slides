@@ -276,7 +276,6 @@ Documentation:
   - [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
   - [Git - git-push Documentation](https://git-scm.com/docs/git-push)
 
-
 ---
 
 ### Hands-on Aが完了しました
