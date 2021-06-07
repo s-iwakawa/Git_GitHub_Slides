@@ -171,7 +171,9 @@ git version 2.31.1
 
 Windows 上に Linux ディストリビューションをインストールする前に、まず "Linux 用 Windows サブシステム" オプション機能を有効にする必要があります。
 
-管理者として PowerShell を開き、以下を実行します。
+**管理者として** PowerShell を開き、以下を実行します。
+
+![Open PowerShell As Admin in Japanese](assets/00_Prep_Windows_PowerShell.png)
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -254,6 +256,16 @@ See "man sudo_root" for details.
 
 ---
 
+### Windows と WSL の間でコピーと貼り付けを有効にする (Ubuntu)
+Ubuntu ウインドウの上タブの部分で右クリックします．
+
+| English Settings                                                                                               | 日本語 設定                                                                                                                         |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Ubuntu の Properties > `Options` > `Edit Options` <br> `Use Ctrl+Shift+C/V as Copy/Paste` プションを有効にする | Ubuntu の `プロパティ` > `オプション` > `編集オプション` <br> `Ctrl+Shift+C/V をコピー/貼り付けとして使用する` プションを有効にする |
+| ![Ubuntu Setting English](assets/00_Prep_wsl_copy-paste-English.png)                                           | ![Ubuntu Setting JP](assets/00_Prep_wsl_copy-paste-JP.png)                                                                          |
+
+---
+
 ### Gitをインストールする
 1. ディストリビューションのパッケージを更新してアップグレードする
    * 「`続行しますか？[Y / n]`」と尋ねられたら、`Y` を入力します。
@@ -296,15 +308,13 @@ sudo mv wslgit.sh /usr/bin/wslgit.sh
 
 テンプレート
 
-```sh
-{
-    "git.path": "C:\Users\REPLACE_WITH_WindowsUSER\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\REPLACE_WITH_UbuntuUSER\wslgit\git.bat"
-}
+```json
+"C:\Users\REPLACE_WITH_WindowsUSER\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\REPLACE_WITH_UbuntuUSER\wslgit\git.bat"
 ```
 
 Windows ユーザー名として `a01234`, Ubuntu ユーザー名として `PANDA` を使用する例
 
-```sh
+```json
 {
     "git.path": "C:\Users\a01234\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\PANDA\wslgit\git.bat"
 }
