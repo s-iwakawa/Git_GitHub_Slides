@@ -281,20 +281,30 @@ See "man sudo_root" for details.
 git clone https://github.com/hangxingliu/wslgit
 cd wslgit/
 sudo mv wslgit.sh /usr/bin/wslgit.sh
-cd
 ```
 
 ---
 
 ### WSL & VS Code
-1. [Remote - WSL VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)をダウンロード
+1. [Remote - WSL VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)をインストール
    * ![Remote_WSL.png](assets/Remote_WSL.png)
 2. VSコード設定に移動して、`git.path` オブジェクトを変更します。
+   * VS Code > File > Preferences > Setting
+   * Search `git.path` 
+   * Click `Edit in settings.json`
 3. _WindowsUSER_ と _UbuntuUSER_ を独自のものに置き換えます。
 
+Template
 ```sh
 {
     "git.path": "C:\Users\WindowsUSER\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\UbuntuUSER\wslgit\git.bat"
+}
+```
+
+Example w/ `a01234` and `panda`
+```sh
+{
+    "git.path": "C:\Users\a01234\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\panda\wslgit\git.bat"
 }
 ```
 
