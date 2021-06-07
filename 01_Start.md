@@ -1,36 +1,32 @@
 # Git, GitHubとは？ - 基本と設定
 
-  - [コンテンツの目的](#コンテンツの目的)
+このセクションでは, Git と GitHub を紹介し, 最初のリポジトリの設定について説明します
+
+## Overview
+  - Gitの基本
+  - GitHubの基本
+  - リポジトリを作成する ハンズオン
+  - git の基本的なコマンドの概要
+
   - [Overview](#overview)
   - [Git とは…](#git-とは)
     - [バージョン管理とは？](#バージョン管理とは)
     - [バージョン管理の例](#バージョン管理の例)
   - [GitHubとは…](#githubとは)
-  - [Hands-On A - 設定](#hands-on-a---設定)
+  - [リポジトリの設定 - ハンズオン](#リポジトリの設定---ハンズオン)
     - [ローカルでの設定](#ローカルでの設定)
     - [Gitの設定をする](#gitの設定をする)
     - [ローカルGitリポジトリを作成する](#ローカルgitリポジトリを作成する)
+    - [git フォルダー内を確認する](#git-フォルダー内を確認する)
     - [README.mdファイルの追加](#readmemdファイルの追加)
     - [Gitのステータスを確認する](#gitのステータスを確認する)
     - [ステージングエリアにファイルを追加](#ステージングエリアにファイルを追加)
     - [Gitリポジトリにファイルを追加](#gitリポジトリにファイルを追加)
     - [GitHubリポジトリを作成する](#githubリポジトリを作成する)
     - [Local Git --> GitHub](#local-git----github)
-    - [Hands-on Aが完了しました](#hands-on-aが完了しました)
-  - [Appendix](#appendix)
-
-## コンテンツの目的
-SC本部メンバーが...
-  1. Git と GitHub について理解できた
-  2. GitHub でコードを管理できるようになった
-
-## Overview
-  - Gitの基本
-  - GitHubの基本
-  - ハンズオン
-    - Gitをインストールする.
-    - GitHubアカウントを作成する
-    - リポジトリを作成する
+    - [Hands-on A が完了しました](#hands-on-a-が完了しました)
+  - [Git の基本的なコマンドの概要](#git-の基本的なコマンドの概要)
+    - [Git での変更の保存方法](#git-での変更の保存方法)
 
 ---
 
@@ -49,11 +45,6 @@ SC本部メンバーが...
 バックアップ
   - 後で特定バージョンを呼び出すことができるようになります.
 
-<!-- | 履歴                                                    | チームワーク                                            | バックアップ                                            |
-| ------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
-| 時間とともに加えられていく変更を記録することができます. | 他のシステムを使う開発者と共同作業をすることができます. | 後で特定バージョンを呼び出すことができるようになります. |
-| ![](assets/Day01/Day01_GitHub_JP_Jun080.png)            | ![](assets/Day01/Day01_GitHub_JP_Jun082.png)            | ![](assets/Day01/Day01_GitHub_JP_Jun084.png)            | -->
-
 ゲームのセーブポイント
   - "バージョン管理" は, ゲームのチェックポイント システムに似ています.
   - レベルをクリアすれば, ゲームの現在のレベルを保存します.
@@ -61,9 +52,9 @@ SC本部メンバーが...
 
 ### バージョン管理の例
 
-| Google Docs                                              | Kintone                                              |
-| -------------------------------------------------------- | ---------------------------------------------------- |
-| ![Day01_GoogleDoc.png](assets/Day01/Day01_GoogleDoc.png) | ![Day01_Kintone.png](assets/Day01/Day01_Kintone.png) |
+| Google Docs                                                  | Kintone                                                |
+| ------------------------------------------------------------ | ------------------------------------------------------ |
+| ![Google Doc Version History](assets/01_Start_GoogleDoc.png) | ![Kintone Record History](assets/01_Start_Kintone.png) |
 
 ## GitHubとは…
 
@@ -73,17 +64,16 @@ SC本部メンバーが...
     - `Remote repositories` (リモートリポジトリ) と聞いたら, GitHub だなっと考えてください.
   - 2008年に設立され, 現在はマイクロソフトの子会社です.
 
-|                                |                                              |                                              |     |
-| ------------------------------ | -------------------------------------------- | -------------------------------------------- | --- |
-| ![](assets/GitHub_CatLogo.png) | ![](assets/Day01/Day01_GitHub_JP_Jun085.png) | ![](assets/Day01/Day01_GitHub_JP_Jun086.png) |
+|                                                       |                                                  |
+| ----------------------------------------------------- | ------------------------------------------------ |
+| ![New GitHub Account](assets/00_Start_GitHub_New.png) | ![New Repo](assets/00_Start_GitHub_Repo_New.png) |
 
 ---
 
-## Hands-On A - 設定
-
+## リポジトリの設定 - ハンズオン
 ローカルでの設定
   - フォルダを作成する.
-  - フォルダをgitで管理するように構成する.
+  - フォルダを Git で管理するように構成する.
 
 GitHub の設定
   - GitHub で "フォルダ" のようなものを作成する.
@@ -91,22 +81,29 @@ GitHub の設定
 
 ローカルと GitHub を接続する
   - 接続するように2つを構成する.
-  - ローカル側でファイルを作成して git コマンドを実行すると、ファイルは GitHub に表示されます.
+  - ローカル側でファイルを作成して Git コマンドを実行すると, ファイルは GitHub に表示されます.
 
 ---
 
-### ローカルでの設定
+## ローカルでの設定
+
+**Mac : Terminalを使用**
+
+**Windows : Ubuntuを使用**
 
 ### Gitの設定をする
-  - `git config` コマンドを使用して、Gitのユーザー名とメールを設定します。
+  - `git config` コマンドを使用して, Gitのユーザー名とメールを設定します
   - `GitHub_UserName` と `example@email.com` 以下を自分のものに置き換えてください
-  - Mac : Terminalを使用
-  - Windows : Ubuntuを使用
 
 ```sh
 git config --global user.name "GitHub_UserName"
 git config --global user.email "example@email.com"
 git config --global color.ui auto
+```
+
+設定が有効になったことを確認しましょう
+
+```sh
 git config --global --list
 ```
 
@@ -114,7 +111,7 @@ git config --global --list
 
 ### ローカルGitリポジトリを作成する
 
-Document ディレクトリに移動し、 `learning_js` という名前のディレクトリを作成します
+Document ディレクトリに移動し, `learning_js` という名前のディレクトリを作成します
 
 ```sh
 cd Documents
@@ -122,11 +119,11 @@ mkdir learning_js
 cd learning_js
 ```
 
-`pwd` コマンドを使用して、正しい場所にいることを確認します
+`pwd` コマンドを使用して, 正しい場所にいることを確認します
 
 ```sh
 ❯ pwd
-/Users/${UserName}/Documents/learning_js
+/Users/YourUserName/Documents/learning_js
 ```
 
 `git init` コマンドで git リポジトリを初期化します.
@@ -136,49 +133,16 @@ git init
 ```
 
 ```terminal
-Initialized empty Git repository in /Users/${UserName}/Documents/learning_js/.git/
+Initialized empty Git repository in /Users/YourUserName/Documents/learning_js/.git/
 ```
 
 Repository (リポジトリ) は, Repo と短縮されて呼ばれることもあります.
 
 ---
 
-### git フォルダー内を確認する
+### README.md ファイルの追加
 
-```sh
-$ pwd
-/Users/g001494/Documents/learning_js
-
-$ ls -la
-total 8
-drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 .
-drwx------@ 20 g001494  staff  640 Jun  8 16:22 ..
-drwxr-xr-x  12 g001494  staff  384 Jun  9 14:56 .git
--rw-r--r--   1 g001494  staff   85 Jun  9 14:54 README.md
-
-$ cd .git
-
-$ ls -la
-total 40
-drwxr-xr-x  12 g001494  staff  384 Jun  9 14:56 .
-drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 ..
--rw-r--r--   1 g001494  staff   20 Jun  9 14:54 COMMIT_EDITMSG
--rw-r--r--   1 g001494  staff   23 Jun  9 14:54 HEAD
--rw-r--r--   1 g001494  staff  316 Jun  9 14:56 config
--rw-r--r--   1 g001494  staff   73 Jun  9 14:54 description
-drwxr-xr-x  14 g001494  staff  448 Jun  9 14:54 hooks
--rw-r--r--   1 g001494  staff  137 Jun  9 14:54 index
-drwxr-xr-x   3 g001494  staff   96 Jun  9 14:54 info
-drwxr-xr-x   4 g001494  staff  128 Jun  9 14:54 logs
-drwxr-xr-x   7 g001494  staff  224 Jun  9 14:54 objects
-drwxr-xr-x   5 g001494  staff  160 Jun  9 14:56 refs
-```
-
----
-
-### README.mdファイルの追加
-
-README.mdファイルを作成します.
+README.md ファイルを作成します.
 
 ```sh
 touch README.md
@@ -195,7 +159,7 @@ vi README.md
 このフォルダは JavaScript や git の課題で使用します.
 ```
 
-READMEファイルは、ソフトウェアや git リポジトリの目的や使用方法を説明するために使用されます.
+README.md ファイルは, ソフトウェアや git リポジトリの目的や使用方法を説明するために使用されます.
 
 ---
 
@@ -204,9 +168,9 @@ READMEファイルは、ソフトウェアや git リポジトリの目的や使
 `git status` コマンド
   - 作業ディレクトリとステージングエリアを表示します
   - `Changes to be committed`: どのファイルに変更が加えられているのか確認できます
-  - `Untracked files`: どのファイルはgitで追跡していないのかを確認できます
+  - `Untracked files`: どのファイルは Git で追跡していないのかを確認できます
 
-画像を確認すると、README\.mdを追跡する必要があることがわかります。
+画像を確認すると, README.md を追跡する必要があることがわかります
 
 ```sh
 git status
@@ -292,7 +256,7 @@ GitHub の `Clone or download` ボタンをクリックし, HTTPS リンクを�
   - [Git - git-remote Documentation](https://git-scm.com/docs/git-remote#_name)
 
 ```sh
-git remote add origin https://github.com/ahandsel/learning_js.git
+git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
 git push -u origin master
 ```
 
@@ -312,27 +276,263 @@ To https://github.com/ahandsel/learning_js.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
-Documentation:
+#### デバッグ
+ローカルと GitHub の間で同期する最初のリポジトリを設定するときに, ログイン問題が発生する可能性があります。
+
+1. リモートリポジトリ設定を削除
+
+```sh
+git remote remove origin
+```
+
+2. 新しいパーソナルアクセストークンを作成する  
+  - [github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+  - 端末から GitHub アカウントにログインするときに, Github パスワードの代わりにトークンを使用します
+
+3. もう一度試してみましょう
+
+```sh
+git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
+git push -u origin master
+```
+
+4. Github.com のリポジトリをチェックして, プッシュが機能したことを確認します。
+
+`https://github.com/`Your_GitHub_UserName`/learning_js.git`
+
+
+#### Documentation
   - [リモートリポジトリを管理する - GitHub Docs](https://docs.github.com/ja/github/getting-started-with-github/getting-started-with-git/managing-remote-repositories)
   - [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
   - [Git - git-push Documentation](https://git-scm.com/docs/git-push)
 
 ---
 
-### Hands-on Aが完了しました
+### Hands-on A が完了しました
 
-| git を初期化する                        | GitHub を設定する                        | ローカルリポジトリを作成してプッシュする |
+| Git を初期化する                        | GitHub を設定する                        | ローカルリポジトリを作成してプッシュする |
 | --------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | `git init` <br> `git remote add origin` | [github.com/new](https://github.com/new) | `git status` <br> `git commit -m`        |
 
 ---
 
+## Git の基本的なコマンドの概要
+
+### Git での変更の保存方法
+
+スペース間でアイテムを転送する2つのコマンドがあります:
+  - `git add` & `git commit`
+
+ファイル, フォルダの変更が保存される3つのスペースがあります:
+  - `working directory` (作業ディレクトリ)
+  - `staging area` (ステージングステージング)
+  - `repository` (リポジトリ)
+
+![01_Start_Git_Stages](assets/01_Start_Git_Stages.png)
+
+|       |                                  |
+| :---: | :------------------------------: |
+|       |     [ working directory ✍️ ]      |
+|       |         ↘️  `git add` 📥 ↘️         |
+|       |        [ staging area 📂 ]        |
+|       |       ↘️  `git commit` 💾 ↘️        |
+|       |         [ repository 🗄️ ]         |
+|       |        ↘️  `git push` 🔄 ↘️         |
+|       | [ remote repository (GitHub) 🌐 ] |
+
+---
+
+|       |                                  |
+| :---: | :------------------------------: |
+|   ➡️   |     [ working directory ✍️ ]      |
+|   ➡️   |         ↘️  `git add` 📥 ↘️         |
+|   ➡️   |        [ staging area 📂 ]        |
+|       |       ↘️  `git commit` 💾 ↘️        |
+|       |         [ repository 🗄️ ]         |
+|       |        ↘️  `git push` 🔄 ↘️         |
+|       | [ remote repository (GitHub) 🌐 ] |
+
+`working directory` (作業ディレクトリ) ✍️
+  - すべての変更は最初に作業ディレクトリーで行われます
+
+`git add` 📩
+  - 作業ディレクトリからステージングエリアへ追加するコマンド
+
+`staging area` (ステージングステージング) 📂
+  - 作業ディレクトリとリポジトリの間のバッファ用スペース
+  - 以前は「インデックス」と呼ばれていました
+  - ある特定の変更のみを追加し, まとめてリポジトリに追加する準備を行うことができます
+
+---
+
+**待って，ステージングエリアが必要な理由？ 🤔**
+  - ファイルをステージングする = コミットのためのファイルを準備する
+
+あなたが音楽を作っていると想像してください 🎶
+  - あなたは様々なメッセージを含められた曲を書いています
+    - 怒りの歌から愛の歌まですべて
+  - すべての音楽をランダムにアップロードしますか？
+    - いいえ, テーマを付けたアルバムを作りますよね
+
+ロマンチックなアルバムを作成するには 🎶
+  - ラブソングだけを `git add` します
+  - すべてのラブソングを追加するまでの間決められたラブソングは `Staging Area`で保存されています.
+  - アルバム内の必要なすべての曲を `Staging Area` に保存したら, コミットする時間です
+  - `git commit -m` する時, "Love Song" ってアルバムのタイトルをコメント追加してコミットします
+
+---
+
+|       |                                  |
+| :---: | :------------------------------: |
+|       |     [ working directory ✍️ ]      |
+|       |         ↘️  `git add` 📥 ↘️         |
+|       |        [ staging area 📂 ]        |
+|   ➡️   |       ↘️  `git commit` 💾 ↘️        |
+|   ➡️   |         [ repository 🗄️ ]         |
+|       |        ↘️  `git push` 🔄 ↘️         |
+|       | [ remote repository (GitHub) 🌐 ] |
+
+`git commit` 💾
+  - リポジトリへ変更を記録するコマンド
+  - 変更を保存したいファイルがステージングエリアに配置されたら, `git commit` コマンドを使用します
+  - ボスを倒してゲームの進行状況を保存したいときに使用するイメージです
+  - コミットごとにどんな変更を記録するのかを把握するためのコメントを残します
+
+`repository` 🗄️
+  - Git リポジトリは, プロジェクト内の `.git` フォルダで管理されています
+  - リポジトリは, プロジェクトの変更を追跡できます。
+
+**Git フォルダーの中身は何ですか? 🤔**
 
 ```sh
-git remote --verbose
+$ pwd
+/Users/UserName/Documents/learning_js
+
+$ ls -la
+total 8
+drwxr-xr-x   4 UserName  staff  128 Jun  9 14:54 .
+drwx------@ 20 UserName  staff  640 Jun  8 16:22 ..
+drwxr-xr-x  12 UserName  staff  384 Jun  9 14:56 .git
+-rw-r--r--   1 UserName  staff   85 Jun  9 14:54 README.md
+
+$ cd .git
+
+$ ls -la
+total 40
+drwxr-xr-x  12 UserName  staff  384 Jun  9 14:56 .
+drwxr-xr-x   4 UserName  staff  128 Jun  9 14:54 ..
+-rw-r--r--   1 UserName  staff   20 Jun  9 14:54 COMMIT_EDITMSG
+-rw-r--r--   1 UserName  staff   23 Jun  9 14:54 HEAD
+-rw-r--r--   1 UserName  staff  316 Jun  9 14:56 config
+-rw-r--r--   1 UserName  staff   73 Jun  9 14:54 description
+drwxr-xr-x  14 UserName  staff  448 Jun  9 14:54 hooks
+-rw-r--r--   1 UserName  staff  137 Jun  9 14:54 index
+drwxr-xr-x   3 UserName  staff   96 Jun  9 14:54 info
+drwxr-xr-x   4 UserName  staff  128 Jun  9 14:54 logs
+drwxr-xr-x   7 UserName  staff  224 Jun  9 14:54 objects
+drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 ```
 
-```sh
-origin https://github.com/ahandsel/learning_js.git (fetch)
-origin https://github.com/ahandsel/learning_js.git (push)
-```
+---
+
+|       |                                  |
+| :---: | :------------------------------: |
+|       |     [ working directory ✍️ ]      |
+|       |         ↘️  `git add` 📥 ↘️         |
+|       |        [ staging area 📂 ]        |
+|       |       ↘️  `git commit` 💾 ↘️        |
+|       |         [ repository 🗄️ ]         |
+|   ➡️   |        ↘️  `git push` 🔄 ↘️         |
+|   ➡️   | [ remote repository (GitHub) 🌐 ] |
+
+`git push <remote> <branch>` 🔄
+  - Local Repo --> Remote Repo
+  - ローカルリポジトリをリモートリポジトリにアップロードするコマンドです
+  - コミットをエクスポートします
+
+`remote repository` (GitHub) 🌐
+  - GitHub のサーバー上のリポジトリであり, コードを他のユーザーが確認できるようにします
+
+---
+
+### リモートリポジトリの操作
+
+`git remote add origin <link>`
+  - ローカルマシンにリモートリポジトリのクローンを作成すると, Git によって `alias` が作成されます。
+  - `origin` はリモートリポジトリのURLのニックネームのようなものです
+  - 最も一般的な `alias` は 「 `origin` 」 と呼ばれます。
+  - 次のコマンドはどちらも同じ内容を実行します
+
+   ```sh
+   $ git push -u https://github.com/ahandsel/demo.git master
+   ```
+
+   ```sh
+   $ git remote add ALIAS https://github.com/ahandsel/demo.git 
+   $ git push -u ALIAS master
+   ```
+
+`git remote`
+  - ローカルとリモートのリポジトリ間の接続を管理します
+
+`git remote --verbose`
+  - Gitが保存しているURLと, そのリモートリポジトリへの読み書き時に使用できるエイリアス (ニックネーム)を一覧表示します。
+
+   ```sh
+   git remote --verbose
+   ```
+
+   ```sh
+   origin https://github.com/ahandsel/learning_js.git (fetch)
+   origin https://github.com/ahandsel/learning_js.git (push)
+   ```
+
+#### Documentation
+  - [Git - リモートでの作業](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD)
+  - [Git - Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+  - [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
+
+---
+
+### git push?
+`git push <remote> <branch>` 🔄
+  - Local Repo --> Remote Repo | コミットをエクスポートします
+  - `git fetch` の対応
+    - ローカルリポジトリへのインポートコミット
+  - ⚠️ 注: プッシュすると, 変更が上書きされる可能性があります。
+
+`git push` コマンドは, 最後のプッシュまたはクローン以降に変更されていないリモートリポジトリに対してのみ機能します
+  - つまり, リモートリポジトリを変更した人は他にいません
+  - あなたと別のクローンが同時にあなたの前に上流にプッシュした場合, そのプッシュは正しく拒否されます。
+  - 最初に彼らの仕事をフェッチしてプッシュに含める必要があります
+
+**ゲームの例-どうぶつの森**
+  - Genji は島にテントを追加しました。
+  - Genji がゲームステータスを GitHub にアップロードしました。
+  - 宗平も島に家を追加しました。
+  - しかし, GitHub にアップロードする前に...
+    - GitHub から最新のゲームステータスを取得する必要があります
+    - ( Genji がテントを追加したため)
+
+#### Documentation
+  - [Git - git-push Documentation](https://git-scm.com/docs/git-push)
+
+### ハンズオン A レビュー
+
+Git での保存
+
+|                                  |    音楽 🎶    |
+| :------------------------------: | :----------: |
+|     [ working directory ✍️ ]      |   個別の曲   |
+|         ↘️  `git add` 📥 ↘️         |              |
+|        [ staging area 📂 ]        |   アルバム   |
+|       ↘️  `git commit` 💾 ↘️        |              |
+|         [ repository 🗄️ ]         | プレイリスト |
+|        ↘️  `git push` 🔄 ↘️         |              |
+| [ remote repository (GitHub) 🌐 ] |   Spotify    |
+
+`git remote`
+  - ローカルとリモートのリポジトリ間の接続を管理するコマンド
+
+`git push`
+  - ローカルリポジトリをリモートリポジトリにアップロードするコマンド
