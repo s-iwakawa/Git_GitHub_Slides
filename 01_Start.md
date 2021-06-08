@@ -70,6 +70,13 @@
 | ----------------------------------------------------- | ------------------------------------------------ |
 | ![New GitHub Account](assets/00_Start_GitHub_New.png) | ![New Repo](assets/00_Start_GitHub_Repo_New.png) |
 
+### GitHub 例 - Apple
+Appleが, パスワードマネージャーなどのアプリの開発者向けに, 強力なパスワードを生成できるよう支援するための一連のツールとリソースを無償公開している.
+
+[github.com/apple/password-manager-resources](https://github.com/apple/password-manager-resources)
+
+[アップル, 「Password Manager Resources」をオープンソースで公開 - ZDNet Japan](https://japan.zdnet.com/article/35154931/)
+
 ---
 
 ## リポジトリの設定 - ハンズオン
@@ -283,24 +290,24 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 1. リモートリポジトリ設定を削除
 
-```sh
-git remote remove origin
-```
+   ```sh
+   git remote remove origin
+   ```
 
 2. 新しいパーソナルアクセストークンを作成する  
-  - [github.com/settings/tokens/new](https://github.com/settings/tokens/new)
-  - 端末から GitHub アカウントにログインするときに, Github パスワードの代わりにトークンを使用します
+   - [github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+   - 端末から GitHub アカウントにログインするときに, Github パスワードの代わりにトークンを使用します
 
 3. もう一度試してみましょう
 
-```sh
-git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
-git push -u origin master
-```
+   ```sh
+   git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
+   git push -u origin master
+   ```
 
 4. Github.com のリポジトリをチェックして, プッシュが機能したことを確認します。
 
-`https://github.com/`Your_GitHub_UserName`/learning_js.git`
+   `https://github.com/`Your_GitHub_UserName`/learning_js.git`
 
 
 #### Documentation <!-- omit in toc -->
@@ -538,3 +545,12 @@ Git での保存
 
 `git push`  
 ローカルリポジトリをリモートリポジトリにアップロードするコマンド
+
+## クイズの時間
+
+1. GitとGitHubはどのように関係していますか？  
+   - ヒント: `hub` とは, 活動またはネットワークの中心点です。
+2. `git add` と `git commit` のどちらを初めに使いますか？
+   - ヒント: `commit` とは, 特定の行動（結婚など）を約束することです。
+3. `git push` コマンドは何をしますか？
+   - ヒント: `git push` コマンドは `git fetch` コマンドの逆の行動を行います。
