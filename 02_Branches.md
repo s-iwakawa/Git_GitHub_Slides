@@ -233,14 +233,11 @@ git branch
 
 ## Hands-on C Review
 
-`git checkout -b develop`
-- ブランチを切り替えるコマンド。
-
-ブランチを使う理由
-- コードの開発、テスト、公開バージョンなどを分離する
-
-`Pull Requests` と `git pull`
-- 「プルリクエスト」とは, 変更を取得するためにターゲットリポジトリをリクエストすることです.
+|                               |                                                                                           |
+| ----------------------------- | ----------------------------------------------------------------------------------------- |
+| `git checkout -b develop`     | ブランチを切り替えるコマンド                                                              |
+| ブランチを使う理由            | コードの開発、テスト、公開バージョンなどを分離する                                        |
+| `Pull Requests` と `git pull` | 「プルリクエスト」とは, 変更を取得するためにターゲットリポジトリをリクエストすることです. |
 
 ---
 
@@ -250,54 +247,22 @@ git branch
 
 ![02_Branches_GitHubWorkflow.png](assets/02_Branches_GitHubWorkflow.png)
 
-| #   | Step            | Notes                                                                                                                              |
-| --- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Create a branch | `master` から `feature` ブランチを作成して開発を開始します                                                                         |
-| 2   | Commit changes  | コード実装が完了したら, `commit` を作成します. <br> `commit` を作成することで変更履歴を確認できて, ロールバックと参照が可能になります. |
-| 3 | Open a Pull Request | 実装内容を他の人と共有する準備ができたら, Pull Request を作成します. | 
-| 4 | Discuss & Review Code |
-| 5 | Deploy & Test |
-| 6 | Merge to Master | 
+| #   | Step                  | Notes                                                                                                                                  |
+| --- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Create a branch       | `master` から `feature` ブランチを作成して開発を開始します                                                                             |
+| 2   | Commit changes        | コード実装が完了したら, `commit` を作成します. <br> `commit` を作成することで変更履歴を確認できて, ロールバックと参照が可能になります. |
+| 3   | Open a Pull Request   | 実装内容を他の人と共有する準備ができたら, Pull Request を作成します.                                                                   |
+| 4   | Discuss & Review Code | ティーンメンバーからコードのレビューをもらい, 議論します．                                                                             |
+| 5   | Deploy & Test         | コードをテスト環境にデプロイして問題なく機能することを確認します.                                                                      |
+| 6   | Merge to Master       | これで実装内容が有効になり, Pull Request はコードに対する変更履歴の記録を保持します。                                                  |
 
-コードレビューの後, コードをテスト環境にデプロイして問題なく機能することを確認します.
-
-例: Webサイトのレイアウトや動作が期待どおりかどうかをZendeskThemes版などでテストします.
----
-
-
-Pull Request を作成することでコードレビューの準備を行います.
-
-GitHub の Pull Request タブでコメントを作成します.
-
-
-### 4 - Discuss & Review Code
-
-![](assets/02_Branches_Workflow_4.png)
-
-### 5 - Deploy & Test
-
-![](assets/02_Branches_Workflow_5.png)
-
-コードレビューの後, コードをテスト環境にデプロイして問題なく機能することを確認します.
-
-例: Webサイトのレイアウトや動作が期待どおりかどうかをZendeskThemes版などでテストします.
-
-### 6 - Merge to Master
-
-![](assets/02_Branches_Workflow_6.png)
-
-コードを`master` ブランチにマージ!
-    - これで実装内容が有効になり, ユーザーもwebサイトの変更を確認できます.
-
-統合すると, Pull Request は参照点として機能します.
-
-例: 新しいロゴのプルリクエストは, ロゴ変更の「前」と「後」を示す参照点になります.
-
-## Overview of GitHub Workflow
+### Detailed Overview of the GitHub Workflow
 
 ![02_Branches_GitHubWorkflow_Overview](assets/02_Branches_GitHubWorkflow_Overview.png)
 
 [Git Common-Flow 1.0.0-rc.5 | Git Common Flow](https://commonflow.org/spec/1.0.0-rc.5.html)
+
+---
 
 ## GitHubの概要 - GitHub Website Overview
 
@@ -332,22 +297,17 @@ Project boards: KANBAN形式でのタスクボードです
 
 Wiki: 関連するプロジェクトドキュメントの作成と保存ができます
 
-Insight: リポジトリの分析ツール: 
+Insight: リポジトリの分析ツール
   - `Network` グラフ: コミットとブランチをタイムラインで視覚化します
   - `Pulse` : 進行中, あるいは完了したタスクを表示します
 
 ## GitHub のパーツ
 
-Branch
-  - コードの代替タイムライン
-  - 例: マスター, 開発, 機能/ xxx
+|                    |                                                             |
+| ------------------ | ----------------------------------------------------------- |
+| Branch             | コードの代替タイムライン <br> 例: マスター, 開発, 機能/ xxx |
+| Commit             | ファイルの変更をリポジトリに保存する                        |
+| Pull Request       | 提案している変更を他の人と共有する                          |
+| Merge Pull Request | 実際にブランチ（マスターなど）を変更して更新し              |
 
-Commit
-  - ファイルの変更をリポジトリに保存する
-
-Pull Request
-  - 提案している変更を他の人と共有する
-
-Merge Pull Request
-  - 実際にブランチ（マスターなど）を変更して更新し
-
+## 次の [巻き戻す - 03_Revert.md](03_Revert.md) へ!
