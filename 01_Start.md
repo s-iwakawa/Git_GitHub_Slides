@@ -120,7 +120,9 @@ git config --global --list
 
 ### ローカルGitリポジトリを作成する
 
-Document ディレクトリに移動し, `learning_js` という名前のディレクトリを作成します
+アクセスしやすいフォルダーに移動し, `learning_js` という名前のディレクトリを作成します.  
+macOS ユーザーだと Document フォルダをお勧めします.  
+Window ユーザーの場合は, [Ubuntu](00_Prep.md#wslの初期化) のトップ フォルダーからでもいいですよ.  
 
 ```sh
 cd Documents
