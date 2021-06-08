@@ -97,6 +97,8 @@ Switched to a new branch 'develop'
   Branch 'develop' set up to track remote branch 'develop' from 'origin'.
   ```
 
+---
+
 ## GitHubでの変更の確認
 
 `develop` ブランチでのみ新しいファイルが追加されました
@@ -107,9 +109,11 @@ Switched to a new branch 'develop'
 
 `https://github.com/USER/REPO/network`
 
-![Gif_GitHub_Demo](assets/Gif_GitHub_Demo.gif)
+|                                                |                                                                    |                                                                      |
+| ---------------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| ![Gif_GitHub_Demo](assets/Gif_GitHub_Demo.gif) | ![02_Branches_GitHubNetwork](assets/02_Branches_GitHubNetwork.png) | ![02_Branches_NetworkExample](assets/02_Branches_NetworkExample.png) |
 
-<img src="assets/Day02/Day02_GitHub_JP_June0910.png" width=500px />
+---
 
 ## プルリクエストの作成とマージ
 
@@ -203,8 +207,6 @@ git branch
 
 [Git - ブランチとは](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF)
 
-Branches
-
 ## Branch と ウェブサイト
 
 `master` ブランチには, Webサイトを実行するコードが存在します.
@@ -227,7 +229,7 @@ Branches
 | 「プッシュ」は, ターゲットリポジトリに変更を強制します.                             | 「プル」はターゲットリポジトリから変更を取得します                                        |
 | `[あなたのコード] ⟾ プッシュ ⟾ [ターゲット]`                                        | `[あなたのコード] ⏎ プル ⏎ [ターゲット]`                                                  |
 | 「プッシュリクエスト」は, 変更をプッシュするように要求するターゲットリポジトリです. | 「プルリクエスト」とは, 変更を取得するためにターゲットリポジトリをリクエストすることです. |
-| ![02_Branches_Push](assets/02_Branches_Push.png) | ![02_Branches_Pull](assets/02_Branches_Pull.png)
+| ![02_Branches_Push](assets/02_Branches_Push.png)                                    | ![02_Branches_Pull](assets/02_Branches_Pull.png)                                          |
 
 ## Hands-on C Review
 
@@ -248,66 +250,41 @@ Branches
 
 ![02_Branches_GitHubWorkflow.png](assets/02_Branches_GitHubWorkflow.png)
 
+| #   | Step            | Notes                                                                                                                              |
+| --- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Create a branch | `master` から `feature` ブランチを作成して開発を開始します                                                                         |
+| 2   | Commit changes  | コード実装が完了したら, `commit` を作成します. <br> `commit` を作成することで変更履歴を確認できて, ロールバックと参照が可能になります. |
+| 3 | Open a Pull Request | 実装内容を他の人と共有する準備ができたら, Pull Request を作成します. | 
+| 4 | Discuss & Review Code |
+| 5 | Deploy & Test |
+| 6 | Merge to Master | 
+
+コードレビューの後, コードをテスト環境にデプロイして問題なく機能することを確認します.
+
+例: Webサイトのレイアウトや動作が期待どおりかどうかをZendeskThemes版などでテストします.
 ---
 
-### #1 - Create a Branch
 
-![Day02_GitHub_JP_June0923.png](assets/Day02/Day02_GitHub_JP_June0923.png)
+Pull Request を作成することでコードレビューの準備を行います.
 
-```sh
-$ git checkout -b develop
-$ git branch
-```
+GitHub の Pull Request タブでコメントを作成します.
 
-webサイトの本番コードは`master` ブランチに保管します.
-  - masterでの変更はユーザーにも影響を与えてしまいます！
-もし新しいページを作成したい場合, まず新しく `feature` ブランチを作成します.
-  - `feature` ブランチで新しいページの開発を行います.
 
----
+### 4 - Discuss & Review Code
 
-### #2 - Making a Commit
+![](assets/02_Branches_Workflow_4.png)
 
-| | |
-| - | -|
-| ![](assets/Day02/Day02_GitHub_JP_June0925.png) | ![](assets/Day02/Day02_GitHub_JP_June0924.png) |
+### 5 - Deploy & Test
 
-`feature` ブランチでコードを実装します.
-
-コード実装が完了したら, commitを作成します.
-
-Commitを作成することで変更履歴を確認できます.
-
-コミットにより, ロールバックと参照が可能になります.
-
-### #3 - Open a Pull Request
-
-<img src="assets/Day02/Day02_GitHub_JP_June0926.png" width=471px />
-
-<img src="assets/Day02/Day02_GitHub_JP_June0927.png" width=500px />
-
-実装内容を他の人と共有する準備ができたら,  PullRequestを作成します.
-
-Pull Requestを作成することでコードレビューの準備を行います.
-
-GitHubの [ プルリクエスト ] タブでコメントを作成します.
-
-### #4 - Test
-
-<img src="assets/Day02/Day02_GitHub_JP_June0929.png" width=465px />
-
-<img src="assets/Day02/Day02_GitHub_JP_June0928.png" width=500px />
-
+![](assets/02_Branches_Workflow_5.png)
 
 コードレビューの後, コードをテスト環境にデプロイして問題なく機能することを確認します.
 
 例: Webサイトのレイアウトや動作が期待どおりかどうかをZendeskThemes版などでテストします.
 
-### #5 - Merge to Master
+### 6 - Merge to Master
 
-<img src="assets/Day02/Day02_GitHub_JP_June0931.png" width=465px />
-
-<img src="assets/Day02/Day02_GitHub_JP_June0930.png" width=500px />
+![](assets/02_Branches_Workflow_6.png)
 
 コードを`master` ブランチにマージ!
     - これで実装内容が有効になり, ユーザーもwebサイトの変更を確認できます.
@@ -326,7 +303,7 @@ GitHubの [ プルリクエスト ] タブでコメントを作成します.
 
 ### GitHub Repository
 
-<img src="assets/Day02/Day02_GitHub_JP_June0932.png" width=500px />
+![02_Branches_GitHub_Bar_Code](assets/02_Branches_GitHub_Bar_Code.png)
 
 GitHub Repository - Code
   - コードやドキュメントなど, プロジェクトに関連するすべてのファイルを保持するコンテナです.
@@ -337,15 +314,14 @@ README.md
 
 ### GitHub Issues
 
-
-<img src="assets/Day02/Day02_GitHub_JP_June0933.png" width=500px />
+![02_Branches_GitHub_Bar_Issues](assets/02_Branches_GitHub_Bar_Issues.png)
 
   - ユーザーがリポジトリの内容に関して議論する場所
   - 課題をユーザーに割り当て, ラベルを追加して読みやすくすることができます
 
 ### GitHub Pull Request
 
-<img src="assets/Day02/Day02_GitHub_JP_June0934.png" width=500px />
+![02_Branches_GitHub_Bar_PullRequest](assets/02_Branches_GitHub_Bar_PullRequest.png)
 
   - ユーザーがリポジトリに変更を加えたいときに使われます
   - 例: README\.mdファイルを新しく追加したい時
@@ -373,5 +349,5 @@ Pull Request
   - 提案している変更を他の人と共有する
 
 Merge Pull Request
-  - 実際にブランチ（マスターなど）を変更して更新し,
+  - 実際にブランチ（マスターなど）を変更して更新し
 
