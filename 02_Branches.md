@@ -2,6 +2,31 @@
 
 このセクションでは, Git Branch を紹介し, 最初のブランチの操作について説明します
 
+## Overview
+  - [Overview](#overview)
+  - [Git Branch?](#git-branch)
+  - [新しいブランチを作成する](#新しいブランチを作成する)
+  - [develop ブランチへの変更](#develop-ブランチへの変更)
+  - [GitHubでの変更の確認](#githubでの変更の確認)
+  - [プルリクエストの作成とマージ](#プルリクエストの作成とマージ)
+  - [GitHub repo から Local repo への更新](#github-repo-から-local-repo-への更新)
+  - [Git Branch とは？](#git-branch-とは)
+    - [ブランチとは？](#ブランチとは)
+    - [なぜブランチを使うのですか？](#なぜブランチを使うのですか)
+  - [Branch と ウェブサイト](#branch-と-ウェブサイト)
+  - [Git Push vs Pull - Teamwork](#git-push-vs-pull---teamwork)
+  - [Hands-on C Review](#hands-on-c-review)
+  - [GitHub Workflow](#github-workflow)
+    - [Detailed Overview of the GitHub Workflow](#detailed-overview-of-the-github-workflow)
+  - [GitHubの概要 - GitHub Website Overview](#githubの概要---github-website-overview)
+    - [GitHub Repository](#github-repository)
+    - [GitHub Issues](#github-issues)
+    - [GitHub Pull Request](#github-pull-request)
+    - [GitHubの概要](#githubの概要)
+  - [GitHub のパーツ](#github-のパーツ)
+  - [クイズの時間](#クイズの時間)
+  - [次の 巻き戻す - 03_Revert.md へ!](#次の-巻き戻す---03_revertmd-へ)
+
 ## Git Branch?
 まず, learning_js リポジトリに戻ります
 
@@ -21,7 +46,7 @@
   ```
 
   ```terminal
-  * master
+  - master
   ```
 
 リポジトリにはデフォルトで `master` ブランチが存在します.
@@ -95,7 +120,7 @@ Switched to a new branch 'develop'
   remote:      https://github.com/ahandsel/learning_js_3/pull/new/develop
   remote:
   To https://github.com/ahandsel/learning_js_3.git
-  * [new branch]      develop -> develop
+  - [new branch]      develop -> develop
   Branch 'develop' set up to track remote branch 'develop' from 'origin'.
   ```
 
@@ -159,7 +184,7 @@ git pull origin master
   remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
   Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
   From https://github.com/ahandsel/kintone_dojo
-  * branch            master     -> FETCH_HEAD
+  - branch            master     -> FETCH_HEAD
     5f9f89b..1438ca5  master     -> origin/master
   Updating d775d42..1438ca5
   Fast-forward
@@ -186,7 +211,7 @@ git branch -d develop
 git branch
 ```
 ```sh
-  * master
+  - master
 ```
 
 ## Git Branch とは？
