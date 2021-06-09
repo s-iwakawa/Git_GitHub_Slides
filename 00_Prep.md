@@ -461,3 +461,16 @@ git config --global --list
 ---
 
 ## 次の [基本と設定 - 01_Start.md](01_Start.md) へ!
+
+---
+
+## GitHub Desktop App
+
+今後のハンズオン セクションは端末で行われます.  
+ただし、プロジェクトで実際に Git と GitHub を使用する場合は、GitHub デスクトップ アプリの方が便利な場合があります.
+
+ここから GitHub Desktop アプリをダウンロードできます:  
+[GitHub Desktop | Simple collaboration from your desktop](https://desktop.github.com/)
+
+GitHub Desktop アプリに関するドキュメンツはこちらです:  
+[GitHub Desktopのドキュメント](https://docs.github.com/ja/desktop)
