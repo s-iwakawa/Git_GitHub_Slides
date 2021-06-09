@@ -27,10 +27,14 @@ SC本部メンバーが...
   * GitHub サイトの概要
 
 [巻き戻す - 03_Revert.md](03_Revert.md)
-  * git でファイルを元に戻す
+  * Git でファイルを元に戻す
+
+[Git CLI カンニングペーパー - 04_CheatSheet.md](04_CheatSheet.md)
+  * 便利な Git コマンドライン (CLI) コマンドの概要を次に示します。
+
 
 ## 質問がありましたか?
-GitHubの問題を作成してください, できる限り対応します.
+[GitHub Issue](https://github.com/ahandsel/Git_GitHub_Slides/issues) を作成してください, できる限り対応します.
 
 ## 間違いを見つけましたか?
 修正を加えたプルリクエストをお願いします~

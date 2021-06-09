@@ -1,6 +1,8 @@
-## Git Command-Line カンニングペーパー
+## Git CLI カンニングペーパー
 
-[GitHub Git チートシート - GitHub Cheatsheets](https://training.github.com/downloads/ja/github-git-cheat-sheet/)
+便利な Git コマンドライン (CLI) コマンドの概要を次に示します。
+
+詳しくはこちら: [Git チートシート - GitHub Cheatsheets](https://training.github.com/downloads/ja/github-git-cheat-sheet/)
 
 ### Create a Repository
 
