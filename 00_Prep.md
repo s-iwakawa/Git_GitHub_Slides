@@ -9,8 +9,8 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 ---
 
 ## 概要 <!-- omit in toc -->
-  - [GitHubアカウント](#githubアカウント)
-    - [Step 1 - GitHubアカウントを作成する](#step-1---githubアカウントを作成する)
+- [GitHub.comアカウント](#githubcomアカウント)
+    - [Step 1 - GitHub.comアカウントを作成する](#step-1---githubcomアカウントを作成する)
     - [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
     - [Step 3 - コマンドラインの個人アクセストークン](#step-3---コマンドラインの個人アクセストークン)
   - [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
@@ -20,14 +20,14 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 
 ---
 
-## GitHubアカウント
+## GitHub.comアカウント
 
-### Step 1 - GitHubアカウントを作成する
+### Step 1 - GitHub.comアカウントを作成する
   - [github.com/join](https://github.com/join)  
 
 
 ### Step 2 - 2要素認証を設定する
-  1. GitHub設定画面に移動します: [github.com/settings/security](https://github.com/settings/security)
+  1. GitHub.comの設定画面に移動します: [github.com/settings/security](https://github.com/settings/security)
      - `Two-factor authentication` (2要素認証) の下で`Enable two-factor authentication` (2要素認証の有効化) をクリックしてください。
      - `Two-factor authentication` のページで、`Set up using an app` をクリックします。
   2. Authenticator Appを作成する
