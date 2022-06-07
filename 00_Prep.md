@@ -46,7 +46,7 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
      - Passwordの代わりにアクセストークンを使用します
      - ユースケースごとにアクセストークンを生成することを推奨します
 
-  3. GitHubの検証のためのtokenを作って保存してください。
+  3. 作成したアクセストークンはメモしてください
 
 ![Creating new GitHub Access Token Demo](assets/Gif_GitHub_Token_New.gif)
 
