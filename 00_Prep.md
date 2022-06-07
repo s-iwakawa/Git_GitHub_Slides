@@ -25,13 +25,12 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 ### Step 1 - GitHub.comアカウントを作成する
   - [github.com/join](https://github.com/join)  
 
-
 ### Step 2 - 2要素認証を設定する
   1. GitHub.comの設定画面に移動します: [github.com/settings/security](https://github.com/settings/security)
      - `Two-factor authentication` (2要素認証) の下で`Enable two-factor authentication` (2要素認証の有効化) をクリックしてください。
      - `Two-factor authentication` のページで、`Set up using an app` をクリックします。
-  2. Authenticator Appを作成する
-     - 提案: [Microsoft](https://www.microsoft.com/en-us/account/authenticator), [Authy](https://authy.com/guides/github/), [Enpass](https://www.enpass.io/)
+  2. 認証アプリでQRコードを読み取ります
+     - 認証アプリの提案: [Microsoft](https://www.microsoft.com/en-us/account/authenticator), [Authy](https://authy.com/guides/github/), [Enpass](https://www.enpass.io/)
 
 #### Resources <!-- omit in toc -->
   - GitHub Help Doc: [2 要素認証を設定する](https://help.github.com/ja/github/authenticating-to-github/configuring-two-factor-authentication)
