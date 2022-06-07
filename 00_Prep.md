@@ -12,7 +12,7 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 - [GitHub.comアカウント](#githubcomアカウント)
     - [Step 1 - GitHub.comアカウントを作成する](#step-1---githubcomアカウントを作成する)
     - [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
-    - [Step 3 - コマンドラインの個人アクセストークン](#step-3---コマンドラインの個人アクセストークン)
+    - [Step 3 - コマンドラインの個人アクセストークンを作成する](#step-3---コマンドラインの個人アクセストークン)
   - [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
   - [MacOS - Gitのインストール](#macos---gitのインストール)
   - [Windows 10 - Gitのインストール](#windows-10---gitのインストール)
@@ -38,14 +38,14 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
   - YouTube: [How to setup 2FA with GitHub](https://youtu.be/5DKqXeorDHY)
 
 
-### Step 3 - コマンドラインの個人アクセストークン  
+### Step 3 - コマンドラインの個人アクセストークンを作成する  
 
-  1. パーソナルアクセストークンを作成する  
+  1. パーソナルアクセストークンを作成します  
      - Settings > Developer settings > Personal access tokens
      - [github.com/settings/tokens/new](https://github.com/settings/tokens/new)  
   2. このtokenはターミナル経由でGitHubアカウントにアクセスする時に使用します  
-     - Passwordの代わりにトークンを使用します
-     - ユースケースごとにtokenを生成します
+     - Passwordの代わりにアクセストークンを使用します
+     - ユースケースごとにアクセストークンを生成することを推奨します
 
   3. GitHubの検証のためのtokenを作って保存してください。
 
