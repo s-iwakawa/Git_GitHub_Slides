@@ -439,13 +439,13 @@ git clone git@github.com:.../a.git
 
 ## Gitの設定をする
   - `git config` コマンドを使用して、Gitのユーザー名とメールを設定します。
-  - `GitHub_UserName` と `example@email.com` 以下を自分のものに置き換えてください
+  - `GitHub_UserName` と `user@example.com` 以下を自分のものに置き換えてください
   - Mac : Terminalを使用
   - Windows : Ubuntuを使用
 
 ```sh
 git config --global user.name "GitHub_UserName"
-git config --global user.email "example@email.com"
+git config --global user.email "user@example.com"
 git config --global color.ui auto
 ```
 
