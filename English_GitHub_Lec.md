@@ -1,6 +1,8 @@
 # English GitHub Lecture Notes
 Markdown/ Outline version of the content
 
+## Outline <!-- omit in toc -->
+<!-- markdownlint-disable MD007 -->
 * [Hands-on A Overview](#hands-on-a-overview)
   * [Local Configuration](#local-configuration)
   * [GitHub Configuration](#github-configuration)
@@ -48,6 +50,7 @@ Markdown/ Outline version of the content
   * [#4 - Test](#4---test)
   * [#5 - Merge to Master](#5---merge-to-master)
   * [Overview of GitHub Workflow](#overview-of-github-workflow)
+<!-- markdownlint-enable MD007 -->
 
 
 ---
