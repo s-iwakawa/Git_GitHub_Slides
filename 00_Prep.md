@@ -9,10 +9,10 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 ---
 
 ## 概要 <!-- omit in toc -->
-  - [GitHubアカウント](#githubアカウント)
-    - [Step 1 - GitHubアカウントを作成する](#step-1---githubアカウントを作成する)
+- [GitHub.comアカウント](#githubcomアカウント)
+    - [Step 1 - GitHub.comアカウントを作成する](#step-1---githubcomアカウントを作成する)
     - [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
-    - [Step 3 - コマンドラインの個人アクセストークン](#step-3---コマンドラインの個人アクセストークン)
+    - [Step 3 - コマンドラインの個人アクセストークンを作成する](#step-3---コマンドラインの個人アクセストークン)
   - [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
   - [MacOS - Gitのインストール](#macos---gitのインストール)
   - [Windows 10 - Gitのインストール](#windows-10---gitのインストール)
@@ -20,34 +20,33 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 
 ---
 
-## GitHubアカウント
+## GitHub.comアカウント
 
-### Step 1 - GitHubアカウントを作成する
+### Step 1 - GitHub.comアカウントを作成する
   - [github.com/join](https://github.com/join)  
 
-
 ### Step 2 - 2要素認証を設定する
-  1. GitHub設定画面に移動します: [github.com/settings/security](https://github.com/settings/security)
+  1. GitHub.comの設定画面に移動します: [github.com/settings/security](https://github.com/settings/security)
      - `Two-factor authentication` (2要素認証) の下で`Enable two-factor authentication` (2要素認証の有効化) をクリックしてください。
      - `Two-factor authentication` のページで、`Set up using an app` をクリックします。
-  2. Authenticator Appを作成する
-     - 提案: [Microsoft](https://www.microsoft.com/en-us/account/authenticator), [Authy](https://authy.com/guides/github/), [Enpass](https://www.enpass.io/)
+  2. 認証アプリでQRコードを読み取ります
+     - 認証アプリの提案: [Microsoft](https://www.microsoft.com/en-us/account/authenticator), [Authy](https://authy.com/guides/github/), [Enpass](https://www.enpass.io/)
 
 #### Resources <!-- omit in toc -->
   - GitHub Help Doc: [2 要素認証を設定する](https://help.github.com/ja/github/authenticating-to-github/configuring-two-factor-authentication)
   - YouTube: [How to setup 2FA with GitHub](https://youtu.be/5DKqXeorDHY)
 
 
-### Step 3 - コマンドラインの個人アクセストークン  
+### Step 3 - コマンドラインの個人アクセストークンを作成する  
 
-  1. パーソナルアクセストークンを作成する  
+  1. パーソナルアクセストークンを作成します  
      - Settings > Developer settings > Personal access tokens
      - [github.com/settings/tokens/new](https://github.com/settings/tokens/new)  
   2. このtokenはターミナル経由でGitHubアカウントにアクセスする時に使用します  
-     - Passwordの代わりにトークンを使用します
-     - ユースケースごとにtokenを生成します
+     - Passwordの代わりにアクセストークンを使用します
+     - ユースケースごとにアクセストークンを生成することを推奨します
 
-  3. GitHubの検証のためのtokenを作って保存してください。
+  3. 作成したアクセストークンはメモしてください
 
 ![Creating new GitHub Access Token Demo](assets/Gif_GitHub_Token_New.gif)
 
@@ -440,13 +439,13 @@ git clone git@github.com:.../a.git
 
 ## Gitの設定をする
   - `git config` コマンドを使用して、Gitのユーザー名とメールを設定します。
-  - `GitHub_UserName` と `example@email.com` 以下を自分のものに置き換えてください
+  - `GitHub_UserName` と `user@example.com` 以下を自分のものに置き換えてください
   - Mac : Terminalを使用
   - Windows : Ubuntuを使用
 
 ```sh
 git config --global user.name "GitHub_UserName"
-git config --global user.email "example@email.com"
+git config --global user.email "user@example.com"
 git config --global color.ui auto
 ```
 
@@ -455,6 +454,8 @@ git config --global color.ui auto
 ```sh
 git config --global --list
 ```
+
+設定したユーザー名とメールアドレスが表示されれば成功です。
 
 詳細: [Git - 最初のGitの構成](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90)
 
