@@ -287,7 +287,7 @@ git branch
 
 ![02_Branches_GitHubWorkflow_Overview](assets/02_Branches_GitHubWorkflow_Overview.png)
 
-[Git Common-Flow 1.0.0-rc.5 | Git Common Flow](https://commonflow.org/spec/1.0.0-rc.5.html)
+[Git Common-Flow 1.0.0-rc.5 - Git Common Flow](https://commonflow.org/spec/1.0.0-rc.5.html)
 
 ---
 
