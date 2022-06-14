@@ -53,7 +53,7 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 ## GitHub.comアカウント
 
 ### Step 1 - GitHub.comアカウントを作成する
-  * [github.com/join](https://github.com/join)  
+* [github.com/join](https://github.com/join)  
 
 ### Step 2 - 2要素認証を設定する
   1. GitHub.comの設定画面に移動します: [github.com/settings/security](https://github.com/settings/security)
@@ -63,8 +63,8 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
      * 認証アプリの提案: [Microsoft](https://www.microsoft.com/en-us/account/authenticator), [Authy](https://authy.com/guides/github/), [Enpass](https://www.enpass.io/)
 
 #### Resources <!-- omit in toc -->
-  * GitHub Help Doc: [2 要素認証を設定する](https://help.github.com/ja/github/authenticating-to-github/configuring-two-factor-authentication)
-  * YouTube: [How to setup 2FA with GitHub](https://youtu.be/5DKqXeorDHY)
+* GitHub Help Doc: [2 要素認証を設定する](https://help.github.com/ja/github/authenticating-to-github/configuring-two-factor-authentication)
+* YouTube: [How to setup 2FA with GitHub](https://youtu.be/5DKqXeorDHY)
 
 
 ### Step 3 - コマンドラインの個人アクセストークンを作成する  
@@ -81,18 +81,18 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 ![Creating new GitHub Access Token Demo](assets/Gif_GitHub_Token_New.gif)
 
 #### Resources <!-- omit in toc -->
-  * GitHub Docs: [個人アクセストークンを使用する](https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token)
+* GitHub Docs: [個人アクセストークンを使用する](https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token)
 
 ---
 
 ## Visual Studio Code (VS Code) + Command Line
 コマンドラインからVSコードを実行する
-  * VS Code を開く
-  * Command Paletteを開く
-  * `Command` \+ `Shift` \+ `P`
-  * Shellと入力して& Shell Command: `Install code in PATH`を選択する
-  * Terminalを再起動する
-  * `code .` と入力することでVSCodeが開きます
+* VS Code を開く
+* Command Paletteを開く
+* `Command` \+ `Shift` \+ `P`
+* Shellと入力して& Shell Command: `Install code in PATH`を選択する
+* Terminalを再起動する
+* `code .` と入力することでVSCodeが開きます
 
 Visual Studio Code Download Link:  
 [code.visualstudio.com](https://code.visualstudio.com/)
@@ -104,12 +104,12 @@ Visual Studio Code Download Link:
 ## MacOS - Gitのインストール
 
 手順:
-  * [Step 0: Homebrewの確認](#step-0-homebrewの確認)
-  * [Step 1: 新しいパッケージをインストールする前にはアップデートとアップグレードしましょう](#step-1-新しいパッケージをインストールする前にはアップデートとアップグレードしましょう)
-  * [Step 2: Homebrew で git をインストール](#step-2-homebrew-で-git-をインストール)
-  * [Step 3: インストールの確認](#step-3-インストールの確認)
-  * [Gitのバージョンが表示されれば成功です](#gitのバージョンが表示されれば成功です)
-  * [Debugging](#debugging)
+* [Step 0: Homebrewの確認](#step-0-homebrewの確認)
+* [Step 1: 新しいパッケージをインストールする前にはアップデートとアップグレードしましょう](#step-1-新しいパッケージをインストールする前にはアップデートとアップグレードしましょう)
+* [Step 2: Homebrew で git をインストール](#step-2-homebrew-で-git-をインストール)
+* [Step 3: インストールの確認](#step-3-インストールの確認)
+* [Gitのバージョンが表示されれば成功です](#gitのバージョンが表示されれば成功です)
+* [Debugging](#debugging)
 
 ### Step 0: Homebrewの確認
 インストールされていなければ、最初に [Homebrew (brew.sh)](https://brew.sh/) をインストールします。
@@ -160,6 +160,20 @@ git version 2.31.1
 ## Windows 10 - Gitのインストール
 
 手順:
+* [GitHub.comアカウント](#githubcomアカウント)
+  * [Step 1 - GitHub.comアカウントを作成する](#step-1---githubcomアカウントを作成する)
+  * [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
+  * [Step 3 - コマンドラインの個人アクセストークンを作成する](#step-3---コマンドラインの個人アクセストークンを作成する)
+* [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
+* [MacOS - Gitのインストール](#macos---gitのインストール)
+  * [Step 0: Homebrewの確認](#step-0-homebrewの確認)
+  * [Step 1: 新しいパッケージをインストールする前にはアップデートとアップグレードしましょう](#step-1-新しいパッケージをインストールする前にはアップデートとアップグレードしましょう)
+  * [Step 2: Homebrew で git をインストール](#step-2-homebrew-で-git-をインストール)
+  * [Step 3: インストールの確認](#step-3-インストールの確認)
+  * [Gitのバージョンが表示されれば成功です](#gitのバージョンが表示されれば成功です)
+  * [Debugging](#debugging)
+  * [これで、Git をインストールする準備が整いました](#これでgit-をインストールする準備が整いました)
+* [Windows 10 - Gitのインストール](#windows-10---gitのインストール)
   * [インストール Windows Subsystem for Linux (WSL)](#インストール-windows-subsystem-for-linux-wsl)
     * [手順](#手順)
     * [Step 1: Linux 用 Windows サブシステムを有効にする](#step-1-linux-用-windows-サブシステムを有効にする)
@@ -178,6 +192,10 @@ git version 2.31.1
   * [設定を確認](#設定を確認)
   * [VS Code + Explorer](#vs-code--explorer)
   * [Windows + WLS と GitHub](#windows--wls-と-github)
+  * [これで、Git をインストールする準備が整いました](#これでgit-をインストールする準備が整いました-1)
+* [Gitの設定をする](#gitの設定をする)
+* [次のセクション - 基本と設定](#次のセクション---基本と設定)
+* [GitHub Desktop App](#github-desktop-app)
 
 ---
 
@@ -185,16 +203,16 @@ git version 2.31.1
 ### インストール Windows Subsystem for Linux (WSL)
 
 #### 手順
-  * Step 1: Linux 用 Windows サブシステムを有効にする
-  * Step 2: WSL 2 の実行に関する要件を確認する
-  * Step 3: 仮想マシンの機能を有効にする
-  * Step 4: Linux カーネル更新プログラム パッケージをダウンロードする
-  * Step 5: WSL 2 を既定のバージョンとして設定する
-  * Step 6: 選択した Linux ディストリビューションをインストールする
+* Step 1: Linux 用 Windows サブシステムを有効にする
+* Step 2: WSL 2 の実行に関する要件を確認する
+* Step 3: 仮想マシンの機能を有効にする
+* Step 4: Linux カーネル更新プログラム パッケージをダウンロードする
+* Step 5: WSL 2 を既定のバージョンとして設定する
+* Step 6: 選択した Linux ディストリビューションをインストールする
 
 #### Resources <!-- omit in toc -->
-  * [Windows 10 に WSL をインストールする](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
-  * [Install WSL on Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+* [Windows 10 に WSL をインストールする](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
+* [Install WSL on Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 
 #### Step 1: Linux 用 Windows サブシステムを有効にする
@@ -213,23 +231,23 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 
 #### Step 2: WSL 2 の実行に関する要件を確認する
-  * 必ずWindows OSを更新してください
-  * Windows 10 Version1709 (OS build16299) 以降である必要があります。
-  * Windows OS 確認し方
-    * `Start` ボタン > `Settings` > `Update & Security` > `Windows Update`
-    * ![Windows_OS_Build.png](assets/Windows_OS_Build.png)
+* 必ずWindows OSを更新してください
+* Windows 10 Version1709 (OS build16299) 以降である必要があります。
+* Windows OS 確認し方
+  * `Start` ボタン > `Settings` > `Update & Security` > `Windows Update`
+  * ![Windows_OS_Build.png](assets/Windows_OS_Build.png)
 
 
 #### Step 3: 仮想マシンの機能を有効にする
-  * "仮想マシン プラットフォーム" オプション機能を有効にする必要があります。
-  * この機能を使用するには、コンピューターに仮想化機能が必要です。
-  * 管理者として PowerShell を開き、以下を実行します。
+* "仮想マシン プラットフォーム" オプション機能を有効にする必要があります。
+* この機能を使用するには、コンピューターに仮想化機能が必要です。
+* 管理者として PowerShell を開き、以下を実行します。
 
     ```powershell
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     ```
 
-  * お使いのマシンを 再起動 して WSL のインストールを完了し、WSL 2 に更新します。
+* お使いのマシンを 再起動 して WSL のインストールを完了し、WSL 2 に更新します。
 
 
 #### Step 4: Linux カーネル更新プログラム パッケージをダウンロードする
@@ -251,7 +269,7 @@ wsl --set-default-version 2
 
 #### Step 6: 選択した Linux ディストリビューションをインストールする
 `Ubuntu 18.04 LTS`で検索してLinux ディストリビューションをインストール
-  * [Ubuntu 18.04 LTS を入手 - Microsoft Store](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+* [Ubuntu 18.04 LTS を入手 - Microsoft Store](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
 
 ---
 
@@ -281,8 +299,8 @@ See "man sudo_root" for details.
 ```
 
 #### Resources <!-- omit in toc -->
-  * Microsoft Docs: [Linux ディストリビューションのユーザー アカウントを作成する](https://docs.microsoft.com/ja-jp/windows/wsl/user-support)
-  * Microsoft Docs: [Create user account for Linux distribution](https://docs.microsoft.com/en-us/windows/wsl/user-support)
+* Microsoft Docs: [Linux ディストリビューションのユーザー アカウントを作成する](https://docs.microsoft.com/ja-jp/windows/wsl/user-support)
+* Microsoft Docs: [Create user account for Linux distribution](https://docs.microsoft.com/en-us/windows/wsl/user-support)
 
 ---
 
@@ -362,7 +380,7 @@ Windows ユーザー名として `a01234`, Ubuntu ユーザー名として `PAND
 
 ```json
 {
-    "git.path": "C:\Users\a01234\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\PANDA\wslgit\git.bat"
+  "git.path": "C:\Users\a01234\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\PANDA\wslgit\git.bat"
 }
 ```
 
@@ -417,8 +435,8 @@ Windows ユーザー名として `a01234`, Ubuntu ユーザー名として `PAND
 3. GitHub で新しい SSH キー を生成する
    * [New SSH key ボタン](https://github.com/settings/ssh/new)
    * タイトルにWindows WSLと入力します.
-  * 公開キー (public key) を貼り付けます
-    * `Add SSH key` ボタン
+   * 公開キー (public key) を貼り付けます
+     * `Add SSH key` ボタン
 
 ![Gif_GitHub_SSH_Setup](assets/Gif_GitHub_SSH_Setup.gif)
 
@@ -444,11 +462,11 @@ Hi ahandsel! You've successfully authenticated, but GitHub does not provide shel
 ### VS Code + Explorer
 
 現在のLinuxフォルダーからエクスプローラーを開くには、次のように入力します。
-  * `explorer.exe .`
+* `explorer.exe .`
 
 現在のLinuxフォルダーからVS Codeを開くには、次のように入力します。
-  * エラーがある場合は、UbuntuとVSコードを再起動してください
-  * `code .`
+* エラーがある場合は、UbuntuとVSコードを再起動してください
+* `code .`
 
 ### Windows + WLS と GitHub
 
@@ -468,10 +486,10 @@ git clone git@github.com:.../a.git
 ---
 
 ## Gitの設定をする
-  * `git config` コマンドを使用して、Gitのユーザー名とメールを設定します。
-  * `GitHub_UserName` と `user@example.com` 以下を自分のものに置き換えてください
-  * Mac : Terminalを使用
-  * Windows : Ubuntuを使用
+* `git config` コマンドを使用して、Gitのユーザー名とメールを設定します。
+* `GitHub_UserName` と `user@example.com` 以下を自分のものに置き換えてください
+* Mac : Terminalを使用
+* Windows : Ubuntuを使用
 
 ```sh
 git config --global user.name "GitHub_UserName"
