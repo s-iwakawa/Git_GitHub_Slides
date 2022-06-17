@@ -11,26 +11,26 @@ SC本部メンバーが...
 ## コンテンツ概要
 
 [準備内容 - 00_Prep.md](00_Prep.md)
-  * GitHub 研修の準備
-  * Windows に git をインストールする
-  * macOS に git をインストールする
+* GitHub 研修の準備
+* Windows に git をインストールする
+* macOS に git をインストールする
 
 [基本と設定 - 01_Start.md](01_Start.md)
-  * Git の基本と設定
-  * GitHub の基本と設定
-  * ローカルでの設定; ローカルと GitHub を接続する
-  * Git での保存; `git remote`, `git push`
+* Git の基本と設定
+* GitHub の基本と設定
+* ローカルでの設定; ローカルと GitHub を接続する
+* Git での保存; `git remote`, `git push`
 
 [ブランチの作成とマージ - 02_Branches.md](02_Branches.md)
-  * ブランチの作成とマージ！
-  * GitHub Workflow
-  * GitHub サイトの概要
+* ブランチの作成とマージ！
+* GitHub Workflow
+* GitHub サイトの概要
 
 [巻き戻す - 03_Revert.md](03_Revert.md)
-  * Git でファイルを元に戻す
+* Git でファイルを元に戻す
 
 [Git CLI カンニングペーパー - 04_CheatSheet.md](04_CheatSheet.md)
-  * 便利な Git コマンドライン (CLI) コマンドの概要を次に示します。
+* 便利な Git コマンドライン (CLI) コマンドの概要を次に示します。
 
 
 ## 質問がありましたか?
