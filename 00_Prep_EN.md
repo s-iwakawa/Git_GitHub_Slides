@@ -20,7 +20,7 @@ Here are the four things you have to install and setup before the lecture (in or
   * [Install Git for MacOS](#install-git-for-macos)
     * [Debugging](#debugging)
   * [Install Git for Windows 10](#install-git-for-windows-10)
-    * [Settings to change from default](#settings-to-change-from-default)
+    * [Settings to change from the default](#settings-to-change-from-the-default)
     * [Japanese step-by-step guide](#japanese-step-by-step-guide)
 * [GitHub Desktop App](#github-desktop-app)
 * [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
@@ -67,10 +67,10 @@ Open VS Code from the command line
 * Open the `Command Palette` with the following shortcut:
   * Mac: `Command` + `Shift` + `P`
   * Windows: `Ctrl` + `Shift` + `P`
-* Type `shell` and select `Shell Command: Install 'code' command in PATH`
+* Type `shell` and select the `Shell Command: Install 'code' command in PATH` option
   * ![VSCode_shell_command.png](assets/VSCode_shell_command.png)
-* Restart the terminal
-* In the terminal, type `code .` to open the current folder in VS Code
+* Restart the Terminal
+* In the Terminal, type `code .` to open the current folder in VS Code
 
 ---
 
@@ -128,7 +128,7 @@ Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the p
     1. For `Configuring the line ending conversions` setting, select `Checkout as is, commit as is` option
 1. Launch `Git Bash` to confirm installation was successful
 
-#### Settings to change from default
+#### Settings to change from the default
 
 | 1                                              | 2                                              | 3                                              |
 | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
@@ -150,7 +150,7 @@ Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the p
 
 1. Download the GitHub Desktop App from here: [desktop.github.com](https://desktop.github.com/)
 1. Then click the `Sign in to GitHub.com` button
-1. Browser window will launch
+1. A browser window will launch
 1. Log into your GitHub.com account by following the screenshots below:
 
       | 1                                                    | 2                                                    | 3                                                    | 4                                                    | 5                                                    | 6                                                    |
@@ -180,20 +180,20 @@ GitHub Desktop App's documentation:
     ```
 
 1. Restart the computer before using GitHub CLI
-1. Go to [Set Up Git](#set-up-git) section
+1. Go to the [Set Up Git](#set-up-git) section
 
 ### GitHub CLI for Windows
 
 1. Install [GitHub CLI](https://cli.github.com/) by going to [cli.github.com](https://cli.github.com) and clicking on the `Download for Windows` button
 1. Accept the Installation Wizard's default setting
 1. Restart the computer before using GitHub CLI
-1. Go to [Set Up Git](#set-up-git) section
+1. Go to the [Set Up Git](#set-up-git) section
 
 ---
 
 ## Set Up Git
 
-We will use GitHub CLI's `gh auth login` command to configure GitHub login
+We will use GitHub CLI's `gh auth login` command to configure the GitHub login
 
 For Mac users:
 * Use the [Terminal](https://support.apple.com/guide/terminal/welcome/mac) for both git commands (`git`) and GitHub CLI commands (`gh`)
@@ -208,7 +208,7 @@ To set up git for your computer:
 1. For `What is your preferred protocol for Git operations?` prompt, select `HTTPS` option
 1. For `Authenticate Git with your GitHub credentials? (Y/n)` prompt, type `y`
 1. Copy the 9-character code and hit `enter`
-1. Browser window will launch
+1. A browser window will launch
 1. Enter the 9-character code to the GitHub website
 1. Click the `Authorize` button
 1. Confirm settings with the following command:
