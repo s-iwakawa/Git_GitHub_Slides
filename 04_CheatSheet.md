@@ -1,10 +1,10 @@
-## Git CLI カンニングペーパー
+# Git CLI カンニングペーパー
 
 便利な Git コマンドライン (CLI) コマンドの概要を次に示します。
 
 詳しくはこちら: [Git チートシート - GitHub Cheatsheets](https://training.github.com/downloads/ja/github-git-cheat-sheet/)
 
-### Create a Repository
+## Create a Repository
 
 | コマンド                      | 説明                                                                   |
 | ----------------------------- | ---------------------------------------------------------------------- |
@@ -14,7 +14,7 @@
 
 URL例= `https://github.com/`UserName`/`repo``
 
-### Branches
+## Branches
 
 | コマンド                   | 説明                                                                 |
 | -------------------------- | -------------------------------------------------------------------- |
@@ -24,7 +24,7 @@ URL例= `https://github.com/`UserName`/`repo``
 | `git checkout [branch]`    | 指定されたブランチに移動します                                       |
 | `git merge [branch]`       | 指定されたブランチを現在のブランチにマージします                     |
 
-### Sync Changes Between Local & Remote
+## Sync Changes Between Local & Remote
 
 | コマンド                      | 説明                                                                                   |
 | ----------------------------- | -------------------------------------------------------------------------------------- |
@@ -32,7 +32,7 @@ URL例= `https://github.com/`UserName`/`repo``
 | `git push [remote] [branch]`  | ローカルリポジトリのコミットをGitHub (リモートリポジトリ)にアップロード(プッシュ)します |
 | `git pull [remote]`           | GitHubの変更履歴をローカルにダウンロードします                                         |
 
-### Snapshotting
+## Snapshot
 
 | コマンド                    | 説明                                                                 |
 | --------------------------- | -------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ URL例= `https://github.com/`UserName`/`repo``
 | `git commit -m "[message]"` | メッセージと共に、リポジトリへ変更を記録します                       |
 | `git rm -r [file]`          | Gitの管理対象からファイルまたはディレクトリを削除する                |
 
-### Make Changes
+## Make Changes
 
 | コマンド                         | 説明                                                               |
 | -------------------------------- | ------------------------------------------------------------------ |
@@ -51,7 +51,7 @@ URL例= `https://github.com/`UserName`/`repo``
 | `git diff [branch A] [branch B]` | ２つのブランチ間の差分を表示します                                 |
 | `git show [commit]`              | 指定されたコミットのメタ情報と変更内容を表示します                 |
 
-### Redo Commits
+## Redo Commits
 
 | コマンド              | 説明                                                     |
 | --------------------- | -------------------------------------------------------- |

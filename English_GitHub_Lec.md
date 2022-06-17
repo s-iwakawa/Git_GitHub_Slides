@@ -1,6 +1,8 @@
 # English GitHub Lecture Notes
 Markdown/ Outline version of the content
 
+## Outline <!-- omit in toc -->
+<!-- markdownlint-disable MD007 -->
 * [Hands-on A Overview](#hands-on-a-overview)
   * [Local Configuration](#local-configuration)
   * [GitHub Configuration](#github-configuration)
@@ -48,6 +50,7 @@ Markdown/ Outline version of the content
   * [#4 - Test](#4---test)
   * [#5 - Merge to Master](#5---merge-to-master)
   * [Overview of GitHub Workflow](#overview-of-github-workflow)
+<!-- markdownlint-enable MD007 -->
 
 
 ---
@@ -110,7 +113,7 @@ Configure it to be managed by git
   * Create a Repository
     * <https://github.com/new>
   * Name your repository learning_js
-  * Do not initialize repository with README!
+  * Do not initialize repository with README!
 
 ### Local Git :arrow_forward: GitHub
   * Push the existing repository!
@@ -170,7 +173,7 @@ Configure it to be managed by git
   * comments per commit  provides a natural documentation
 
 #### repository
-  * git repository is the actual  ".git" folder inside a project
+  * git repository is the actual  ".git" folder inside a project
   * the folder tracks all the changes made in the project
   * i.e. the historian
   * remote repository (GitHub)
@@ -213,7 +216,7 @@ Note: Pushing can potentially overwrite changes!
 
 ### Hands-on A Quiz Time
   * Q1: How is Git & GitHub related?
-    * Hint: "hub" means the center of an activity or network.
+    * Hint: "hub" means the center of an activity or network.
   * Q2: Which comes first, `git add` or `git commit`?
     * Hint: "commit" means to pledge yourself to a certain action (like marriage).
   * Q3: What does `git push` command do?
@@ -241,7 +244,7 @@ Switched to a new branch 'develop'
 
 $ git branch
 * develop
-  master
+  master
 ```
 
 ### Changing develop Branch
@@ -255,8 +258,8 @@ $ touch develop_file.md
 $ git add develop_file.md
 $ git commit -m "develop only"
 [develop f946eb0] File only in develop branch
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 develop_file.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 develop_file.md
 $ git status
 On branch develop
 nothing to commit, working tree clean

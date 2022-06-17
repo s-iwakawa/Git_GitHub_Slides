@@ -3,29 +3,29 @@
 このセクションでは, Git Branch を紹介し, 最初のブランチの操作について説明します
 
 ## Overview
-  - [Overview](#overview)
-  - [Git Branch?](#git-branch)
-  - [新しいブランチを作成する](#新しいブランチを作成する)
-  - [develop ブランチへの変更](#develop-ブランチへの変更)
-  - [GitHubでの変更の確認](#githubでの変更の確認)
-  - [プルリクエストの作成とマージ](#プルリクエストの作成とマージ)
-  - [GitHub repo から Local repo への更新](#github-repo-から-local-repo-への更新)
-  - [Git Branch とは？](#git-branch-とは)
-    - [ブランチとは？](#ブランチとは)
-    - [なぜブランチを使うのですか？](#なぜブランチを使うのですか)
-  - [Branch と ウェブサイト](#branch-と-ウェブサイト)
-  - [Git Push vs Pull - Teamwork](#git-push-vs-pull---teamwork)
-  - [Hands-on C Review](#hands-on-c-review)
-  - [GitHub Workflow](#github-workflow)
-    - [Detailed Overview of the GitHub Workflow](#detailed-overview-of-the-github-workflow)
-  - [GitHubの概要 - GitHub Website Overview](#githubの概要---github-website-overview)
-    - [GitHub Repository](#github-repository)
-    - [GitHub Issues](#github-issues)
-    - [GitHub Pull Request](#github-pull-request)
-    - [GitHubの概要](#githubの概要)
-  - [GitHub のパーツ](#github-のパーツ)
-  - [クイズの時間](#クイズの時間)
-  - [次の 巻き戻す - 03_Revert.md へ!](#次の-巻き戻す---03_revertmd-へ)
+  * [Overview](#overview)
+  * [Git Branch?](#git-branch)
+  * [新しいブランチを作成する](#新しいブランチを作成する)
+  * [develop ブランチへの変更](#develop-ブランチへの変更)
+  * [GitHubでの変更の確認](#githubでの変更の確認)
+  * [プルリクエストの作成とマージ](#プルリクエストの作成とマージ)
+  * [GitHub repo から Local repo への更新](#github-repo-から-local-repo-への更新)
+  * [Git Branch とは？](#git-branch-とは)
+    * [ブランチとは？](#ブランチとは)
+    * [なぜブランチを使うのですか？](#なぜブランチを使うのですか)
+  * [Branch と ウェブサイト](#branch-と-ウェブサイト)
+  * [Git Push vs Pull - Teamwork](#git-push-vs-pull---teamwork)
+  * [Hands-on C Review](#hands-on-c-review)
+  * [GitHub Workflow](#github-workflow)
+    * [Detailed Overview of the GitHub Workflow](#detailed-overview-of-the-github-workflow)
+  * [GitHubの概要 - GitHub Website Overview](#githubの概要---github-website-overview)
+    * [GitHub Repository](#github-repository)
+    * [GitHub Issues](#github-issues)
+    * [GitHub Pull Request](#github-pull-request)
+    * [GitHubの概要](#githubの概要)
+  * [GitHub のパーツ](#github-のパーツ)
+  * [クイズの時間](#クイズの時間)
+  * [次の 巻き戻す - 03_Revert.md へ!](#次の-巻き戻す---03_revertmd-へ)
 
 ## Git Branch?
 まず, learning_js リポジトリに戻ります
@@ -37,16 +37,16 @@
 `git branch` と入力して, 現在のブランチと現在のブランチを確認します.
 
 `git branch`
-  - [git-branch](http://git-scm.com/docs/git-branch)
-  - ブランチ一覧を表示するコマンド
-  - アスタリスク（\*）がついているブランチが現在のブランチです
+  * [git-branch](http://git-scm.com/docs/git-branch)
+  * ブランチ一覧を表示するコマンド
+  * アスタリスク（\*）がついているブランチが現在のブランチです
 
   ```sh
   git branch
   ```
 
   ```terminal
-  - master
+  * master
   ```
 
 リポジトリにはデフォルトで `master` ブランチが存在します.
@@ -64,8 +64,8 @@ Switched to a new branch 'develop'
 ```
 
 `git checkout –b <branch name>`
-  - リポジトリに新しいブランチを作成して、そのブランチに移動するコマンドです．
-  - [git-checkout Doc](https://git-scm.com/docs/git-checkout)
+  * リポジトリに新しいブランチを作成して、そのブランチに移動するコマンドです．
+  * [git-checkout Doc](https://git-scm.com/docs/git-checkout)
 
 
 ## develop ブランチへの変更
@@ -85,6 +85,7 @@ Switched to a new branch 'develop'
   ```sh
   git commit -m "develop only"
   ```
+
   ```terminal
   [develop 4f98baf] develop only
   1 file changed, 0 insertions(+), 0 deletions(-)
@@ -96,6 +97,7 @@ Switched to a new branch 'develop'
   ```sh
   git status
   ```
+
   ```terminal
   On branch develop
   nothing to commit, working tree clean
@@ -106,6 +108,7 @@ Switched to a new branch 'develop'
   ```sh
   git push -u origin develop
   ```
+
   ```terminal
   Enumerating objects: 4, done.
   Counting objects: 100% (4/4), done.
@@ -120,7 +123,7 @@ Switched to a new branch 'develop'
   remote:      https://github.com/ahandsel/learning_js_3/pull/new/develop
   remote:
   To https://github.com/ahandsel/learning_js_3.git
-  - [new branch]      develop -> develop
+  * [new branch]      develop -> develop
   Branch 'develop' set up to track remote branch 'develop' from 'origin'.
   ```
 
@@ -145,10 +148,10 @@ Switched to a new branch 'develop'
 ## プルリクエストの作成とマージ
 
 `Pull Requests` で, 実際にファイルが変更される前に, 他のユーザーの変更などを確認できます.
-  - コードレビューなどに使われます.
+  * コードレビューなどに使われます.
 
 `develop` ブランチを `master` ブランチにマージするために, GitHub で `Pull request` を作成します.
-  - 変更を確認し, `Pull Request` をマージします.
+  * 変更を確認し, `Pull Request` をマージします.
 
 ![Gif_GitHub_Dojo_PullRequest](assets/Gif_GitHub_Dojo_PullRequest.gif)
 
@@ -178,13 +181,14 @@ git checkout master
 ```sh
 git pull origin master
 ```
+
 ```sh
   remote: Enumerating objects: 1, done.
   remote: Counting objects: 100% (1/1), done.
   remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
   Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
   From https://github.com/ahandsel/kintone_dojo
-  - branch            master     -> FETCH_HEAD
+  * branch            master     -> FETCH_HEAD
     5f9f89b..1438ca5  master     -> origin/master
   Updating d775d42..1438ca5
   Fast-forward
@@ -201,6 +205,7 @@ git pull origin master
 ```sh
 git branch -d develop
 ```
+
 ```sh
   Deleted branch develop (was c6e6c83).
 ```
@@ -210,25 +215,26 @@ git branch -d develop
 ```sh
 git branch
 ```
+
 ```sh
-  - master
+  * master
 ```
 
 ## Git Branch とは？
 
 ### ブランチとは？
-  - コミットの動くポインタ.
-  - 複数のタイムラインで管理し, メインラインに影響を与えることなく変更することができます
-  - `git checkout`
-    - ブランチを切り替えるコマンド.
-  - `git branch -d <branch-name>`
-    - ブランチを削除するコマンド.
+  * コミットの動くポインタ.
+  * 複数のタイムラインで管理し, メインラインに影響を与えることなく変更することができます
+  * `git checkout`
+    * ブランチを切り替えるコマンド.
+  * `git branch -d <branch-name>`
+    * ブランチを削除するコマンド.
 
 ### なぜブランチを使うのですか？
-  - 安定した版, 開発版, 実験版などを離隔するため.
-  - 例: このGitHubスライド
-    - 各ハンズオンとコンセプトセクションをブランチにすることができます.
-    - それぞれを同時に開発できます.
+  * 安定した版, 開発版, 実験版などを離隔するため.
+  * 例: このGitHubスライド
+    * 各ハンズオンとコンセプトセクションをブランチにすることができます.
+    * それぞれを同時に開発できます.
 
 ![02_Branches_GitBranches](assets/02_Branches_GitBranches.png)
 
@@ -237,12 +243,12 @@ git branch
 ## Branch と ウェブサイト
 
 `master` ブランチには, Webサイトを実行するコードが存在します.
-  - もし `master` ブランチで変更が加わると, ユーザーに影響を与えてしまいます！！
+  * もし `master` ブランチで変更が加わると, ユーザーに影響を与えてしまいます！！
 
 2人の開発者が同時にWebサイトを変更したい場合, 3つのブランチを作成します
-  - `master` → ライブコード
-  - `feature_A` → 開発者Aが実装する
-  - `feature_B` → 開発者Bが実装する
+  * `master` → ライブコード
+  * `feature_A` → 開発者Aが実装する
+  * `feature_B` → 開発者Bが実装する
 
 開発が完了したら, ブランチをマージします！
 
@@ -287,7 +293,7 @@ git branch
 
 ![02_Branches_GitHubWorkflow_Overview](assets/02_Branches_GitHubWorkflow_Overview.png)
 
-[Git Common-Flow 1.0.0-rc.5 | Git Common Flow](https://commonflow.org/spec/1.0.0-rc.5.html)
+[Git Common-Flow 1.0.0-rc.5 - Git Common Flow](https://commonflow.org/spec/1.0.0-rc.5.html)
 
 ---
 
@@ -298,25 +304,25 @@ git branch
 ![02_Branches_GitHub_Bar_Code](assets/02_Branches_GitHub_Bar_Code.png)
 
 GitHub Repository - Code
-  - コードやドキュメントなど, プロジェクトに関連するすべてのファイルを保持するコンテナです.
-  - GitHubに保存されているすべてのファイルは, gitでバージョン管理されています
-  - リポジトリはしばしば「リポ」と短縮されて呼ばれます
+  * コードやドキュメントなど, プロジェクトに関連するすべてのファイルを保持するコンテナです.
+  * GitHubに保存されているすべてのファイルは, gitでバージョン管理されています
+  * リポジトリはしばしば「リポ」と短縮されて呼ばれます
 README.md
-  - リポジトリの下部に表示される, プロジェクトの紹介などを表示するためのファイルです
+  * リポジトリの下部に表示される, プロジェクトの紹介などを表示するためのファイルです
 
 ### GitHub Issues
 
 ![02_Branches_GitHub_Bar_Issues](assets/02_Branches_GitHub_Bar_Issues.png)
 
-  - ユーザーがリポジトリの内容に関して議論する場所
-  - 課題をユーザーに割り当て, ラベルを追加して読みやすくすることができます
+  * ユーザーがリポジトリの内容に関して議論する場所
+  * 課題をユーザーに割り当て, ラベルを追加して読みやすくすることができます
 
 ### GitHub Pull Request
 
 ![02_Branches_GitHub_Bar_PullRequest](assets/02_Branches_GitHub_Bar_PullRequest.png)
 
-  - ユーザーがリポジトリに変更を加えたいときに使われます
-  - 例: README\.mdファイルを新しく追加したい時
+  * ユーザーがリポジトリに変更を加えたいときに使われます
+  * 例: README\.mdファイルを新しく追加したい時
 
 ### GitHubの概要
 
@@ -325,8 +331,8 @@ Project boards: KANBAN形式でのタスクボードです
 Wiki: 関連するプロジェクトドキュメントの作成と保存ができます
 
 Insight: リポジトリの分析ツール
-  - `Network` グラフ: コミットとブランチをタイムラインで視覚化します
-  - `Pulse` : 進行中, あるいは完了したタスクを表示します
+  * `Network` グラフ: コミットとブランチをタイムラインで視覚化します
+  * `Pulse` : 進行中, あるいは完了したタスクを表示します
 
 ## GitHub のパーツ
 
@@ -340,12 +346,12 @@ Insight: リポジトリの分析ツール
 ## クイズの時間
 
 `git checkout -b develop` は何しますか？
-  - 新しいブランチ（develop）を作成して、そのブランチに移動するコマンド.
+  * 新しいブランチ（develop）を作成して、そのブランチに移動するコマンド.
 
 ブランチを使う理由は？
-  - コードの開発、テスト、公開バージョンなどを分離するため.
+  * コードの開発、テスト、公開バージョンなどを分離するため.
 
 `Pull Request` (プルリクエスト) とは？
-  - 変更を取得するためにターゲットリポジトリをリクエストすることです.
+  * 変更を取得するためにターゲットリポジトリをリクエストすることです.
 
-## 次の [巻き戻す - 03_Revert.md](03_Revert.md) へ!
+## 次の [巻き戻す - 03_Revert.md](03_Revert.md) へ
