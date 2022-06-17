@@ -1,4 +1,4 @@
-# Git, GitHubとは？ - 準備ガイド
+# Git, GitHubとは？ -- 準備ガイド
 
 これは、Git, GitHub の導入レクチャーに向けて準備するためのガイドです。
 
@@ -9,7 +9,6 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 ---
 
 ## 概要 <!-- omit in toc -->
-<!-- markdownlint-disable MD007 -->
 * [GitHub.comアカウント](#githubcomアカウント)
   * [Step 1 - GitHub.comアカウントを作成する](#step-1---githubcomアカウントを作成する)
   * [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
@@ -46,7 +45,6 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
 * [Gitの設定をする](#gitの設定をする)
 * [次のセクション - 基本と設定](#次のセクション---基本と設定)
 * [GitHub Desktop App](#github-desktop-app)
-<!-- markdownlint-enable MD007 -->
 
 ---
 
@@ -75,7 +73,6 @@ PC に Git がインストールされていない場合は, [macOS](#macos---gi
   2. このtokenはターミナル経由でGitHubアカウントにアクセスする時に使用します  
      * Passwordの代わりにアクセストークンを使用します
      * ユースケースごとにアクセストークンを生成することを推奨します
-
   3. 作成したアクセストークンはメモしてください
 
 ![Creating new GitHub Access Token Demo](assets/Gif_GitHub_Token_New.gif)
