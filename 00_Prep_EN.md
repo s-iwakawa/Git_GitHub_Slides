@@ -20,8 +20,7 @@ Here are the four things you have to install and setup before the lecture (in or
   * [Install Git for MacOS](#install-git-for-macos)
     * [Debugging](#debugging)
   * [Install Git for Windows 10](#install-git-for-windows-10)
-    * [Settings to change from the default](#settings-to-change-from-the-default)
-    * [Japanese step-by-step guide](#japanese-step-by-step-guide)
+    * [Screenshots of the Installation Wizard settings](#screenshots-of-the-installation-wizard-settings)
 * [GitHub Desktop App](#github-desktop-app)
 * [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
   * [GitHub CLI for MacOS](#github-cli-for-macos)
@@ -34,7 +33,13 @@ Here are the four things you have to install and setup before the lecture (in or
 ## GitHub.com Account
 
 ### Step 1 - Create a GitHub.com Account
+Create a GitHub.com account by signing up here:
 * [github.com/join](https://github.com/join)  
+
+Check out unsplash.com for free images to use for your profile pic:
+* [unsplash.com/s/photos/cute](https://unsplash.com/s/photos/cute)
+* [unsplash.com/s/photos/profile-dog](https://unsplash.com/s/photos/profile-dog)
+* [unsplash.com/collections/410090/animals](https://unsplash.com/collections/410090/animals)
 
 ### Step 2 - Set up Two-Factor Authentication
 1. Open GitHub.com's `Two-factor authentication` settings: [github.com/settings/security](https://github.com/settings/security)
@@ -62,15 +67,15 @@ Here is a gif that goes over Step 2:
 Install VS Code
 * [code.visualstudio.com](https://code.visualstudio.com/)
 
-Open VS Code from the command line
-* Launch VS Code App
-* Open the `Command Palette` with the following shortcut:
-  * Mac: `Command` + `Shift` + `P`
-  * Windows: `Ctrl` + `Shift` + `P`
-* Type `shell` and select the `Shell Command: Install 'code' command in PATH` option
-  * ![VSCode_shell_command.png](assets/VSCode_shell_command.png)
-* Restart the Terminal
-* In the Terminal, type `code .` to open the current folder in VS Code
+Open VS Code from the command line:
+1. Launch VS Code App
+1. Open the `Command Palette` with the following shortcut:
+    * Mac: `Command` + `Shift` + `P`
+    * Windows: `Ctrl` + `Shift` + `P`
+1. Type `shell` and select the `Shell Command: Install 'code' command in PATH` option
+    * ![VSCode_shell_command.png](assets/VSCode_shell_command.png)
+1. Restart the Terminal
+1. In the Terminal, type `code .` to open the current folder in VS Code
 
 ---
 
@@ -126,19 +131,21 @@ Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the p
     1. For `Choosing the default editor used by Git` setting, select `Use Visual Studio Code as Git's default editor` option
     1. For `Adjusting the name of the initial branch in new repositories` setting, select `Override the default branch name for new repositories` option
     1. For `Configuring the line ending conversions` setting, select `Checkout as is, commit as is` option
-1. Launch `Git Bash` to confirm installation was successful
+    1. For `Configuring the terminal emulator to use with Git Bash` setting, select `Use Windows's default console window` option
+    1. For the last settings page, select `Launch Git Bash` option and deselect `View Release Notes` option
 
-#### Settings to change from the default
+#### Screenshots of the Installation Wizard settings
+The settings with changes has the modification highlighted
 
-| 1                                              | 2                                              | 3                                              |
-| ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
-| ![windows_git_1.png](assets/windows_git_1.png) | ![windows_git_2.png](assets/windows_git_2.png) | ![windows_git_3.png](assets/windows_git_3.png) |
-
-
-#### Japanese step-by-step guide
-
-Watch this video for a step-by-step guide on the installation process:
-* [youtube.com/watch?v=Ceq4yFGF3Qk&t=153s](https://www.youtube.com/watch?v=Ceq4yFGF3Qk&t=153s)
+  |                                                            |                                                            |
+  | ---------------------------------------------------------- | ---------------------------------------------------------- |
+  | ![windows_git_step_1.png](assets/windows_git_step_1.png)   | ![windows_git_step_2.png](assets/windows_git_step_2.png)   |
+  | ![windows_git_step_3.png](assets/windows_git_step_3.png)   | ![windows_git_step_4.png](assets/windows_git_step_4.png)   |
+  | ![windows_git_step_5.png](assets/windows_git_step_5.png)   | ![windows_git_step_6.png](assets/windows_git_step_6.png)   |
+  | ![windows_git_step_7.png](assets/windows_git_step_7.png)   | ![windows_git_step_8.png](assets/windows_git_step_8.png)   |
+  | ![windows_git_step_9.png](assets/windows_git_step_9.png)   | ![windows_git_step_10.png](assets/windows_git_step_10.png) |
+  | ![windows_git_step_11.png](assets/windows_git_step_11.png) | ![windows_git_step_12.png](assets/windows_git_step_12.png) |
+  | ![windows_git_step_13.png](assets/windows_git_step_13.png) | ![windows_git_step_14.png](assets/windows_git_step_14.png) |
 
 #### Now you are ready! <!-- omit in toc -->
 
@@ -195,12 +202,9 @@ GitHub Desktop App's documentation:
 
 We will use GitHub CLI's `gh auth login` command to configure the GitHub login
 
-For Mac users:
-* Use the [Terminal](https://support.apple.com/guide/terminal/welcome/mac) for both git commands (`git`) and GitHub CLI commands (`gh`)
-
-For Windows users:
-* Run GitHub CLI commands (`gh`) with [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe)
-* Run git commands (`git`) with [Git Bash](https://www.atlassian.com/git/tutorials/git-bash)
+Where to run the commands?
+* For Mac users: Use the [Terminal](https://support.apple.com/guide/terminal/welcome/mac) for both git commands (`git`) and GitHub CLI commands (`gh`)
+* For Windows users: Use the [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe) for both git commands (`git`) and GitHub CLI commands (`gh`)
 
 To set up git for your computer:
 1. Run `gh auth login` command
