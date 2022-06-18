@@ -128,14 +128,14 @@ Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the p
 
 1. Install git for windows from [gitforwindows.org](https://gitforwindows.org/)
 1. Accept the Installation Wizard's default setting EXCEPT for the following settings:
-    1. For `Choosing the default editor used by Git` setting, select `Use Visual Studio Code as Git's default editor` option
-    1. For `Adjusting the name of the initial branch in new repositories` setting, select `Override the default branch name for new repositories` option
-    1. For `Configuring the line ending conversions` setting, select `Checkout as is, commit as is` option
-    1. For `Configuring the terminal emulator to use with Git Bash` setting, select `Use Windows's default console window` option
-    1. For the last settings page, select `Launch Git Bash` option and deselect `View Release Notes` option
+    1. For `Choosing the default editor used by Git` setting, select the `Use Visual Studio Code as Git's default editor` option
+    1. For `Adjusting the name of the initial branch in new repositories` setting, select the `Override the default branch name for new repositories` option
+    1. For `Configuring the line ending conversions` setting, select the `Checkout as is, commit as is` option
+    1. For `Configuring the terminal emulator to use with Git Bash` setting, select the `Use Windows's default console window` option
+    1. For the last settings page, select the `Launch Git Bash` option and deselect the `View Release Notes` option
 
 #### Screenshots of the Installation Wizard settings
-The settings with changes has the modification highlighted
+The non-default settings are highlighted.
 
   |                                                            |                                                            |
   | ---------------------------------------------------------- | ---------------------------------------------------------- |
