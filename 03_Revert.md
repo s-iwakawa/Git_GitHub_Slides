@@ -359,3 +359,5 @@ __git revert \[commit hash\]__
 
 ![03_Revert_GitRevert.png](assets/03_Revert_GitRevert.png)
 
+## 講義ガイド一覧 <!-- omit in toc -->
+[README.md](README.md) ⚙️

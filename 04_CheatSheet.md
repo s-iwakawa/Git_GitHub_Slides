@@ -58,3 +58,6 @@ URL例= `https://github.com/`UserName`/`repo``
 | `git reset [commit]`  | 指定したcommitの状態まで強制的に戻します                 |
 | `git revert [commit]` | 指定したcommitを取り消すためにコマンドです               |
 | `git revert HEAD`     | 直前のコミットを取り消すための新しいコミットを作成します |
+
+## 講義ガイド一覧 <!-- omit in toc -->
+[README.md](README.md) ⚙️

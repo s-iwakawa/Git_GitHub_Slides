@@ -559,4 +559,9 @@ Git での保存
 3. `git push` コマンドは何をしますか？
    * ヒント: `git push` コマンドは `git fetch` コマンドの逆の行動を行います。
 
-## 次の [ブランチの作成とマージ - 02_Branches.md](02_Branches.md) へ
+## 次のセクション
+[ブランチの作成とマージ - 02_Branches.md](02_Branches.md) へ 💪
+
+## 講義ガイド一覧 <!-- omit in toc -->
+[README.md](README.md) ⚙️
+
