@@ -3,13 +3,13 @@
 
 This is a guide to get you ready for the `Intro to Git & GitHub` lecture.
 
-Here are the four things you have to install and setup before the lecture (in order):
+Here are the steps to do in preparation for the lecture (in order):
   1. [GitHub.com Account](#githubcom-account)
   1. [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
   1. [Install Git](#install-git)
   1. [GitHub Desktop App](#github-desktop-app)
   1. [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
-  1. [Set Up Git](#set-up-git)
+  1. [Configure Git](#configure-git)
 
 ## Outline <!-- omit in toc -->
 * [GitHub.com Account](#githubcom-account)
@@ -18,15 +18,12 @@ Here are the four things you have to install and setup before the lecture (in or
 * [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
 * [Install Git](#install-git)
   * [Install Git for MacOS](#install-git-for-macos)
-    * [Debugging](#debugging)
   * [Install Git for Windows 10](#install-git-for-windows-10)
-    * [Settings to change from default](#settings-to-change-from-default)
-    * [Japanese step-by-step guide](#japanese-step-by-step-guide)
 * [GitHub Desktop App](#github-desktop-app)
 * [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
   * [GitHub CLI for MacOS](#github-cli-for-macos)
   * [GitHub CLI for Windows](#github-cli-for-windows)
-* [Set Up Git](#set-up-git)
+* [Configure Git](#configure-git)
 * [Next section - Basics and Settings](#next-section---basics-and-settings)
 
 ---
@@ -34,14 +31,21 @@ Here are the four things you have to install and setup before the lecture (in or
 ## GitHub.com Account
 
 ### Step 1 - Create a GitHub.com Account
+Create a GitHub.com account by signing up here:
 * [github.com/join](https://github.com/join)  
+
+Check out unsplash.com for free images to use for your profile pic:
+* [unsplash.com/s/photos/cute](https://unsplash.com/s/photos/cute)
+* [unsplash.com/s/photos/profile-dog](https://unsplash.com/s/photos/profile-dog)
+* [unsplash.com/collections/410090/animals](https://unsplash.com/collections/410090/animals)
 
 ### Step 2 - Set up Two-Factor Authentication
 1. Open GitHub.com's `Two-factor authentication` settings: [github.com/settings/security](https://github.com/settings/security)
     * Click on the `Enable two-factor authentication` button
     * Select `Set up using an app` option and click the `Continue` button
 2. Scan the QR Code with a two-factor authentication app
-    * Two-factor authentication app suggestions:
+    * Recommended two-factor authentication apps:
+      * [1Password](https://1password.com/)
       * [Microsoft](https://www.microsoft.com/en-us/account/authenticator)
       * [Authy](https://authy.com/guides/github/)
       * [Enpass](https://www.enpass.io/)
@@ -59,18 +63,18 @@ Here is a gif that goes over Step 2:
 ---
 
 ## Visual Studio Code (VS Code) + Command Line
-Install VS Code
+Install VS Code from here:
 * [code.visualstudio.com](https://code.visualstudio.com/)
 
-Open VS Code from the command line
-* Launch VS Code App
-* Open the `Command Palette` with the following shortcut:
-  * Mac: `Command` + `Shift` + `P`
-  * Windows: `Ctrl` + `Shift` + `P`
-* Type `shell` and select `Shell Command: Install 'code' command in PATH`
-  * ![VSCode_shell_command.png](assets/VSCode_shell_command.png)
-* Restart the terminal
-* In the terminal, type `code .` to open the current folder in VS Code
+Setup the ability to open VS Code from the command line:
+1. Launch VS Code App
+1. Open the `Command Palette` with the following shortcut:
+    * Mac: `Command` + `Shift` + `P`
+    * Windows: `Ctrl` + `Shift` + `P`
+1. Type `shell` and select the `Shell Command: Install 'code' command in PATH` option
+    * ![VSCode_shell_command.png](assets/VSCode_shell_command.png)
+1. Restart the Terminal
+1. In the Terminal, type `code .` to open the current folder in VS Code
 
 ---
 
@@ -84,7 +88,7 @@ Open VS Code from the command line
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
 
-1. Update and upgrade brew before installing new packages
+1. Update and upgrade `brew` before installing new packages
 
     ```shell
     brew update && brew upgrade
@@ -105,7 +109,7 @@ Open VS Code from the command line
     git version 2.36.1
     ```
 
-#### Debugging
+#### Debugging <!-- omit in toc -->
 
 |                                     |                                       |
 | ----------------------------------- | ------------------------------------- |
@@ -114,8 +118,7 @@ Open VS Code from the command line
 | Or do this!                         | `export PATH=/usr/local/bin:$PATH`    |
 
 #### Now you are ready! <!-- omit in toc -->
-
-Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the process!
+Next section is [GitHub Desktop App](#github-desktop-app)!
 
 ---
 
@@ -123,26 +126,27 @@ Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the p
 
 1. Install git for windows from [gitforwindows.org](https://gitforwindows.org/)
 1. Accept the Installation Wizard's default setting EXCEPT for the following settings:
-    1. For `Choosing the default editor used by Git` setting, select `Use Visual Studio Code as Git's default editor` option
-    1. For `Adjusting the name of the initial branch in new repositories` setting, select `Override the default branch name for new repositories` option
-    1. For `Configuring the line ending conversions` setting, select `Checkout as is, commit as is` option
-1. Launch `Git Bash` to confirm installation was successful
+    1. For `Choosing the default editor used by Git` setting, select the `Use Visual Studio Code as Git's default editor` option
+    1. For `Adjusting the name of the initial branch in new repositories` setting, select the `Override the default branch name for new repositories` option
+    1. For `Configuring the line ending conversions` setting, select the `Checkout as is, commit as is` option
+    1. For `Configuring the terminal emulator to use with Git Bash` setting, select the `Use Windows's default console window` option
+    1. For the last settings page, select the `Launch Git Bash` option and deselect the `View Release Notes` option
 
-#### Settings to change from default
+#### Screenshots of the Installation Wizard settings <!-- omit in toc -->
+The non-default settings are highlighted.
 
-| 1                                              | 2                                              | 3                                              |
-| ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
-| ![windows_git_1.png](assets/windows_git_1.png) | ![windows_git_2.png](assets/windows_git_2.png) | ![windows_git_3.png](assets/windows_git_3.png) |
-
-
-#### Japanese step-by-step guide
-
-Watch this video for a step-by-step guide on the installation process:
-* [youtube.com/watch?v=Ceq4yFGF3Qk&t=153s](https://www.youtube.com/watch?v=Ceq4yFGF3Qk&t=153s)
+  |                                                            |                                                            |
+  | ---------------------------------------------------------- | ---------------------------------------------------------- |
+  | ![windows_git_step_1.png](assets/windows_git_step_1.png)   | ![windows_git_step_2.png](assets/windows_git_step_2.png)   |
+  | ![windows_git_step_3.png](assets/windows_git_step_3.png)   | ![windows_git_step_4.png](assets/windows_git_step_4.png)   |
+  | ![windows_git_step_5.png](assets/windows_git_step_5.png)   | ![windows_git_step_6.png](assets/windows_git_step_6.png)   |
+  | ![windows_git_step_7.png](assets/windows_git_step_7.png)   | ![windows_git_step_8.png](assets/windows_git_step_8.png)   |
+  | ![windows_git_step_9.png](assets/windows_git_step_9.png)   | ![windows_git_step_10.png](assets/windows_git_step_10.png) |
+  | ![windows_git_step_11.png](assets/windows_git_step_11.png) | ![windows_git_step_12.png](assets/windows_git_step_12.png) |
+  | ![windows_git_step_13.png](assets/windows_git_step_13.png) | ![windows_git_step_14.png](assets/windows_git_step_14.png) |
 
 #### Now you are ready! <!-- omit in toc -->
-
-Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the process!
+Next section is [GitHub Desktop App](#github-desktop-app)!
 
 ---
 
@@ -150,7 +154,7 @@ Skip to the [GitHub Desktop App](#github-desktop-app) section and complete the p
 
 1. Download the GitHub Desktop App from here: [desktop.github.com](https://desktop.github.com/)
 1. Then click the `Sign in to GitHub.com` button
-1. Browser window will launch
+1. A browser window will launch
 1. Log into your GitHub.com account by following the screenshots below:
 
       | 1                                                    | 2                                                    | 3                                                    | 4                                                    | 5                                                    | 6                                                    |
@@ -180,27 +184,27 @@ GitHub Desktop App's documentation:
     ```
 
 1. Restart the computer before using GitHub CLI
-1. Go to [Set Up Git](#set-up-git) section
+
+#### Now you are ready! <!-- omit in toc -->
+Next section is [Configure Git](#configure-git)!
 
 ### GitHub CLI for Windows
 
 1. Install [GitHub CLI](https://cli.github.com/) by going to [cli.github.com](https://cli.github.com) and clicking on the `Download for Windows` button
 1. Accept the Installation Wizard's default setting
 1. Restart the computer before using GitHub CLI
-1. Go to [Set Up Git](#set-up-git) section
+
+#### Now you are ready! <!-- omit in toc -->
+Next section is [Configure Git](#configure-git)!
 
 ---
 
-## Set Up Git
+## Configure Git
+We will use GitHub CLI's `gh auth login` command to configure the GitHub login
 
-We will use GitHub CLI's `gh auth login` command to configure GitHub login
-
-For Mac users:
-* Use the [Terminal](https://support.apple.com/guide/terminal/welcome/mac) for both git commands (`git`) and GitHub CLI commands (`gh`)
-
-For Windows users:
-* Run GitHub CLI commands (`gh`) with [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe)
-* Run git commands (`git`) with [Git Bash](https://www.atlassian.com/git/tutorials/git-bash)
+Where to run the commands?
+* For Mac users: Use the [Terminal](https://support.apple.com/guide/terminal/welcome/mac) for both git commands (`git`) and GitHub CLI commands (`gh`)
+* For Windows users: Use the [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe) for both git commands (`git`) and GitHub CLI commands (`gh`)
 
 To set up git for your computer:
 1. Run `gh auth login` command
@@ -208,7 +212,7 @@ To set up git for your computer:
 1. For `What is your preferred protocol for Git operations?` prompt, select `HTTPS` option
 1. For `Authenticate Git with your GitHub credentials? (Y/n)` prompt, type `y`
 1. Copy the 9-character code and hit `enter`
-1. Browser window will launch
+1. A browser window will launch
 1. Enter the 9-character code to the GitHub website
 1. Click the `Authorize` button
 1. Confirm settings with the following command:
