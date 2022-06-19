@@ -169,9 +169,9 @@ Visual Studio Codeダウンロードリンク:
 
   |         |                                                      |         |                                                      |
   | ------- | ---------------------------------------------------- | ------- | ---------------------------------------------------- |
-  | Step 1: | ![GitHubDesktop_1.png](./assets/GitHubDesktop_1.png) | Step 2: | ![GitHubDesktop_2.png](./assets/GitHubDesktop_2.png) |
-  | Step 3: | ![GitHubDesktop_3.png](./assets/GitHubDesktop_3.png) | Step 4: | ![GitHubDesktop_4.png](./assets/GitHubDesktop_4.png) |
-  | Step 5: | ![GitHubDesktop_5.png](./assets/GitHubDesktop_5.png) | Step 6: | ![GitHubDesktop_6.png](./assets/GitHubDesktop_6.png) |
+  | ステップ 1 | ![GitHubDesktop_1.png](./assets/GitHubDesktop_1.png) | ステップ 2 | ![GitHubDesktop_2.png](./assets/GitHubDesktop_2.png) |
+  | ステップ 3 | ![GitHubDesktop_3.png](./assets/GitHubDesktop_3.png) | ステップ 4 | ![GitHubDesktop_4.png](./assets/GitHubDesktop_4.png) |
+  | ステップ 5 | ![GitHubDesktop_5.png](./assets/GitHubDesktop_5.png) | ステップ 6 | ![GitHubDesktop_6.png](./assets/GitHubDesktop_6.png) |
 
 GitHub デスクトップアプリのドキュメント:
 * English: [GitHub Desktop - GitHub Docs](https://docs.github.com/en/desktop)
