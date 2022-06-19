@@ -4,21 +4,20 @@ _🇺🇸 English version: [01_Start_EN.md](01_Start_EN.md)_
 
 このセクションでは, Git と GitHub を紹介し, 最初のリポジトリの設定について説明します
 
-## Overview
+## 概要
 * Gitの基本
 * GitHubの基本
 * リポジトリを作成する ハンズオン
 * Git の基本的なコマンドの概要
 
-* [Overview](#overview)
+## 目次 <!-- omit in toc -->
+* [概要](#概要)
 * [Git とは…](#git-とは)
   * [バージョン管理とは？](#バージョン管理とは)
   * [バージョン管理の例](#バージョン管理の例)
 * [GitHubとは…](#githubとは)
   * [GitHub 例 - Apple](#github-例---apple)
 * [リポジトリの設定 - ハンズオン](#リポジトリの設定---ハンズオン)
-* [ローカルでの設定](#ローカルでの設定)
-  * [Gitの設定をする](#gitの設定をする)
   * [ローカルGitリポジトリを作成する](#ローカルgitリポジトリを作成する)
   * [README.md ファイルの追加](#readmemd-ファイルの追加)
   * [Gitのステータスを確認する](#gitのステータスを確認する)
@@ -30,8 +29,11 @@ _🇺🇸 English version: [01_Start_EN.md](01_Start_EN.md)_
   * [Hands-on A が完了しました](#hands-on-a-が完了しました)
 * [Git の基本的なコマンドの概要](#git-の基本的なコマンドの概要)
   * [Git での変更の保存方法](#git-での変更の保存方法)
+    * [待って，ステージングエリアが必要な理由？ 🤔](#待ってステージングエリアが必要な理由-)
+    * [Git フォルダーの中身は何ですか? 🤔](#git-フォルダーの中身は何ですか-)
   * [リモートリポジトリの操作](#リモートリポジトリの操作)
   * [git push?](#git-push)
+    * [ゲームの例-どうぶつの森](#ゲームの例-どうぶつの森)
 * [ハンズオン A レビュー](#ハンズオン-a-レビュー)
 * [クイズの時間](#クイズの時間)
 * [次のセクション](#次のセクション)
@@ -100,83 +102,62 @@ GitHub の設定
 
 ---
 
-## ローカルでの設定
-
-**Mac : Terminalを使用**
-
-**Windows : Ubuntuを使用**
-
-### Gitの設定をする
-* `git config` コマンドを使用して, Gitのユーザー名とメールを設定します
-* `GitHub_UserName` と `example@email.com` 以下を自分のものに置き換えてください
-
-```sh
-git config --global user.name "GitHub_UserName"
-git config --global user.email "example@email.com"
-git config --global color.ui auto
-```
-
-設定が有効になったことを確認しましょう
-
-```sh
-git config --global --list
-```
-
-[Git - 最初のGitの構成](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90)
-
 ### ローカルGitリポジトリを作成する
 
-アクセスしやすいフォルダーに移動し, `learning_js` という名前のディレクトリを作成します.  
-macOS ユーザーだと Document フォルダをお勧めします.  
-Window ユーザーの場合は, [Ubuntu](00_Prep.md#wslの初期化) のトップ フォルダーからでもいいですよ.  
+⚠️ 準備ガイド, [準備内容 - 00_Prep.md](00_Prep.md), に記載されている手順をすでに完了していることを確認してください。
 
-```sh
-cd Documents
-mkdir learning_js
-cd learning_js
-```
+1. アクセスしやすいフォルダーに移動し, `learning_js` という名前のディレクトリを作成します.  
 
-`pwd` コマンドを使用して, 正しい場所にいることを確認します
+    ```sh
+    cd Documents
+    mkdir learning_js
+    cd learning_js
+    ```
 
-```sh
-❯ pwd
-/Users/YourUserName/Documents/learning_js
-```
+1. `pwd` コマンドを使用して, 正しい場所にいることを確認します
 
-`git init` コマンドで git リポジトリを初期化します.
+    ```sh
+    pwd
 
-```sh
-git init
-```
+    /Users/YourUserName/Documents/learning_js
+    ```
 
-```terminal
-Initialized empty Git repository in /Users/YourUserName/Documents/learning_js/.git/
-```
+1. `git init` コマンドで git リポジトリを初期化します.
 
-Repository (リポジトリ) は, Repo と短縮されて呼ばれることもあります.
+    ```sh
+    git init
+
+    Initialized empty Git repository in /Users/YourUserName/Documents/learning_js/.git/
+    ```
+
+⚡ Repository (リポジトリ) は, Repo と短縮されて呼ばれることもあります.
 
 ---
 
 ### README.md ファイルの追加
 
-README.md ファイルを作成します.
+1. README.md ファイルを作成します.
 
-```sh
-touch README.md
-```
+    ```sh
+    touch README.md
+    ```
 
-README.md ファイルにリポジトリの説明を追加します.
+1. README.md ファイルにリポジトリの説明を追加します.
 
-```sh
-vi README.md
-```
+    ```sh
+    vi README.md
 
-```markdown
-# Learning JS Repo
-このフォルダは JavaScript や git の課題で使用します.
-```
+    # また
 
-README.md ファイルは, ソフトウェアや git リポジトリの目的や使用方法を説明するために使用されます.
+    code README.md
+    ```
+
+    ```markdown
+    # Learning JS Repo
+    このフォルダは JavaScript や git の課題で使用します.
+    ```
+
+⚡ README.md ファイルは, ソフトウェアや git リポジトリの目的や使用方法を説明するために使用されます.
 
 ---
 
@@ -298,24 +279,23 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 1. リモートリポジトリ設定を削除
 
-   ```sh
-   git remote remove origin
-   ```
+    ```sh
+    git remote remove origin
+    ```
 
 2. 新しいパーソナルアクセストークンを作成する  
-   * [github.com/settings/tokens/new](https://github.com/settings/tokens/new)
-   * 端末から GitHub アカウントにログインするときに, Github パスワードの代わりにトークンを使用します
+    * [github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+    * 端末から GitHub アカウントにログインするときに, Github パスワードの代わりにトークンを使用します
 
 3. もう一度試してみましょう
 
-   ```sh
-   git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
-   git push -u origin master
-   ```
+    ```sh
+    git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
+    git push -u origin master
+    ```
 
 4. Github.com のリポジトリをチェックして, プッシュが機能したことを確認します。
-
-   `https://github.com/`Your_GitHub_UserName`/learning_js.git`
+    * `https://github.com/`Your_GitHub_UserName`/learning_js.git`
 
 
 #### Documentation <!-- omit in toc -->
@@ -382,7 +362,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 ---
 
-**待って，ステージングエリアが必要な理由？ 🤔**
+#### 待って，ステージングエリアが必要な理由？ 🤔
 * ファイルをステージングする = コミットのためのファイルを準備する
 
 あなたが音楽を作っていると想像してください 🎶
@@ -419,7 +399,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 * Git リポジトリは, プロジェクト内の `.git` フォルダで管理されています
 * リポジトリは, プロジェクトの変更を追跡できます。
 
-**Git フォルダーの中身は何ですか? 🤔**
+#### Git フォルダーの中身は何ですか? 🤔
 
 ```sh
 $ pwd
@@ -495,14 +475,14 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 `git remote --verbose`
 * Gitが保存しているURLと, そのリモートリポジトリへの読み書き時に使用できるエイリアス (ニックネーム)を一覧表示します。
 
-   ```sh
-   git remote --verbose
-   ```
+    ```sh
+    git remote --verbose
+    ```
 
-   ```sh
-   origin https://github.com/ahandsel/learning_js.git (fetch)
-   origin https://github.com/ahandsel/learning_js.git (push)
-   ```
+    ```sh
+    origin https://github.com/ahandsel/learning_js.git (fetch)
+    origin https://github.com/ahandsel/learning_js.git (push)
+    ```
 
 #### Documentation <!-- omit in toc -->
 * [Git - リモートでの作業](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD)
@@ -523,10 +503,10 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 * あなたと別のクローンが同時にあなたの前に上流にプッシュした場合, そのプッシュは正しく拒否されます。
 * 最初に彼らの仕事をフェッチしてプッシュに含める必要があります
 
-**ゲームの例-どうぶつの森**
+#### ゲームの例-どうぶつの森
 * Genji は島にテントを追加しました。
 * Genji がゲームステータスを GitHub にアップロードしました。
-* 宗平も島に家を追加しました。
+* Piyoも島に家を追加しました。
 * しかし, GitHub にアップロードする前に...
   * GitHub から最新のゲームステータスを取得する必要があります
   * ( Genji がテントを追加したため)
@@ -568,4 +548,3 @@ Git での保存
 
 ## 講義ガイド一覧 <!-- omit in toc -->
 [README.md](README.md) ⚙️
-
