@@ -1,6 +1,8 @@
 # What is Git & GitHub? -- Prep Guide
 <!-- markdownlint-disable MD026 -->
 
+_🇯🇵 日本語版: [00_Prep.md](00_Prep.md)_
+
 This is a guide to get you ready for the `Intro to Git & GitHub` lecture.
 
 Here are the steps to do in preparation for the lecture (in order):
