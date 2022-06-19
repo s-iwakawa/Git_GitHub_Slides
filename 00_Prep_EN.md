@@ -81,6 +81,8 @@ Setup the ability to open VS Code from the command line:
 ---
 
 ## Install Git
+* [Install Git for MacOS](#install-git-for-macos)
+* [Install Git for Windows 10](#install-git-for-windows-10)
 
 ### Install Git for MacOS
 
@@ -170,6 +172,8 @@ GitHub Desktop App's documentation:
 ---
 
 ## GitHub Command Line (GitHub CLI)
+* [GitHub CLI for MacOS](#github-cli-for-macos)
+* [GitHub CLI for Windows](#github-cli-for-windows)
 
 ### GitHub CLI for MacOS
 

@@ -86,7 +86,9 @@ Visual Studio Codeダウンロードリンク:
 ---
 
 ## Git のインストール
-
+* [MacOS - Git のインストール](#macos---git-のインストール)
+* [Windows 10 - Git のインストール](#windows-10---git-のインストール)
+  
 ### MacOS - Git のインストール
 1. 次のコマンドで [Homebrew (brew.sh)](https://brew.sh/) をインストールします。
 
@@ -177,6 +179,8 @@ GitHub デスクトップアプリのドキュメント:
 
 ## GitHub Command Line (GitHub CLI)
 GitHubコマンドライン (GitHub CLI)
+* [MacOS - GitHub CLI のインストール](#macos---github-cli-のインストール)
+* [Windows 10 - GitHub CLI のインストール](#windows-10---github-cli-のインストール)
 
 ### MacOS - GitHub CLI のインストール
 1. 新しいパッケージをインストールする前に, brewを更新およびアップグレードします
