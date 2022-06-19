@@ -167,9 +167,11 @@ Visual Studio Codeダウンロードリンク:
 1. ブラウザウィンドウが起動します
 1. 以下のスクリーンショットに従って,  GitHub.com アカウントにログインします。
 
-      | 1                                                    | 2                                                    | 3                                                    | 4                                                    | 5                                                    | 6                                                    |
-      | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
-      | ![GitHubDesktop_1.png](./assets/GitHubDesktop_1.png) | ![GitHubDesktop_2.png](./assets/GitHubDesktop_2.png) | ![GitHubDesktop_3.png](./assets/GitHubDesktop_3.png) | ![GitHubDesktop_4.png](./assets/GitHubDesktop_4.png) | ![GitHubDesktop_5.png](./assets/GitHubDesktop_5.png) | ![GitHubDesktop_6.png](./assets/GitHubDesktop_6.png) |
+  |         |                                                      |         |                                                      |
+  | ------- | ---------------------------------------------------- | ------- | ---------------------------------------------------- |
+  | Step 1: | ![GitHubDesktop_1.png](./assets/GitHubDesktop_1.png) | Step 2: | ![GitHubDesktop_2.png](./assets/GitHubDesktop_2.png) |
+  | Step 3: | ![GitHubDesktop_3.png](./assets/GitHubDesktop_3.png) | Step 4: | ![GitHubDesktop_4.png](./assets/GitHubDesktop_4.png) |
+  | Step 5: | ![GitHubDesktop_5.png](./assets/GitHubDesktop_5.png) | Step 6: | ![GitHubDesktop_6.png](./assets/GitHubDesktop_6.png) |
 
 GitHub デスクトップアプリのドキュメント:
 * English: [GitHub Desktop - GitHub Docs](https://docs.github.com/en/desktop)
