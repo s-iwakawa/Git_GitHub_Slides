@@ -1,6 +1,8 @@
 # Git, GitHubとは？ -- 準備ガイド
 <!-- markdownlint-disable MD026 -->
 
+_🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
+
 これは, 「Git＆GitHubの概要」講義の準備をするためのガイドです。
 
 講義の準備として (順番に)行う手順は次のとおりです。

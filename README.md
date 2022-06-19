@@ -1,12 +1,14 @@
 # Git, GitHubとは？
 
+_🇺🇸 English version: [README_EN.md](README_EN.md)_
+
 Git と GitHub の簡単な紹介をします．
 内容を説明する 3 つの講義と、開始するための準備ガイドがあります。
 
 ## コンテンツの目的
-SC本部メンバーが...
-  1. Git と GitHub について理解できた
-  2. GitHub でコードを管理できるようになった
+読者は
+1. Git と GitHub について理解できた
+2. GitHub でコードを管理できるようになった
 
 ## コンテンツ概要
 
@@ -32,9 +34,8 @@ SC本部メンバーが...
 [Git CLI カンニングペーパー - 04_CheatSheet.md](04_CheatSheet.md)
 * 便利な Git コマンドライン (CLI) コマンドの概要を次に示します。
 
-
 ## 質問がありましたか?
 [GitHub Issue](https://github.com/ahandsel/Git_GitHub_Slides/issues) を作成してください, できる限り対応します.
 
 ## 間違いを見つけましたか?
-修正を加えたプルリクエストをお願いします~
+修正を加えた[プルリクエスト](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)をお願いします~
