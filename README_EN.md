@@ -24,7 +24,7 @@ Readers walk away with
 * Save with Git; `git remote`, `git push`
 * ⚠️ Pending Translation
 
-[Creating and merging branches - 02_Branches_EN.md](02_Branches_EN.md)
+[Create & Merge Branches - 02_Branches_EN.md](02_Branches_EN.md)
 * Create and merge branches!
 * GitHub Workflow
 * Overview of the GitHub site
