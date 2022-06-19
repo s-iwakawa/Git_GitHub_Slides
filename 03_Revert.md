@@ -2,17 +2,19 @@
 
 このセクションでは `git revert` を紹介し, Git でファイルを元に戻すやり方について説明します
 
-  - [タイムトラベルの準備](#タイムトラベルの準備)
-    - [Local Git](#local-git)
-    - [GitHub](#github)
-    - [サンプル ファイル と ブランチ を作成する](#サンプル-ファイル-と-ブランチ-を作成する)
-  - [元に戻す: 時計を巻き戻す](#元に戻す-時計を巻き戻す)
-    - [歴史を見る](#歴史を見る)
-    - [GitHub - timeline branch](#github---timeline-branch)
-  - [過去を訪ねる](#過去を訪ねる)
-  - [1 Commit文過去に戻る](#1-commit文過去に戻る)
-  - [コミットハッシュで過去に戻る](#コミットハッシュで過去に戻る)
-  - [Reset vs Revert](#reset-vs-revert)
+* [タイムトラベルの準備](#タイムトラベルの準備)
+  * [Local Git](#local-git)
+  * [GitHub](#github)
+  * [サンプル ファイル と ブランチ を作成する](#サンプル-ファイル-と-ブランチ-を作成する)
+* [元に戻す: 時計を巻き戻す](#元に戻す-時計を巻き戻す)
+  * [歴史を見る](#歴史を見る)
+  * [GitHub - timeline branch](#github---timeline-branch)
+  * [GitHub - timeline's commits](#github---timelines-commits)
+* [過去を訪ねる](#過去を訪ねる)
+* [1コミット文過去に戻る](#1コミット文過去に戻る)
+* [コミットハッシュで過去に戻る](#コミットハッシュで過去に戻る)
+* [Reset vs Revert](#reset-vs-revert)
+* [次のセクション](#次のセクション)
 
 ## タイムトラベルの準備
 
@@ -24,11 +26,13 @@
 `develop` ブランチがまだある場合削除してください.
 
 1. `learning_js` フォルダーに移動します
+
    ```sh
    cd ~/learning_js
    ```
 
 2. Gitの現状を確認
+
    ```sh
    git status
    ```
@@ -50,7 +54,8 @@
      master
    ```
 
-4. `develop`　ブランチにいるので, `master`に切り替えます
+4. `develop` ブランチにいるので, `master`に切り替えます
+
    ```sh
    git checkout master
    ```
@@ -80,13 +85,11 @@
 
 ### GitHub
 1. Github の `learning_js` リポジトリに移動します.
-   - github.com/`UserName`/learning_js
-
+    * github.com/`UserName`/learning_js
 2. ブランチが1つだけかどうかを確認する.
-   - github.com/`UserName`/learning_js/branches
-
+    * github.com/`UserName`/learning_js/branches
 3. `develop` ブランチがあれば[ブランチを削除](https://docs.github.com/ja/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
-   - ![03_Revert_DeleteBranch](assets/03_Revert_DeleteBranch.png)
+    * ![03_Revert_DeleteBranch](assets/03_Revert_DeleteBranch.png)
 
 ---
 
@@ -95,22 +98,22 @@
 
 1. `master` ブランチに切り替える
 
-   ```sh
-   git checkout master
-   ```
+    ```sh
+    git checkout master
+    ```
 
 2. `timeline` ブランチを作成します.
 
-   ```sh
-   git checkout -b timeline
-   ```
+    ```sh
+    git checkout -b timeline
+    ```
 
-   ```terminal
-   Switched to a new branch 'timeline'
-   ```
+    ```terminal
+    Switched to a new branch 'timeline'
+    ```
 
 3. 次のファイルを作成して別々にコミットします.
-   - `yr_1`, `yr_2`, `yr_3`
+    * `yr_1`, `yr_2`, `yr_3`
 
    ```sh
    touch yr_1
@@ -145,8 +148,8 @@
    ```
 
 `git log --oneline`
-  - ブランチ上でのコミットを一覧表示します.
-  - チェックアウトおよび復帰コマンドに提供されたコミットハッシュを使用する.
+* ブランチ上でのコミットを一覧表示します.
+* チェックアウトおよび復帰コマンドに提供されたコミットハッシュを使用する.
 
    ```sh
    git log --oneline
@@ -160,31 +163,30 @@
    ```
 
 `git push origin timeline`
-  - これで `timeline` ブランチは GitHub にプッシュされています.
-  - ブラウザでリポジトリにアクセスして確認します.
+* これで `timeline` ブランチは GitHub にプッシュされています.
+* ブラウザでリポジトリにアクセスして確認します.
 
 ```sh
 git push origin timeline
 ```
 
 ### GitHub - timeline branch
-
 ![03_Revert_timelineBranch](assets/03_Revert_timelineBranch.png)
 
 ### GitHub - timeline's commits
-
 ![03_Revert_timelineBranch_Commits](assets/03_Revert_timelineBranch_Commits.png)
 
 
 ## 過去を訪ねる
 
 `git log --oneline`
-  - ブランチ上でのコミットを一覧表示します
-  - チェックアウトおよび復帰コマンドに提供されたコミットハッシュを使用する
+* ブランチ上でのコミットを一覧表示します
+* チェックアウトおよび復帰コマンドに提供されたコミットハッシュを使用する
 
    ```sh
    git log --oneline
    ```
+
    ```terminal
    7a5bbf4 (HEAD -> timeline, origin/timeline) Year 3
    5215f6d Year 2
@@ -193,13 +195,14 @@ git push origin timeline
    ```
 
 `git checkout [commit hash]`
-  - 作業ディレクトリを [`commit`]とまったく同じ状態に変換します.
-  - これが元に戻すコミットかどうかを確認します.
-  - この状況で行われた変更は保存されません.
+* 作業ディレクトリを [`commit`]とまったく同じ状態に変換します.
+* これが元に戻すコミットかどうかを確認します.
+* この状況で行われた変更は保存されません.
 
    ```sh
    git checkout f10f791
    ```
+
    ```terminal
    Note: switching to 'f10f791'.
 
@@ -232,42 +235,50 @@ git push origin timeline
 ## 1コミット文過去に戻る
 
 `git revert HEAD`
-  - 1コミット前に戻ります.
+* 1コミット前に戻ります.
 
-   ```sh
-   git checkout timeline
-   ```
-   ```terminal
-   Previous HEAD position was f10f791 Year 1
-   Switched to branch 'timeline'
-   ```
-   ```sh
-   ls
-   ```
-   ```terminal
-   README.md  yr_1  yr_2  yr_3
-   ```
-   ```sh
-   git revert HEAD
-   ```
-   ```terminal
-   Removing yr_3
-   [timeline 450d385] Revert "Year 3"
+    ```sh
+    git checkout timeline
+    ```
+
+    ```terminal
+    Previous HEAD position was f10f791 Year 1
+    Switched to branch 'timeline'
+    ```
+
+    ```sh
+    ls
+    ```
+
+    ```terminal
+    README.md  yr_1  yr_2  yr_3
+    ```
+
+    ```sh
+    git revert HEAD
+    ```
+
+    ```terminal
+    Removing yr_3
+    [timeline 450d385] Revert "Year 3"
     1 file changed, 0 insertions(+), 0 deletions(-)
     delete mode 100644 yr_3
-   ```
-   ```sh
-   ls
-   ```
-   ```terminal
-   README.md  yr_1  yr_2
-   ```
+    ```
+
+    ```sh
+    ls
+    ```
+
+    ```terminal
+    README.md  yr_1  yr_2
+    ```
 
 ## コミットハッシュで過去に戻る
 
 ```sh
 git log --oneline
 ```
+
 ```terminal
 2fb96f6 (HEAD -> timeline) Revert "Year 3"
 7a5bbf4 (origin/timeline) Year 3
@@ -280,9 +291,11 @@ f10f791 Year 1
 これは, GitHub (origin) に `Revert "Year 3"` コミットが実装されていないことを意味します。
 
 `git push`
+
 ```sh
 git push origin timeline
 ```
+
 ```terminal
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -311,14 +324,13 @@ To https://github.com/ahandsel/learning_js_3.git
 
 ```sh
 git revert 5215f6d
-```
 
 Removing yr_2
 [timeline 6c3367a] Revert "Year 2"
  1 file changed, 0 insertions(+), 0 deletions(-)
  delete mode 100644 yr_2
-
 ```
+
 `git log --oneline`
 
 <span style="color:#AAAB25"> __f3fc335 \(__ </span>  <span style="color:#38B9C7"> __HEAD \->__ </span>  <span style="color:#39C026"> __timeline__ </span>  <span style="color:#AAAB25"> __\)__ </span>  __Revert "Year 2"__
@@ -337,16 +349,15 @@ Revert
 
 `ls`
 
-_README\.md yr\_1_
+README.md yr_1
 
 `git push origin timeline`
 
-__git revert \[commit hash\]__
-```
+git revert [commit hash]
 
 `git revert [commit hash]`
-  - 前進する取り消しコマンド
-  - 指定された[ `commit` ]によって加えられた変更を反転し, 新しいコミットとして結果を追加します.
+* 前進する取り消しコマンド
+* 指定された[ `commit` ]によって加えられた変更を反転し, 新しいコミットとして結果を追加します.
 
 ## Reset vs Revert
 
