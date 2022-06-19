@@ -30,7 +30,7 @@ Readers walk away with
 * Overview of the GitHub site
 * ⚠️ Pending Translation
 
-[Rewind - 03_Revert_EN.md](03_Revert_EN.md)
+[Revert - 03_Revert_EN.md](03_Revert_EN.md)
 * Undo files with Git
 * ⚠️ Pending Translation
 
