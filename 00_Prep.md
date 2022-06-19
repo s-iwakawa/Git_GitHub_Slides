@@ -1,6 +1,8 @@
 # Git, GitHubとは？ -- 準備ガイド
 <!-- markdownlint-disable MD026 -->
 
+_🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
+
 これは, 「Git＆GitHubの概要」講義の準備をするためのガイドです。
 
 講義の準備として (順番に)行う手順は次のとおりです。
@@ -36,7 +38,7 @@
 ここでサインアップして, GitHub.comアカウントを作成します。
 * [github.com/join](https://github.com/join)  
 
-プロフィール写真に使用できる無料の画像については, unsplash.comをおすすめします：
+プロフィール写真に使用できる無料の画像については, unsplash.comをおすすめします:
 * [unsplash.com/s/photos/cute](https://unsplash.com/s/photos/cute)
 * [unsplash.com/s/photos/profile-dog](https://unsplash.com/s/photos/profile-dog)
 * [unsplash.com/collections/410090/animals](https://unsplash.com/collections/410090/animals)
@@ -66,7 +68,7 @@
 ---
 
 ## Visual Studio Code (VS Code) + Command Line
-Visual Studio Codeダウンロードリンク：
+Visual Studio Codeダウンロードリンク:
 * [code.visualstudio.com](https://code.visualstudio.com/)
 
 コマンドラインからVSCodeを開く機能を設定します。
