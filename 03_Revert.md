@@ -359,5 +359,8 @@ __git revert \[commit hash\]__
 
 ![03_Revert_GitRevert.png](assets/03_Revert_GitRevert.png)
 
+## 次のセクション
+[巻き戻す - 03_Revert.md](03_Revert.md) へ 💪
+
 ## 講義ガイド一覧 <!-- omit in toc -->
 [README.md](README.md) ⚙️

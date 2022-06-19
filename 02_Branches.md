@@ -25,7 +25,7 @@
   * [GitHubの概要](#githubの概要)
 * [GitHub のパーツ](#github-のパーツ)
 * [クイズの時間](#クイズの時間)
-* [次の 巻き戻す - 03_Revert.md へ](#次の-巻き戻す---03_revertmd-へ)
+* [次のセクション](#次のセクション)
 
 ## Git Branch?
 まず, learning_js リポジトリに戻ります
@@ -354,7 +354,8 @@ Insight: リポジトリの分析ツール
 `Pull Request` (プルリクエスト) とは？
 * 変更を取得するためにターゲットリポジトリをリクエストすることです.
 
-## 次の [巻き戻す - 03_Revert.md](03_Revert.md) へ
+## 次のセクション
+[Git CLI カンニングペーパー - 04_CheatSheet.md](04_CheatSheet.md) へ 💪
 
 ## 講義ガイド一覧 <!-- omit in toc -->
 [README.md](README.md) ⚙️
