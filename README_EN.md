@@ -34,7 +34,7 @@ Readers walk away with
 * Undo files with Git
 * ⚠️ Pending Translation
 
-[Git CLI cheat sheet - 04_CheatSheet_EN.md](04_CheatSheet_EN.md)
+[Git Cheat Sheet - 04_CheatSheet_EN.md](04_CheatSheet_EN.md)
 * Here's an overview of useful Git command-line (CLI) commands.
 * ⚠️ Pending Translation
 
