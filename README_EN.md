@@ -41,5 +41,5 @@ Readers walk away with
 ## Got Questions?
 Submit a [GitHub Issue](https://github.com/ahandsel/Git_GitHub_Slides/issues) & I will do my best to answer your question.
 
-## Found mistakes?
+## Found Mistakes?
 Make a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with the corrections ~
