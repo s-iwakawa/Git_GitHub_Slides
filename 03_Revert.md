@@ -27,10 +27,10 @@ _🇺🇸 English version: [03_Revert_EN.md](03_Revert_EN.md)_
 `main` ブランチだけにしましょう.  
 `develop` ブランチがまだある場合削除してください.
 
-1. `learning_js` フォルダーに移動します
+1. `learning_git` フォルダーに移動します
 
    ```sh
-   cd ~/learning_js
+   cd ~/learning_git
    ```
 
 2. Gitの現状を確認
@@ -86,10 +86,10 @@ _🇺🇸 English version: [03_Revert_EN.md](03_Revert_EN.md)_
    ```
 
 ### GitHub
-1. Github の `learning_js` リポジトリに移動します.
-    * github.com/`UserName`/learning_js
+1. Github の `learning_git` リポジトリに移動します.
+    * github.com/`UserName`/learning_git
 2. ブランチが1つだけかどうかを確認する.
-    * github.com/`UserName`/learning_js/branches
+    * github.com/`UserName`/learning_git/branches
 3. `develop` ブランチがあれば[ブランチを削除](https://docs.github.com/ja/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
     * ![03_Revert_DeleteBranch](img/03_Revert_DeleteBranch.png)
 
@@ -307,8 +307,8 @@ Writing objects: 100% (2/2), 240 bytes | 240.00 KiB/s, done.
 Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 remote: This repository moved. Please use the new location:
-remote:   https://github.com/ahandsel/learning_js_3.git
-To https://github.com/ahandsel/learning_js_3.git
+remote:   https://github.com/ahandsel/learning_git_3.git
+To https://github.com/ahandsel/learning_git_3.git
    f0c82a0..53a0f3e  timeline -> timeline
 ```
 

@@ -30,10 +30,10 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 * [次のセクション](#次のセクション)
 
 ## Git Branch?
-まず, learning_js リポジトリに戻ります
+まず, learning_git リポジトリに戻ります
 
 ```sh
-~ % cd Documents/learning_js
+~ % cd Documents/learning_git
 ```
 
 `git branch` と入力して, 現在のブランチと現在のブランチを確認します.
@@ -119,12 +119,12 @@ Switched to a new branch 'develop'
   Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
   Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
   remote: This repository moved. Please use the new location:
-  remote:   https://github.com/ahandsel/learning_js_3.git
+  remote:   https://github.com/ahandsel/learning_git_3.git
   remote:
   remote: Create a pull request for 'develop' on GitHub by visiting:
-  remote:      https://github.com/ahandsel/learning_js_3/pull/new/develop
+  remote:      https://github.com/ahandsel/learning_git_3/pull/new/develop
   remote:
-  To https://github.com/ahandsel/learning_js_3.git
+  To https://github.com/ahandsel/learning_git_3.git
   * [new branch]      develop -> develop
   Branch 'develop' set up to track remote branch 'develop' from 'origin'.
   ```

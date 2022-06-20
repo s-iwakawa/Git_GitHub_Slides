@@ -87,12 +87,12 @@ Connect the Local Folder with GitHub
 * Mac: Use the [Terminal](https://support.apple.com/guide/terminal/welcome/mac)
 * Windows: Use the [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe)
 
-1. Go to a easily accessible folder (e.g., Documents) and create a folder named `learning_js`
+1. Go to a easily accessible folder (e.g., Documents) and create a folder named `learning_git`
 
     ```sh
     cd Documents
-    mkdir learning_js
-    cd learning_js
+    mkdir learning_git
+    cd learning_git
     ```
 
 1. Use `pwd` command to verify the current location
@@ -100,7 +100,7 @@ Connect the Local Folder with GitHub
     ```sh
     pwd
 
-    /Users/YourUserName/Documents/learning_js
+    /Users/YourUserName/Documents/learning_git
     ```
 
 1. Initialize git with `git init` command
@@ -108,7 +108,7 @@ Connect the Local Folder with GitHub
     ```sh
     git init
 
-    Initialized empty Git repository in /Users/YourUserName/Documents/learning_js/.git/
+    Initialized empty Git repository in /Users/YourUserName/Documents/learning_git/.git/
     ```
 
 ⚡ Repo is short for Repository
@@ -219,7 +219,7 @@ nothing to commit, working tree clean
 repo を作成する
 * [github.com/new](https://github.com/new)
 
-`learning_js` という name のrepo を作成します
+`learning_git` という name のrepo を作成します
 
 READMEでrepo を初期化しないでください
 
@@ -236,7 +236,7 @@ GitHub の `Clone or download` ボタンをクリックし, HTTPS リンクを�
 * [Git - git-remote Documentation](https://git-scm.com/docs/git-remote#_name)
 
 ```sh
-git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
+git remote add origin https://github.com/Your_GitHub_UserName/learning_git.git
 git push -u origin main
 ```
 
@@ -250,8 +250,8 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: This repository moved. Please use the new location:
-remote:   https://github.com/ahandsel/learning_js.git
-To https://github.com/ahandsel/learning_js.git
+remote:   https://github.com/ahandsel/learning_git.git
+To https://github.com/ahandsel/learning_git.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
@@ -272,12 +272,12 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 3. もう一度試してみましょう
 
     ```sh
-    git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
+    git remote add origin https://github.com/Your_GitHub_UserName/learning_git.git
     git push -u origin main
     ```
 
 4. Github.com のrepo をチェックして, プッシュが機能したことを確認します。
-    * `https://github.com/`Your_GitHub_UserName`/learning_js.git`
+    * `https://github.com/`Your_GitHub_UserName`/learning_git.git`
 
 
 #### Documentation <!-- omit in toc -->
@@ -385,7 +385,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 
 ```sh
 $ pwd
-/Users/UserName/Documents/learning_js
+/Users/UserName/Documents/learning_git
 
 $ ls -la
 total 8
@@ -462,8 +462,8 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
     ```
 
     ```sh
-    origin https://github.com/ahandsel/learning_js.git (fetch)
-    origin https://github.com/ahandsel/learning_js.git (push)
+    origin https://github.com/ahandsel/learning_git.git (fetch)
+    origin https://github.com/ahandsel/learning_git.git (push)
     ```
 
 #### Documentation <!-- omit in toc -->

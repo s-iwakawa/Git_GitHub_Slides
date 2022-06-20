@@ -72,15 +72,15 @@ Configure it to be managed by git
 * Create a file on the local side and run git commands, the file will appear on GitHub.com
 
 ### Create a Local Git Repository
-* With your terminal, go to Documents and create a directory named `learning_js`
-  * `pwd ~/Documents/learning_js`
+* With your terminal, go to Documents and create a directory named `learning_git`
+  * `pwd ~/Documents/learning_git`
 * In this folder, using the `git init` command, initialize a repository
 * Repository is often shortened to Repo
 
 ### Add a README.md file to the Local Repo
 * Create a README.md file
   * README file is used to describe a software/ git repo's purpose and usage.
-* Open the current learning_js directory with VS Code
+* Open the current learning_git directory with VS Code
 * Add a description of your repository in the markdown file
 
 ### Check Git's Status
@@ -112,7 +112,7 @@ Configure it to be managed by git
 ### Create a GitHub Repository
 * Create a Repository
   * <https://github.com/new>
-* Name your repository learning_js
+* Name your repository learning_git
 * Do not initialize repository with README!
 
 ### Local Git :arrow_forward: GitHub
@@ -305,7 +305,7 @@ $ git push -u origin develop
   remote: Counting objects: 100% (1/1), done.
   remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
   Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
-  From https://github.com/ahandsel/learning_js
+  From https://github.com/ahandsel/learning_git
   * branch            main     -> FETCH_HEAD
     5f9f89b..1438ca5  main     -> origin/main
   Updating d775d42..1438ca5
