@@ -48,7 +48,7 @@ Markdown/ Outline version of the content
   * [#2 - Making a Commit](#2---making-a-commit)
   * [#3 - Open a Pull Request](#3---open-a-pull-request)
   * [#4 - Test](#4---test)
-  * [#5 - Merge to Master](#5---merge-to-master)
+  * [#5 - Merge to main](#5---merge-to-main)
   * [Overview of GitHub Workflow](#overview-of-github-workflow)
 <!-- markdownlint-enable MD007 -->
 
@@ -103,7 +103,7 @@ Configure it to be managed by git
 * git commit -m "message"
 * command to add the file/folder to the repository
 * Now the README.md is now in the repository
-* specifically the master branch
+* specifically the main branch
 * git commit commands makes git fully track the file
 * Similar to the game check-point
 * -m is the adding message option
@@ -185,9 +185,9 @@ Configure it to be managed by git
 * i.e. nickname is assigned per remote repository's URL
 * Most common alias is called "origin."
 * Thus, both following commands does the same thing:
-  * git push -u <https://github.com/user/repo.git> master
+  * git push -u <https://github.com/user/repo.git> main
   * git remote add ALIAS <https://github.com/ahandsel/repo.git>
-  * git push -u ALIAS master
+  * git push -u ALIAS main
 
 #### git remote command
 * manages the connection between your local & remote repositories
@@ -230,7 +230,7 @@ Note: Pushing can potentially overwrite changes!
 
 
 ### Create a New Branch
-* By default, a repository has a **master** branch
+* By default, a repository has a **main** branch
 * Let's create a new branch named **develop**
 * `git checkout -b <branch_name>`
   * command to create a new branch & switch to it
@@ -244,7 +244,7 @@ Switched to a new branch 'develop'
 
 $ git branch
 * develop
-  master
+  main
 ```
 
 ### Changing develop Branch
@@ -278,36 +278,36 @@ $ git push -u origin develop
 ### Create & Merge Pull Request
 * **Pull Requests** shows others your changes without actual modifying
   * useful for code review
-* On GitHub, create the **pull request** to merge **develop** -> **master** branch
+* On GitHub, create the **pull request** to merge **develop** -> **main** branch
 * Confirm the changes and **Merge** Pull request
-* This results in **master** branch having the two new files!
+* This results in **main** branch having the two new files!
 
 ### GitHub repo -> Update Local repo
 * Currently, your GitHub repo is ahead of the local copy
   * Use `git pull` command to address this
-* `git pull origin master`
+* `git pull origin main`
   * pull the latest repo version from GitHub to the local repo
 * Following commands
-  * `git checkout master`
-  * `git pull origin master`
+  * `git checkout main`
+  * `git pull origin main`
   * `git branch -d develop`
   * `git branch`
 * Outcome:
 
   ```sh
-  $ git checkout master
-  Switched to branch 'master'
-  Your branch is behind 'origin/master' by 4 commits & can be fast-forwarded
+  $ git checkout main
+  Switched to branch 'main'
+  Your branch is behind 'origin/main' by 4 commits & can be fast-forwarded
     (use "git pull" to update your local branch)
 
-  $ git pull origin master
+  $ git pull origin main
   remote: Enumerating objects: 1, done.
   remote: Counting objects: 100% (1/1), done.
   remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
   Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
   From https://github.com/ahandsel/learning_js
-  * branch            master     -> FETCH_HEAD
-    5f9f89b..1438ca5  master     -> origin/master
+  * branch            main     -> FETCH_HEAD
+    5f9f89b..1438ca5  main     -> origin/main
   Updating d775d42..1438ca5
   Fast-forward
   2nd_file.md     | 0
@@ -320,7 +320,7 @@ $ git push -u origin develop
   Deleted branch develop (was c6e6c83).
 
   $ git branch
-  * master
+  * main
   ```
 
 
@@ -345,11 +345,11 @@ $ git push -u origin develop
   * Each can be developed in parallel.
 
 ### Branches - Website
-* master branch contains the 'live' code that runs the website.
-* changes in master impacts users
+* main branch contains the 'live' code that runs the website.
+* changes in main impacts users
 * Two coders want to modify the website at the same time.
   * Make 3x branches:
-  * master    -> live code
+  * main    -> live code
   * feature_A -> for coder A to modify
   * feature_B -> for coder B to modify
 * Once the code developments are done, merge the branches.
@@ -369,7 +369,7 @@ $ git push -u origin develop
 ## GitHub Workflow
 
 ### #1 - Create a Branch
-* The code for the **live** website is in the **master** branch
+* The code for the **live** website is in the **main** branch
 * Any changes to here will effect the users!
 * If you want to create a new page, first create a new **feature** branch.
   * This is where you will do the development for the new page.
@@ -391,8 +391,8 @@ $ git push -u origin develop
 * After code review, deploy your code in a testing environment to make sure everything works.
 * Example: Test if the website looks and acts as expected on *Zendesk Preview* mode.
 
-### #5 - Merge to Master
-* Merge your code into the **master** branch.
+### #5 - Merge to main
+* Merge your code into the **main** branch.
 * Now your changes are live & visible to the users.
 * Once merged, **Pull Requests** acts as reference points.
 * Example: Pull Request for new logo will become a reference point to indicate the "before" and the "after" of the logo change.

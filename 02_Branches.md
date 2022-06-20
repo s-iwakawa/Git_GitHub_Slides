@@ -46,10 +46,10 @@
   ```
 
   ```terminal
-  * master
+  * main
   ```
 
-リポジトリにはデフォルトで `master` ブランチが存在します.
+リポジトリにはデフォルトで `main` ブランチが存在します.
 
 ## 新しいブランチを作成する
 
@@ -150,36 +150,36 @@ Switched to a new branch 'develop'
 `Pull Requests` で, 実際にファイルが変更される前に, 他のユーザーの変更などを確認できます.
 * コードレビューなどに使われます.
 
-`develop` ブランチを `master` ブランチにマージするために, GitHub で `Pull request` を作成します.
+`develop` ブランチを `main` ブランチにマージするために, GitHub で `Pull request` を作成します.
 * 変更を確認し, `Pull Request` をマージします.
 
 ![Gif_GitHub_Dojo_PullRequest](assets/Gif_GitHub_Dojo_PullRequest.gif)
 
-`master` ブランチに2つの新しいファイルが表示されました！
+`main` ブランチに2つの新しいファイルが表示されました！
 
 ![Example_Pull_Request](assets/Example_Pull_Request.png)
 
 ## GitHub repo から Local repo への更新
 
-`master` ブランチに移動しましょう.
+`main` ブランチに移動しましょう.
 
 ```sh
-git checkout master
+git checkout main
 ```
 
 現在, GitHubリポジトリはローカルリポジトリよりもファイルが最新になっています.
 
 ```sh
-  Switched to branch 'master'
-  Your branch is behind 'origin/master' by 4 commits & can be fast-forwarded
+  Switched to branch 'main'
+  Your branch is behind 'origin/main' by 4 commits & can be fast-forwarded
     (use "git pull" to update your local branch)
 ```
 
 `git pull` コマンドを使用して対応します  
-`git pull origin master` で最新のリポジトリのバージョンを GitHub からローカルに pull します
+`git pull origin main` で最新のリポジトリのバージョンを GitHub からローカルに pull します
 
 ```sh
-git pull origin master
+git pull origin main
 ```
 
 ```sh
@@ -188,8 +188,8 @@ git pull origin master
   remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
   Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
   From https://github.com/ahandsel/kintone_dojo
-  * branch            master     -> FETCH_HEAD
-    5f9f89b..1438ca5  master     -> origin/master
+  * branch            main     -> FETCH_HEAD
+    5f9f89b..1438ca5  main     -> origin/main
   Updating d775d42..1438ca5
   Fast-forward
   2nd_file.md     | 0
@@ -199,7 +199,7 @@ git pull origin master
   create mode 100644 develop_file.md
 ```
 
-これで `master` ブランチと `develop` ブランチは同じ状態になりました.  
+これで `main` ブランチと `develop` ブランチは同じ状態になりました.  
 なので`develop` ブランチを削除しましょう．
 
 ```sh
@@ -217,7 +217,7 @@ git branch
 ```
 
 ```sh
-  * master
+  * main
 ```
 
 ## Git Branch とは？
@@ -242,11 +242,11 @@ git branch
 
 ## Branch と ウェブサイト
 
-`master` ブランチには, Webサイトを実行するコードが存在します.
-* もし `master` ブランチで変更が加わると, ユーザーに影響を与えてしまいます！！
+`main` ブランチには, Webサイトを実行するコードが存在します.
+* もし `main` ブランチで変更が加わると, ユーザーに影響を与えてしまいます！！
 
 2人の開発者が同時にWebサイトを変更したい場合, 3つのブランチを作成します
-* `master` → ライブコード
+* `main` → ライブコード
 * `feature_A` → 開発者Aが実装する
 * `feature_B` → 開発者Bが実装する
 
@@ -282,12 +282,12 @@ git branch
 
 | #   | Step                  | Notes                                                                                                                                  |
 | --- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Create a branch       | `master` から `feature` ブランチを作成して開発を開始します                                                                             |
+| 1   | Create a branch       | `main` から `feature` ブランチを作成して開発を開始します                                                                             |
 | 2   | Commit changes        | コード実装が完了したら, `commit` を作成します. <br> `commit` を作成することで変更履歴を確認できて, ロールバックと参照が可能になります. |
 | 3   | Open a Pull Request   | 実装内容を他の人と共有する準備ができたら, Pull Request を作成します.                                                                   |
 | 4   | Discuss & Review Code | ティーンメンバーからコードのレビューをもらい, 議論します．                                                                             |
 | 5   | Deploy & Test         | コードをテスト環境にデプロイして問題なく機能することを確認します.                                                                      |
-| 6   | Merge to Master       | これで実装内容が有効になり, Pull Request はコードに対する変更履歴の記録を保持します。                                                  |
+| 6   | Merge to main       | これで実装内容が有効になり, Pull Request はコードに対する変更履歴の記録を保持します。                                                  |
 
 ### Detailed Overview of the GitHub Workflow
 

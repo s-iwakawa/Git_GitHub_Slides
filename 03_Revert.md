@@ -22,7 +22,7 @@
 
 前のセクションでは, `develop` ブランチを作成, マージ, 削除しました.
 
-`master` ブランチだけにしましょう.  
+`main` ブランチだけにしましょう.  
 `develop` ブランチがまだある場合削除してください.
 
 1. `learning_js` フォルダーに移動します
@@ -51,18 +51,18 @@
 
    ```terminal
    - develop
-     master
+     main
    ```
 
-4. `develop` ブランチにいるので, `master`に切り替えます
+4. `develop` ブランチにいるので, `main`に切り替えます
 
    ```sh
-   git checkout master
+   git checkout main
    ```
 
    ```terminal
-   Switched to branch 'master'
-   Your branch is up to date with 'origin/master'.
+   Switched to branch 'main'
+   Your branch is up to date with 'origin/main'.
    ```
 
 5. `develop` ブランチを削除する
@@ -96,10 +96,10 @@
 ### サンプル ファイル と ブランチ を作成する
 タイムトラベルためにファイルを作成する
 
-1. `master` ブランチに切り替える
+1. `main` ブランチに切り替える
 
     ```sh
-    git checkout master
+    git checkout main
     ```
 
 2. `timeline` ブランチを作成します.
@@ -159,7 +159,7 @@
    7a5bbf4 (HEAD -> timeline) Year 3
    5215f6d Year 2
    f10f791 Year 1
-   03098e7 (origin/master, master) README file created
+   03098e7 (origin/main, main) README file created
    ```
 
 `git push origin timeline`
@@ -191,7 +191,7 @@ git push origin timeline
    7a5bbf4 (HEAD -> timeline, origin/timeline) Year 3
    5215f6d Year 2
    f10f791 Year 1
-   03098e7 (origin/master, master) README file created
+   03098e7 (origin/main, main) README file created
    ```
 
 `git checkout [commit hash]`
@@ -284,7 +284,7 @@ git log --oneline
 7a5bbf4 (origin/timeline) Year 3
 5215f6d Year 2
 f10f791 Year 1
-03098e7 (origin/master, master) README file created
+03098e7 (origin/main, main) README file created
 ```
 
 `7a5bbf4 (origin/timeline) Year 3`行に注意してください.  
@@ -318,7 +318,7 @@ To https://github.com/ahandsel/learning_js_3.git
 <span style="color:#AAAB25"> __f7cf1cb__ </span>  __Year 3__  
 <span style="color:#AAAB25"> __f7fb07c__ </span>  __Year 2__  
 <span style="color:#AAAB25"> __e4df7f2__ </span>  __Year 1__  
-<span style="color:#AAAB25"> __03098e7 \(__ </span>  <span style="color:#CA3323"> __origin/master__ </span>  <span style="color:#AAAB25"> __\,__ </span>  <span style="color:#39C026"> __master__ </span>  __\) README file created__  
+<span style="color:#AAAB25"> __03098e7 \(__ </span>  <span style="color:#CA3323"> __origin/main__ </span>  <span style="color:#AAAB25"> __\,__ </span>  <span style="color:#39C026"> __main__ </span>  __\) README file created__  
 
 `git revert f7fb07` Year 2 commit's hash
 
@@ -343,7 +343,7 @@ Removing yr_2
 
 <span style="color:#AAAB25"> __e4df7f2__ </span>  __Year 1__
 
-<span style="color:#AAAB25"> __03098e7 \(__ </span>  <span style="color:#CA3323"> __origin/master__ </span>  <span style="color:#AAAB25"> __\,__ </span>  <span style="color:#39C026"> __master__ </span>  <span style="color:#AAAB25"> __\)__ </span>  __README file created__
+<span style="color:#AAAB25"> __03098e7 \(__ </span>  <span style="color:#CA3323"> __origin/main__ </span>  <span style="color:#AAAB25"> __\,__ </span>  <span style="color:#39C026"> __main__ </span>  <span style="color:#AAAB25"> __\)__ </span>  __README file created__
 
 Revert
 

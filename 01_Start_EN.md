@@ -158,7 +158,7 @@ git status
 ```
 
 ```sh
-On branch master
+On branch main
 No commits yet
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -182,7 +182,7 @@ git status
 ```
 
 ```sh
-On branch master
+On branch main
 No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
@@ -196,7 +196,7 @@ Changes to be committed:
 * [Git - git-commit Documentation](https://git-scm.com/docs/git-commit)
 
 README.mdがリポジトリに追加されました!!
-* `README.md` が `master` ブランチに追加されたことが分かります
+* `README.md` が `main` ブランチに追加されたことが分かります
 
 ```sh
 git commit -m "README file created"
@@ -206,12 +206,12 @@ git status
 
 ```sh
 $ git commit -m "README file created"
-[master (root-commit) 03098e7] README file created
+[main (root-commit) 03098e7] README file created
  1 file changed, 3 insertions(+)
  create mode 100644 README.md
 
 $ git status
-On branch master
+On branch main
 nothing to commit, working tree clean
 ```
 
@@ -238,7 +238,7 @@ GitHub の `Clone or download` ボタンをクリックし, HTTPS リンクを�
 
 ```sh
 git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
-git push -u origin master
+git push -u origin main
 ```
 
 端末からの結果
@@ -253,8 +253,8 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: This repository moved. Please use the new location:
 remote:   https://github.com/ahandsel/learning_js.git
 To https://github.com/ahandsel/learning_js.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
 
 #### デバッグ
@@ -274,7 +274,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
     ```sh
     git remote add origin https://github.com/Your_GitHub_UserName/learning_js.git
-    git push -u origin master
+    git push -u origin main
     ```
 
 4. Github.com のリポジトリをチェックして, プッシュが機能したことを確認します。
@@ -444,12 +444,12 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 * 次のcommandはどちらも同じ内容を実行します
 
    ```sh
-   $ git push -u https://github.com/ahandsel/demo.git master
+   $ git push -u https://github.com/ahandsel/demo.git main
    ```
 
    ```sh
    $ git remote add ALIAS https://github.com/ahandsel/demo.git 
-   $ git push -u ALIAS master
+   $ git push -u ALIAS main
    ```
 
 `git remote`
