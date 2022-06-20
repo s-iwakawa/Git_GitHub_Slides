@@ -98,19 +98,19 @@ Visual Studio Codeダウンロードリンク:
 
 1. 新しいパッケージをインストールする前に,  `brew` を更新およびアップグレードします
 
-    ```sh
+    ```shell
     brew update && brew upgrade
     ```
 
 1. Homebrew で git をインストール
 
-    ```sh
+    ```shell
     brew install git
     ```
 
 1. インストールの確認
 
-    ```sh
+    ```shell
     git --version
 
     # Gitのバージョンが表示されれば成功です
