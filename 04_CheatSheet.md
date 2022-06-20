@@ -1,5 +1,7 @@
 # Git CLI カンニングペーパー
 
+_🇺🇸 English version: [04_CheatSheet_EN.md](04_CheatSheet_EN.md)_
+
 便利な Git コマンドライン (CLI) コマンドの概要を次に示します。
 
 詳しくはこちら: [Git チートシート - GitHub Cheatsheets](https://training.github.com/downloads/ja/github-git-cheat-sheet/)
@@ -59,5 +61,5 @@ URL例= `https://github.com/`UserName`/`repo``
 | `git revert [commit]` | 指定したcommitを取り消すためにコマンドです               |
 | `git revert HEAD`     | 直前のコミットを取り消すための新しいコミットを作成します |
 
-## 講義ガイド一覧 <!-- omit in toc -->
+## 終わり <!-- omit in toc -->
 [README.md](README.md) ⚙️
