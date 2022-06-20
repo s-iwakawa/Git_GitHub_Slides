@@ -17,7 +17,7 @@ Git と GitHub の簡単な紹介をします．
 * Windows に git をインストールする
 * macOS に git をインストールする
 
-[基本と設定 - 01_Start.md](01_Start.md)
+[基本と最初のレポ - 01_Start.md](01_Start.md)
 * Git の基本と設定
 * GitHub の基本と設定
 * ローカルでの設定; ローカルと GitHub を接続する

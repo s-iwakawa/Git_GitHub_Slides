@@ -232,4 +232,4 @@ To set up git for your computer:
 ---
 
 ## Next section - Basics and Settings
-Go to the [Basics and Settings - 01_Start_EN.md](01_Start_EN.md) section 💪
+Go to the [Basics & First Repo - 01_Start_EN.md](01_Start_EN.md) section 💪

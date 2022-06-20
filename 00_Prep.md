@@ -239,7 +239,7 @@ git コマンド (`git`) と GitHub CLI コマンド (`gh`) はこちらを使�
 ---
 
 ## 次のセクション
-[基本と設定 - 01_Start.md](01_Start.md) へ 💪
+[基本と最初のレポ - 01_Start.md](01_Start.md) へ 💪
 
 ## 講義ガイド一覧 <!-- omit in toc -->
 [README.md](README.md) ⚙️

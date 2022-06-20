@@ -17,7 +17,7 @@ Readers walk away with
 * Install & setup GitHub Desktop App
 * Install & setup GitHub Command Line (GitHub CLI)
 
-[Basics and Setup - 01_Start_EN.md](01_Start_EN.md)
+[Basics & First Repo - 01_Start_EN.md](01_Start_EN.md)
 * Git basics and settings
 * GitHub basics and settings
 * Local settings; Connect local to GitHub
