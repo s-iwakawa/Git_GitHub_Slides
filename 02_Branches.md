@@ -45,7 +45,7 @@
   git branch
   ```
 
-  ```terminal
+  ```sh
   * main
   ```
 
@@ -63,7 +63,7 @@ git checkout -b develop
 Switched to a new branch 'develop'
 ```
 
-`git checkout –b <branch name>`
+`git checkout -b <branch name>`
 * リポジトリに新しいブランチを作成して、そのブランチに移動するコマンドです．
 * [git-checkout Doc](https://git-scm.com/docs/git-checkout)
 
@@ -86,7 +86,7 @@ Switched to a new branch 'develop'
   git commit -m "develop only"
   ```
 
-  ```terminal
+  ```sh
   [develop 4f98baf] develop only
   1 file changed, 0 insertions(+), 0 deletions(-)
   create mode 100644 develop_file.md
@@ -98,7 +98,7 @@ Switched to a new branch 'develop'
   git status
   ```
 
-  ```terminal
+  ```sh
   On branch develop
   nothing to commit, working tree clean
   ```
@@ -109,7 +109,7 @@ Switched to a new branch 'develop'
   git push -u origin develop
   ```
 
-  ```terminal
+  ```sh
   Enumerating objects: 4, done.
   Counting objects: 100% (4/4), done.
   Delta compression using up to 4 threads
