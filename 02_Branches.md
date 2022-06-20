@@ -1,5 +1,7 @@
 # Git, GitHubとは？ - ブランチの作成とマージ
 
+_🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
+
 このセクションでは, Git Branch を紹介し, 最初のブランチの操作について説明します
 
 ## Overview
@@ -355,7 +357,7 @@ Insight: リポジトリの分析ツール
 * 変更を取得するためにターゲットリポジトリをリクエストすることです.
 
 ## 次のセクション
-[Git CLI カンニングペーパー - 04_CheatSheet.md](04_CheatSheet.md) へ 💪
+[巻き戻す - 03_Revert.md](03_Revert.md)
 
 ## 講義ガイド一覧 <!-- omit in toc -->
 [README.md](README.md) ⚙️

@@ -1,5 +1,7 @@
 # Git, GitHubとは？ - 巻き戻す
 
+_🇺🇸 English version: [03_Revert_EN.md](03_Revert_EN.md)_
+
 このセクションでは `git revert` を紹介し, Git でファイルを元に戻すやり方について説明します
 
 * [タイムトラベルの準備](#タイムトラベルの準備)
@@ -371,7 +373,7 @@ git revert [commit hash]
 ![03_Revert_GitRevert.png](img/03_Revert_GitRevert.png)
 
 ## 次のセクション
-[巻き戻す - 03_Revert.md](03_Revert.md) へ 💪
+[Git CLI カンニングペーパー - 04_CheatSheet.md](04_CheatSheet.md)
 
 ## 講義ガイド一覧 <!-- omit in toc -->
 [README.md](README.md) ⚙️
