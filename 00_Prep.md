@@ -59,7 +59,7 @@ _🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
 1. 最後に, `Done` (完了) ボタンをクリックします
 
 これがステップ2のセクションを案内するgifです
-* ![GitHub_Settings_TwoFactor.gif](./assets/GitHub_Settings_TwoFactor.gif)
+* ![GitHub_Settings_TwoFactor.gif](./img/GitHub_Settings_TwoFactor.gif)
 
 #### ドキュメンテーション <!-- omit in toc -->
 * GitHub ドキュメンテーション: [2 要素認証を設定する](https://help.github.com/ja/github/authenticating-to-github/configuring-two-factor-authentication)
@@ -77,7 +77,7 @@ Visual Studio Codeダウンロードリンク:
     * Mac: `Command` + `Shift` + `P`
     * Windows: `Ctrl` + `Shift` + `P`
 1. `shell` をタイプして `Shell Command: Install 'code' command in PATH` オプションを選択します
-    * ![VSCode_shell_command.png](assets/VSCode_shell_command.png)
+    * ![VSCode_shell_command.png](img/VSCode_shell_command.png)
 1. ターミナルを再起動します
 1. ターミナルで,  `code .`と入力して, VSCodeで現在のフォルダーを開きます
     * Mac: [ターミナル](https://support.apple.com/ja-jp/guide/terminal/welcome/mac) を使う
@@ -147,13 +147,13 @@ Visual Studio Codeダウンロードリンク:
 
   |                                                            |                                                            |
   | ---------------------------------------------------------- | ---------------------------------------------------------- |
-  | ![windows_git_step_1.png](assets/windows_git_step_1.png)   | ![windows_git_step_2.png](assets/windows_git_step_2.png)   |
-  | ![windows_git_step_3.png](assets/windows_git_step_3.png)   | ![windows_git_step_4.png](assets/windows_git_step_4.png)   |
-  | ![windows_git_step_5.png](assets/windows_git_step_5.png)   | ![windows_git_step_6.png](assets/windows_git_step_6.png)   |
-  | ![windows_git_step_7.png](assets/windows_git_step_7.png)   | ![windows_git_step_8.png](assets/windows_git_step_8.png)   |
-  | ![windows_git_step_9.png](assets/windows_git_step_9.png)   | ![windows_git_step_10.png](assets/windows_git_step_10.png) |
-  | ![windows_git_step_11.png](assets/windows_git_step_11.png) | ![windows_git_step_12.png](assets/windows_git_step_12.png) |
-  | ![windows_git_step_13.png](assets/windows_git_step_13.png) | ![windows_git_step_14.png](assets/windows_git_step_14.png) |
+  | ![windows_git_step_1.png](img/windows_git_step_1.png)   | ![windows_git_step_2.png](img/windows_git_step_2.png)   |
+  | ![windows_git_step_3.png](img/windows_git_step_3.png)   | ![windows_git_step_4.png](img/windows_git_step_4.png)   |
+  | ![windows_git_step_5.png](img/windows_git_step_5.png)   | ![windows_git_step_6.png](img/windows_git_step_6.png)   |
+  | ![windows_git_step_7.png](img/windows_git_step_7.png)   | ![windows_git_step_8.png](img/windows_git_step_8.png)   |
+  | ![windows_git_step_9.png](img/windows_git_step_9.png)   | ![windows_git_step_10.png](img/windows_git_step_10.png) |
+  | ![windows_git_step_11.png](img/windows_git_step_11.png) | ![windows_git_step_12.png](img/windows_git_step_12.png) |
+  | ![windows_git_step_13.png](img/windows_git_step_13.png) | ![windows_git_step_14.png](img/windows_git_step_14.png) |
 
 #### これで, Git をインストールする準備が整いました <!-- omit in toc -->
 次のセクションは [GitHub Desktop App](#github-desktop-app) です
@@ -169,9 +169,9 @@ Visual Studio Codeダウンロードリンク:
 
   |         |                                                      |         |                                                      |
   | ------- | ---------------------------------------------------- | ------- | ---------------------------------------------------- |
-  | ステップ 1 | ![GitHubDesktop_1.png](./assets/GitHubDesktop_1.png) | ステップ 2 | ![GitHubDesktop_2.png](./assets/GitHubDesktop_2.png) |
-  | ステップ 3 | ![GitHubDesktop_3.png](./assets/GitHubDesktop_3.png) | ステップ 4 | ![GitHubDesktop_4.png](./assets/GitHubDesktop_4.png) |
-  | ステップ 5 | ![GitHubDesktop_5.png](./assets/GitHubDesktop_5.png) | ステップ 6 | ![GitHubDesktop_6.png](./assets/GitHubDesktop_6.png) |
+  | ステップ 1 | ![GitHubDesktop_1.png](./img/GitHubDesktop_1.png) | ステップ 2 | ![GitHubDesktop_2.png](./img/GitHubDesktop_2.png) |
+  | ステップ 3 | ![GitHubDesktop_3.png](./img/GitHubDesktop_3.png) | ステップ 4 | ![GitHubDesktop_4.png](./img/GitHubDesktop_4.png) |
+  | ステップ 5 | ![GitHubDesktop_5.png](./img/GitHubDesktop_5.png) | ステップ 6 | ![GitHubDesktop_6.png](./img/GitHubDesktop_6.png) |
 
 GitHub デスクトップアプリのドキュメント:
 * English: [GitHub Desktop - GitHub Docs](https://docs.github.com/en/desktop)

@@ -89,7 +89,7 @@
 2. ブランチが1つだけかどうかを確認する.
     * github.com/`UserName`/learning_js/branches
 3. `develop` ブランチがあれば[ブランチを削除](https://docs.github.com/ja/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
-    * ![03_Revert_DeleteBranch](assets/03_Revert_DeleteBranch.png)
+    * ![03_Revert_DeleteBranch](img/03_Revert_DeleteBranch.png)
 
 ---
 
@@ -171,10 +171,10 @@ git push origin timeline
 ```
 
 ### GitHub - timeline branch
-![03_Revert_timelineBranch](assets/03_Revert_timelineBranch.png)
+![03_Revert_timelineBranch](img/03_Revert_timelineBranch.png)
 
 ### GitHub - timeline's commits
-![03_Revert_timelineBranch_Commits](assets/03_Revert_timelineBranch_Commits.png)
+![03_Revert_timelineBranch_Commits](img/03_Revert_timelineBranch_Commits.png)
 
 
 ## 過去を訪ねる
@@ -310,7 +310,7 @@ To https://github.com/ahandsel/learning_js_3.git
    f0c82a0..53a0f3e  timeline -> timeline
 ```
 
-![03_Revert_10.png](assets/03_Revert_10.png)
+![03_Revert_10.png](img/03_Revert_10.png)
 
 `git log --oneline`
 
@@ -368,7 +368,7 @@ git revert [commit hash]
 | これはすべてをクリーンアップします.                               | コミットは削除されません.                       |
 | ただし, 削除されたコミットの履歴は失われます.                     | 公開/共有リポジトリに使用                       |
 
-![03_Revert_GitRevert.png](assets/03_Revert_GitRevert.png)
+![03_Revert_GitRevert.png](img/03_Revert_GitRevert.png)
 
 ## 次のセクション
 [巻き戻す - 03_Revert.md](03_Revert.md) へ 💪

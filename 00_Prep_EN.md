@@ -56,7 +56,7 @@ Check out unsplash.com for free images to use for your profile pic:
 5. Finally, click the `Done` button
 
 Here is a gif that goes over Step 2:  
-* ![GitHub_Settings_TwoFactor.gif](./assets/GitHub_Settings_TwoFactor.gif)
+* ![GitHub_Settings_TwoFactor.gif](./img/GitHub_Settings_TwoFactor.gif)
 
 ### Resources <!-- omit in toc -->
 * GitHub Help Doc: [Configuring two-factor authentication - GitHub Docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)
@@ -74,7 +74,7 @@ Setup the ability to open VS Code from the command line:
     * Mac: `Command` + `Shift` + `P`
     * Windows: `Ctrl` + `Shift` + `P`
 1. Type `shell` and select the `Shell Command: Install 'code' command in PATH` option
-    * ![VSCode_shell_command.png](assets/VSCode_shell_command.png)
+    * ![VSCode_shell_command.png](img/VSCode_shell_command.png)
 1. Restart the Terminal
 1. In the Terminal, type `code .` to open the current folder in VS Code
 
@@ -141,13 +141,13 @@ The non-default settings are highlighted.
 
   |                                                            |                                                            |
   | ---------------------------------------------------------- | ---------------------------------------------------------- |
-  | ![windows_git_step_1.png](assets/windows_git_step_1.png)   | ![windows_git_step_2.png](assets/windows_git_step_2.png)   |
-  | ![windows_git_step_3.png](assets/windows_git_step_3.png)   | ![windows_git_step_4.png](assets/windows_git_step_4.png)   |
-  | ![windows_git_step_5.png](assets/windows_git_step_5.png)   | ![windows_git_step_6.png](assets/windows_git_step_6.png)   |
-  | ![windows_git_step_7.png](assets/windows_git_step_7.png)   | ![windows_git_step_8.png](assets/windows_git_step_8.png)   |
-  | ![windows_git_step_9.png](assets/windows_git_step_9.png)   | ![windows_git_step_10.png](assets/windows_git_step_10.png) |
-  | ![windows_git_step_11.png](assets/windows_git_step_11.png) | ![windows_git_step_12.png](assets/windows_git_step_12.png) |
-  | ![windows_git_step_13.png](assets/windows_git_step_13.png) | ![windows_git_step_14.png](assets/windows_git_step_14.png) |
+  | ![windows_git_step_1.png](img/windows_git_step_1.png)   | ![windows_git_step_2.png](img/windows_git_step_2.png)   |
+  | ![windows_git_step_3.png](img/windows_git_step_3.png)   | ![windows_git_step_4.png](img/windows_git_step_4.png)   |
+  | ![windows_git_step_5.png](img/windows_git_step_5.png)   | ![windows_git_step_6.png](img/windows_git_step_6.png)   |
+  | ![windows_git_step_7.png](img/windows_git_step_7.png)   | ![windows_git_step_8.png](img/windows_git_step_8.png)   |
+  | ![windows_git_step_9.png](img/windows_git_step_9.png)   | ![windows_git_step_10.png](img/windows_git_step_10.png) |
+  | ![windows_git_step_11.png](img/windows_git_step_11.png) | ![windows_git_step_12.png](img/windows_git_step_12.png) |
+  | ![windows_git_step_13.png](img/windows_git_step_13.png) | ![windows_git_step_14.png](img/windows_git_step_14.png) |
 
 #### Now you are ready! <!-- omit in toc -->
 Next section is [GitHub Desktop App](#github-desktop-app)!
@@ -163,9 +163,9 @@ Next section is [GitHub Desktop App](#github-desktop-app)!
 
   |         |                                                      |         |                                                      |
   | ------- | ---------------------------------------------------- | ------- | ---------------------------------------------------- |
-  | Step 1 | ![GitHubDesktop_1.png](./assets/GitHubDesktop_1.png) | Step 2 | ![GitHubDesktop_2.png](./assets/GitHubDesktop_2.png) |
-  | Step 3 | ![GitHubDesktop_3.png](./assets/GitHubDesktop_3.png) | Step 4 | ![GitHubDesktop_4.png](./assets/GitHubDesktop_4.png) |
-  | Step 5 | ![GitHubDesktop_5.png](./assets/GitHubDesktop_5.png) | Step 6 | ![GitHubDesktop_6.png](./assets/GitHubDesktop_6.png) |
+  | Step 1 | ![GitHubDesktop_1.png](./img/GitHubDesktop_1.png) | Step 2 | ![GitHubDesktop_2.png](./img/GitHubDesktop_2.png) |
+  | Step 3 | ![GitHubDesktop_3.png](./img/GitHubDesktop_3.png) | Step 4 | ![GitHubDesktop_4.png](./img/GitHubDesktop_4.png) |
+  | Step 5 | ![GitHubDesktop_5.png](./img/GitHubDesktop_5.png) | Step 6 | ![GitHubDesktop_6.png](./img/GitHubDesktop_6.png) |
 
 GitHub Desktop App's documentation:
 * English: [GitHub Desktop - GitHub Docs](https://docs.github.com/en/desktop)

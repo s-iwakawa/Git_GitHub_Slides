@@ -23,7 +23,7 @@ Windows 上に Linux ディストリビューションをインストールす�
 
 **管理者として** PowerShell を開き、以下を実行します。
 
-![Open PowerShell As Admin in Japanese](assets/00_Prep_Windows_PowerShell.png)
+![Open PowerShell As Admin in Japanese](img/00_Prep_Windows_PowerShell.png)
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -37,7 +37,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 * Windows 10 Version1709 (OS build16299) 以降である必要があります。
 * Windows OS 確認し方
   * `Start` ボタン > `Settings` > `Update & Security` > `Windows Update`
-  * ![Windows_OS_Build.png](assets/Windows_OS_Build.png)
+  * ![Windows_OS_Build.png](img/Windows_OS_Build.png)
 
 
 ### Step 3: 仮想マシンの機能を有効にする
@@ -112,7 +112,7 @@ Ubuntu ウインドウの上タブの部分で右クリックします．
 | English Settings                                                                                               | 日本語 設定                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Ubuntu の Properties > `Options` > `Edit Options` <br> `Use Ctrl+Shift+C/V as Copy/Paste` プションを有効にする | Ubuntu の `プロパティ` > `オプション` > `編集オプション` <br> `Ctrl+Shift+C/V をコピー/貼り付けとして使用する` プションを有効にする |
-| ![Ubuntu Setting English](assets/00_Prep_wsl_copy-paste-English.png)                                           | ![Ubuntu Setting JP](assets/00_Prep_wsl_copy-paste-JP.png)                                                                          |
+| ![Ubuntu Setting English](img/00_Prep_wsl_copy-paste-English.png)                                           | ![Ubuntu Setting JP](img/00_Prep_wsl_copy-paste-JP.png)                                                                          |
 
 ---
 
@@ -163,7 +163,7 @@ cd
 
 ## WSL & VS Code
 1. [Remote - WSL VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)をインストール
-   * ![Remote_WSL.png](assets/Remote_WSL.png)
+   * ![Remote_WSL.png](img/Remote_WSL.png)
 
 2. VSコード設定に移動して、`git.path` オブジェクトを変更します。
    * VS Code > File > Preferences > Setting
@@ -240,7 +240,7 @@ Windows ユーザー名として `a01234`, Ubuntu ユーザー名として `PAND
    * 公開キー (public key) を貼り付けます
      * `Add SSH key` ボタン
 
-![Gif_GitHub_SSH_Setup](assets/Gif_GitHub_SSH_Setup.gif)
+![Gif_GitHub_SSH_Setup](img/Gif_GitHub_SSH_Setup.gif)
 
 ## 設定を確認
 
@@ -280,7 +280,7 @@ git clone https://github.com/.../a.git
 git clone git@github.com:.../a.git
 ```
 
-![Gif_GitHub_SSH_Download](assets/Gif_GitHub_SSH_Download.gif)
+![Gif_GitHub_SSH_Download](img/Gif_GitHub_SSH_Download.gif)
 
 ## これで、Git をインストールする準備が整いました
 [Set Up Git](#set-up-git) セクションまでスキップして、プロセスを完了してください!

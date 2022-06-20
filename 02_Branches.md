@@ -141,7 +141,7 @@ Switched to a new branch 'develop'
 
 |                                                |                                                                    |                                                                      |
 | ---------------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| ![Gif_GitHub_Demo](assets/Gif_GitHub_Demo.gif) | ![02_Branches_GitHubNetwork](assets/02_Branches_GitHubNetwork.png) | ![02_Branches_NetworkExample](assets/02_Branches_NetworkExample.png) |
+| ![Gif_GitHub_Demo](img/Gif_GitHub_Demo.gif) | ![02_Branches_GitHubNetwork](img/02_Branches_GitHubNetwork.png) | ![02_Branches_NetworkExample](img/02_Branches_NetworkExample.png) |
 
 ---
 
@@ -153,11 +153,11 @@ Switched to a new branch 'develop'
 `develop` ブランチを `main` ブランチにマージするために, GitHub で `Pull request` を作成します.
 * 変更を確認し, `Pull Request` をマージします.
 
-![Gif_GitHub_Dojo_PullRequest](assets/Gif_GitHub_Dojo_PullRequest.gif)
+![Gif_GitHub_Dojo_PullRequest](img/Gif_GitHub_Dojo_PullRequest.gif)
 
 `main` ブランチに2つの新しいファイルが表示されました！
 
-![Example_Pull_Request](assets/Example_Pull_Request.png)
+![Example_Pull_Request](img/Example_Pull_Request.png)
 
 ## GitHub repo から Local repo への更新
 
@@ -236,7 +236,7 @@ git branch
   * 各ハンズオンとコンセプトセクションをブランチにすることができます.
   * それぞれを同時に開発できます.
 
-![02_Branches_GitBranches](assets/02_Branches_GitBranches.png)
+![02_Branches_GitBranches](img/02_Branches_GitBranches.png)
 
 [Git - ブランチとは](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF)
 
@@ -252,7 +252,7 @@ git branch
 
 開発が完了したら, ブランチをマージします！
 
-![02_Branches_Web](assets/02_Branches_Web.png)
+![02_Branches_Web](img/02_Branches_Web.png)
 
 ## Git Push vs Pull - Teamwork
 
@@ -262,7 +262,7 @@ git branch
 | 「プッシュ」は, ターゲットリポジトリに変更を強制します.                             | 「プル」はターゲットリポジトリから変更を取得します                                        |
 | `[あなたのコード] ⟾ プッシュ ⟾ [ターゲット]`                                        | `[あなたのコード] ⏎ プル ⏎ [ターゲット]`                                                  |
 | 「プッシュリクエスト」は, 変更をプッシュするように要求するターゲットリポジトリです. | 「プルリクエスト」とは, 変更を取得するためにターゲットリポジトリをリクエストすることです. |
-| ![02_Branches_Push](assets/02_Branches_Push.png)                                    | ![02_Branches_Pull](assets/02_Branches_Pull.png)                                          |
+| ![02_Branches_Push](img/02_Branches_Push.png)                                    | ![02_Branches_Pull](img/02_Branches_Pull.png)                                          |
 
 ## Hands-on C Review
 
@@ -278,7 +278,7 @@ git branch
 
 [Understanding the GitHub flow · GitHub Guides](https://guides.github.com/introduction/flow/)
 
-![02_Branches_GitHubWorkflow.png](assets/02_Branches_GitHubWorkflow.png)
+![02_Branches_GitHubWorkflow.png](img/02_Branches_GitHubWorkflow.png)
 
 | #   | Step                  | Notes                                                                                                                                  |
 | --- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -291,7 +291,7 @@ git branch
 
 ### Detailed Overview of the GitHub Workflow
 
-![02_Branches_GitHubWorkflow_Overview](assets/02_Branches_GitHubWorkflow_Overview.png)
+![02_Branches_GitHubWorkflow_Overview](img/02_Branches_GitHubWorkflow_Overview.png)
 
 [Git Common-Flow 1.0.0-rc.5 - Git Common Flow](https://commonflow.org/spec/1.0.0-rc.5.html)
 
@@ -301,7 +301,7 @@ git branch
 
 ### GitHub Repository
 
-![02_Branches_GitHub_Bar_Code](assets/02_Branches_GitHub_Bar_Code.png)
+![02_Branches_GitHub_Bar_Code](img/02_Branches_GitHub_Bar_Code.png)
 
 GitHub Repository - Code
 * コードやドキュメントなど, プロジェクトに関連するすべてのファイルを保持するコンテナです.
@@ -312,14 +312,14 @@ README.md
 
 ### GitHub Issues
 
-![02_Branches_GitHub_Bar_Issues](assets/02_Branches_GitHub_Bar_Issues.png)
+![02_Branches_GitHub_Bar_Issues](img/02_Branches_GitHub_Bar_Issues.png)
 
 * ユーザーがリポジトリの内容に関して議論する場所
 * 課題をユーザーに割り当て, ラベルを追加して読みやすくすることができます
 
 ### GitHub Pull Request
 
-![02_Branches_GitHub_Bar_PullRequest](assets/02_Branches_GitHub_Bar_PullRequest.png)
+![02_Branches_GitHub_Bar_PullRequest](img/02_Branches_GitHub_Bar_PullRequest.png)
 
 * ユーザーがリポジトリに変更を加えたいときに使われます
 * 例: README\.mdファイルを新しく追加したい時

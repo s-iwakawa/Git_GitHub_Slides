@@ -43,7 +43,7 @@ A Save Point in a Game 📌
 
   | Google Docs                                                  | Kintone                                                |
   | ------------------------------------------------------------ | ------------------------------------------------------ |
-  | ![Google Doc Version History](assets/01_Start_GoogleDoc.png) | ![Kintone Record History](assets/01_Start_Kintone.png) |
+  | ![Google Doc Version History](img/01_Start_GoogleDoc.png) | ![Kintone Record History](img/01_Start_Kintone.png) |
 
 ## What is GitHub?
 
@@ -55,7 +55,7 @@ A Save Point in a Game 📌
 
   |                                                       |                                                  |
   | ----------------------------------------------------- | ------------------------------------------------ |
-  | ![New GitHub Account](assets/00_Start_GitHub_New.png) | ![New Repo](assets/00_Start_GitHub_Repo_New.png) |
+  | ![New GitHub Account](img/00_Start_GitHub_New.png) | ![New Repo](img/00_Start_GitHub_Repo_New.png) |
 
 ### GitHub Example - Apple
 Apple has released a set of tools and resources for app developers such as password managers to help them generate strong passwords for free.
@@ -224,7 +224,7 @@ nothing to commit, working tree clean
 
 READMEでリポジトリを初期化しないでください
 
-![Gif_GitHub_Repo_Demo](assets/Gif_GitHub_Repo_Demo.gif)
+![Gif_GitHub_Repo_Demo](img/Gif_GitHub_Repo_Demo.gif)
 
 ### Local Git --> GitHub
 
@@ -308,7 +308,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 * `staging area` (ステージングステージング)
 * `repository` (リポジトリ)
 
-![01_Start_Git_Stages](assets/01_Start_Git_Stages.png)
+![01_Start_Git_Stages](img/01_Start_Git_Stages.png)
 
 |       |                                  |
 | :---: | :------------------------------: |
