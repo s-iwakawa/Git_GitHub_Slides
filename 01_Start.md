@@ -1,4 +1,4 @@
-# Git, Gi? - 基本と最初のレポ
+# Git, GitHubとは？ - 基本と最初のレポ
 
 _🇺🇸 English version: [01_Start_EN.md](01_Start_EN.md)_
 
