@@ -139,8 +139,8 @@ Next section is [GitHub Desktop App](#github-desktop-app)!
 #### Screenshots of the Installation Wizard settings <!-- omit in toc -->
 The non-default settings are highlighted.
 
-  |                                                            |                                                            |
-  | ---------------------------------------------------------- | ---------------------------------------------------------- |
+  |                                                         |                                                         |
+  | ------------------------------------------------------- | ------------------------------------------------------- |
   | ![windows_git_step_1.png](img/windows_git_step_1.png)   | ![windows_git_step_2.png](img/windows_git_step_2.png)   |
   | ![windows_git_step_3.png](img/windows_git_step_3.png)   | ![windows_git_step_4.png](img/windows_git_step_4.png)   |
   | ![windows_git_step_5.png](img/windows_git_step_5.png)   | ![windows_git_step_6.png](img/windows_git_step_6.png)   |
@@ -161,8 +161,8 @@ Next section is [GitHub Desktop App](#github-desktop-app)!
 1. A browser window will launch
 1. Log into your GitHub.com account by following the screenshots below:
 
-  |         |                                                      |         |                                                      |
-  | ------- | ---------------------------------------------------- | ------- | ---------------------------------------------------- |
+  |        |                                                   |        |                                                   |
+  | ------ | ------------------------------------------------- | ------ | ------------------------------------------------- |
   | Step 1 | ![GitHubDesktop_1.png](./img/GitHubDesktop_1.png) | Step 2 | ![GitHubDesktop_2.png](./img/GitHubDesktop_2.png) |
   | Step 3 | ![GitHubDesktop_3.png](./img/GitHubDesktop_3.png) | Step 4 | ![GitHubDesktop_4.png](./img/GitHubDesktop_4.png) |
   | Step 5 | ![GitHubDesktop_5.png](./img/GitHubDesktop_5.png) | Step 6 | ![GitHubDesktop_6.png](./img/GitHubDesktop_6.png) |
@@ -233,3 +233,6 @@ To set up git for your computer:
 
 ## Next section - Basics and Settings
 Go to the [Basics & First Repo - 01_Start_EN.md](01_Start_EN.md) section 💪
+
+## List of Lecture Guides <!-- omit in toc -->
+[README_EN.md](README_EN.md) ⚙️
