@@ -22,8 +22,6 @@ This section introduces you to Git and GitHub and goes over setting up your firs
 * Started in 2005 as a tool to manage Linux kernel development
 * Free and open source distributed version control system
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-
 ## What is Version Control?
 History ⌛
 * Record changes made over time
@@ -148,8 +146,8 @@ Connect the Local Folder with GitHub
 
 `git status` command
 * Shows the **working directory** and **staging area**
-* `Changes to be committed`: See which files have changed
 * `Untracked files`: See which files are not being tracked by Git
+* `Changes to be committed`: See which files have changed
 
 We can see that README.md file needs to be tracked by Git.
 
@@ -161,8 +159,9 @@ git status
 On branch main
 No commits yet
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
- README.md
+    (use "git add <file>..." to include in what will be committed)
+    README.md
+
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
@@ -189,13 +188,13 @@ Changes to be committed:
  new file:   README.md
 ```
 
-### Gitリポジトリにファイルを追加
+### Gitrepo にファイルを追加
 
 `git commit -m "message"`
-* ファイル/フォルダをリポジトリに追加するcommand
+* ファイル/フォルダをrepo に追加するcommand
 * [Git - git-commit Documentation](https://git-scm.com/docs/git-commit)
 
-README.mdがリポジトリに追加されました!!
+README.mdがrepo に追加されました!!
 * `README.md` が `main` ブランチに追加されたことが分かります
 
 ```sh
@@ -215,14 +214,14 @@ On branch main
 nothing to commit, working tree clean
 ```
 
-### GitHub リポジトリを作成する
+### GitHub repo を作成する
 
-リポジトリを作成する
+repo を作成する
 * [github.com/new](https://github.com/new)
 
-`learning_js` という名前のリポジトリを作成します
+`learning_js` という name のrepo を作成します
 
-READMEでリポジトリを初期化しないでください
+READMEでrepo を初期化しないでください
 
 ![Gif_GitHub_Repo_Demo](img/Gif_GitHub_Repo_Demo.gif)
 
@@ -232,8 +231,8 @@ repository を `push` しましょう！
 GitHub の `Clone or download` ボタンをクリックし, HTTPS リンクをコピーして URL を取得します
 
 `git remote add origin <link>`
-* ローカルリポジトリを GitHub のリモートリポジトリに接続します
-* `git remote` はリモートリポジトリを管理するcommandです
+* ローカルrepo を GitHub のリモートrepo に接続します
+* `git remote` はリモートrepo を管理するcommandです
 * [Git - git-remote Documentation](https://git-scm.com/docs/git-remote#_name)
 
 ```sh
@@ -258,9 +257,9 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
 
 #### デバッグ
-ローカルと GitHub の間で同期する最初のリポジトリを設定するときに, ログイン問題が発生する可能性があります。
+ローカルと GitHub の間で同期する最初のrepo を設定するときに, ログイン問題が発生する可能性があります。
 
-1. リモートリポジトリ設定を削除
+1. リモートrepo 設定を削除
 
     ```sh
     git remote remove origin
@@ -277,12 +276,12 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
     git push -u origin main
     ```
 
-4. Github.com のリポジトリをチェックして, プッシュが機能したことを確認します。
+4. Github.com のrepo をチェックして, プッシュが機能したことを確認します。
     * `https://github.com/`Your_GitHub_UserName`/learning_js.git`
 
 
 #### Documentation <!-- omit in toc -->
-* [リモートリポジトリを管理する - GitHub Docs](https://docs.github.com/ja/github/getting-started-with-github/getting-started-with-git/managing-remote-repositories)
+* [リモートrepo を管理する - GitHub Docs](https://docs.github.com/ja/github/getting-started-with-github/getting-started-with-git/managing-remote-repositories)
 * [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
 * [Git - git-push Documentation](https://git-scm.com/docs/git-push)
 
@@ -290,7 +289,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 
 ### Hands-on A が完了しました
 
-| Git を初期化する                        | GitHub を設定する                        | ローカルリポジトリを作成してプッシュする |
+| Git を初期化する                        | GitHub を設定する                        | ローカルrepo を作成してプッシュする |
 | --------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | `git init` <br> `git remote add origin` | [github.com/new](https://github.com/new) | `git status` <br> `git commit -m`        |
 
@@ -306,7 +305,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 ファイル, フォルダの変更が保存される3つのスペースがあります:
 * `working directory` (作業ディレクトリ)
 * `staging area` (ステージングステージング)
-* `repository` (リポジトリ)
+* `repository` (repo )
 
 ![01_Start_Git_Stages](img/01_Start_Git_Stages.png)
 
@@ -339,9 +338,9 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 * 作業ディレクトリからステージングエリアへ追加するcommand
 
 `staging area` (ステージングステージング) 📂
-* 作業ディレクトリとリポジトリの間のバッファ用スペース
+* 作業ディレクトリとrepo の間のバッファ用スペース
 * 以前は「インデックス」と呼ばれていました
-* ある特定の変更のみを追加し, まとめてリポジトリに追加する準備を行うことができます
+* ある特定の変更のみを追加し, まとめてrepo に追加する準備を行うことができます
 
 ---
 
@@ -373,14 +372,14 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 |       | [ remote repository (GitHub) 🌐 ] |
 
 `git commit` 💾
-* リポジトリへ変更を記録するcommand
+* repo へ変更を記録するcommand
 * 変更を保存したいファイルがステージングエリアに配置されたら, `git commit` commandを使用します
 * ボスを倒してゲームの進行状況を保存したいときに使用するイメージです
 * コミットごとにどんな変更を記録するのかを把握するためのコメントを残します
 
 `repository` 🗄️
-* Git リポジトリは, プロジェクト内の `.git` フォルダで管理されています
-* リポジトリは, プロジェクトの変更を追跡できます。
+* Git repo は, プロジェクト内の `.git` フォルダで管理されています
+* repo は, プロジェクトの変更を追跡できます。
 
 #### Git フォルダーの中身は何ですか? 🤔
 
@@ -427,19 +426,19 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 
 `git push <remote> <branch>` 🔄
 * Local Repo --> Remote Repo
-* ローカルリポジトリをリモートリポジトリにアップロードするcommandです
+* ローカルrepo をリモートrepo にアップロードするcommandです
 * コミットをエクスポートします
 
 `remote repository` (GitHub) 🌐
-* GitHub のサーバー上のリポジトリであり, コードを他のユーザーが確認できるようにします
+* GitHub のサーバー上のrepo であり, コードを他のユーザーが確認できるようにします
 
 ---
 
-### リモートリポジトリの操作
+### リモートrepo の操作
 
 `git remote add origin <link>`
-* ローカルマシンにリモートリポジトリのクローンを作成すると, Git によって `alias` が作成されます。
-* `origin` はリモートリポジトリのURLのニックネームのようなものです
+* ローカルマシンにリモートrepo のクローンを作成すると, Git によって `alias` が作成されます。
+* `origin` はリモートrepo のURLのニックネームのようなものです
 * 最も一般的な `alias` は 「 `origin` 」 と呼ばれます。
 * 次のcommandはどちらも同じ内容を実行します
 
@@ -453,10 +452,10 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
    ```
 
 `git remote`
-* ローカルとリモートのリポジトリ間の接続を管理します
+* ローカルとリモートのrepo 間の接続を管理します
 
 `git remote --verbose`
-* Gitが保存しているURLと, そのリモートリポジトリへの読み書き時に使用できるエイリアス (ニックネーム)を一覧表示します。
+* Gitが保存しているURLと, そのリモートrepo への読み書き時に使用できるエイリアス (ニックネーム)を一覧表示します。
 
     ```sh
     git remote --verbose
@@ -478,11 +477,11 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 `git push <remote> <branch>` 🔄
 * Local Repo --> Remote Repo | コミットをエクスポートします
 * `git fetch` の対応
-  * ローカルリポジトリへのインポートコミット
+  * ローカルrepo へのインポートコミット
 * ⚠️ 注: プッシュすると, 変更が上書きされる可能性があります。
 
-`git push` commandは, 最後のプッシュまたはクローン以降に変更されていないリモートリポジトリに対してのみ機能します
-* つまり, リモートリポジトリを変更した人は他にいません
+`git push` commandは, 最後のプッシュまたはクローン以降に変更されていないリモートrepo に対してのみ機能します
+* つまり, リモートrepo を変更した人は他にいません
 * あなたと別のクローンが同時にあなたの前に上流にプッシュした場合, そのプッシュは正しく拒否されます。
 * 最初に彼らの仕事をフェッチしてプッシュに含める必要があります
 
@@ -512,10 +511,10 @@ Git での保存
 | [ remote repository (GitHub) 🌐 ] |   Spotify    |
 
 `git remote`  
-ローカルとリモートのリポジトリ間の接続を管理するcommand
+ローカルとリモートのrepo 間の接続を管理するcommand
 
 `git push`  
-ローカルリポジトリをリモートリポジトリにアップロードするcommand
+ローカルrepo をリモートrepo にアップロードするcommand
 
 ## Quiz Time
 
