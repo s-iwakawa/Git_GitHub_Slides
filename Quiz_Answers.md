@@ -15,3 +15,12 @@
     * コードの開発, テスト, 公開バージョンなどを分離するため.
 1. `Pull Request` (プルリクエスト) とは？
     * 変更を取得するためにターゲットリポジトリをリクエストすることです.
+
+...
+
+1. What does the `git checkout -b develop` command do?
+    * A command to create a new branch and go to that branch.
+1. Why use a branch?
+    * To separate code development, testing, public versions, etc.
+1. `Pull Request`What is (pull request)?
+    * Requesting a target repository to get changes.
