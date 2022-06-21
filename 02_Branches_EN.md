@@ -365,14 +365,9 @@ Insight: Repository analysis tool
 
 ## Quiz time
 
-What does the `git checkout -b develop` command do?
-* A command to create a new branch and go to that branch.
-
-Why use a branch?
-* To separate code development, testing, public versions, etc.
-
-`Pull Request`What is (pull request)?
-* Requesting a target repository to get changes.
+* What does the `git checkout -b develop` command do?
+* Why use a branch?
+* What is a `Pull Request`?
 
 ## Next Section
 [Revert - 03_Revert_EN.md](03_Revert_EN.md)
