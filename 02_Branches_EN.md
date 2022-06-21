@@ -149,7 +149,7 @@ Go to the `Network graph` setting on your GitHub repo to see the changes you hav
 
 |                                                                                          |                                                                                                              |                                                                                                                |
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| ![Gif_GitHub_Demo](https://ahandsel.github.io/Git_GitHub_Slides/img/Gif_GitHub_Demo.gif) | ![02_Branches_GitHubNetwork](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_GitHubNetwork.png) | ![02_Branches_NetworkExample](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_NetworkExample.png) |
+| ![Gif_GitHub_Demo](./img/Gif_GitHub_Demo.gif) | ![02_Branches_GitHubNetwork](./img/02_Branches_GitHubNetwork.png) | ![02_Branches_NetworkExample](./img/02_Branches_NetworkExample.png) |
 
 ---
 
@@ -163,11 +163,11 @@ Go to the `Network graph` setting on your GitHub repo to see the changes you hav
 
 * Review your changes and `Pull Request`merge.
 
-![Gif_GitHub_Dojo_PullRequest](https://ahandsel.github.io/Git_GitHub_Slides/img/Gif_GitHub_Dojo_PullRequest.gif)
+![Gif_GitHub_Dojo_PullRequest](./img/Gif_GitHub_Dojo_PullRequest.gif)
 
 `main`You see two new files in your branch!
 
-![Example_Pull_Request](https://ahandsel.github.io/Git_GitHub_Slides/img/Example_Pull_Request.png)
+![Example_Pull_Request](./img/Example_Pull_Request.png)
 
 ## Update from GitHub repo to Local repo
 
@@ -274,7 +274,7 @@ When development is complete, merge the branches!
 | "Push" forces changes to the target repository.                                            | "Pull" gets changes from the target repository                                             |
 | `[あなたのコード] ⟾ プッシュ ⟾ [ターゲット]`                                               | `[あなたのコード] ⏎ プル ⏎ [ターゲット]`                                                   |
 | A "push request" is a target repository that requests you to push changes.                 | A "pull request" is to request the target repository to get changes.                       |
-| ![02_Branches_Push](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_Push.png) | ![02_Branches_Pull](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_Pull.png) |
+| ![02_Branches_Push](./img/02_Branches_Push.png) | ![02_Branches_Pull](./img/02_Branches_Pull.png) |
 
 ## Hands-on C Review
 
@@ -292,7 +292,7 @@ When development is complete, merge the branches!
 
 [Understanding the GitHub flow - GitHub Guides](https://guides.github.com/introduction/flow/)
 
-![02_Branches_GitHubWorkflow.png](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_GitHubWorkflow.png)
+![02_Branches_GitHubWorkflow.png](./img/02_Branches_GitHubWorkflow.png)
 
 | #                                                                                        | Step                  | Notes                                                                                            |
 | ---------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------ |
@@ -306,7 +306,7 @@ When development is complete, merge the branches!
 
 ### Detailed Overview of the GitHub Workflow
 
-![02_Branches_GitHubWorkflow_Overview](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_GitHubWorkflow_Overview.png)
+![02_Branches_GitHubWorkflow_Overview](./img/02_Branches_GitHubWorkflow_Overview.png)
 
 [Git Common-Flow 1.0.0-rc.5 --Git Common Flow](https://commonflow.org/spec/1.0.0-rc.5.html)
 
@@ -317,7 +317,7 @@ When development is complete, merge the branches!
 
 ### GitHub Repository
 
-![02_Branches_GitHub_Bar_Code](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_GitHub_Bar_Code.png)
+![02_Branches_GitHub_Bar_Code](./img/02_Branches_GitHub_Bar_Code.png)
 
 GitHub Repository --Code
 
@@ -328,14 +328,14 @@ GitHub Repository --Code
 
 ### GitHub Issues
 
-![02_Branches_GitHub_Bar_Issues](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_GitHub_Bar_Issues.png)
+![02_Branches_GitHub_Bar_Issues](./img/02_Branches_GitHub_Bar_Issues.png)
 
 * Where users discuss the contents of the repository
 * You can assign issues to users and add labels to make them easier to read.
 
 ### GitHub Pull Request
 
-![02_Branches_GitHub_Bar_PullRequest](https://ahandsel.github.io/Git_GitHub_Slides/img/02_Branches_GitHub_Bar_PullRequest.png)
+![02_Branches_GitHub_Bar_PullRequest](./img/02_Branches_GitHub_Bar_PullRequest.png)
 
 * Used when the user wants to make changes to the repository
 * Example: When you want to add a new README.md file
@@ -348,7 +348,7 @@ Wiki: Allows you to create and save related project documents
 
 Insight: Repository analysis tool
 
-* `Network`Graph: Visualize commits and branches in the timeline
+* `Network Graph`: Visualize commits and branches in the timeline
 * `Pulse`: Shows tasks in progress or completed
 
 ## GitHub parts
