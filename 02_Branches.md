@@ -6,10 +6,13 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 
 ## Overview
 * [Overview](#overview)
-* [Git Branch?](#git-branch)
+* [Git branch?](#git-branch)
+  * [`git branch`](#git-branch-1)
 * [新しいブランチを作成する](#新しいブランチを作成する)
-* [develop ブランチへの変更](#develop-ブランチへの変更)
-* [GitHubでの変更の確認](#githubでの変更の確認)
+  * [`git checkout -b <branch name>`](#git-checkout--b-branch-name)
+* [develop ブランチにファイルを追加します](#develop-ブランチにファイルを追加します)
+  * [GitHub Desktop Appで確認する](#github-desktop-appで確認する)
+* [GitHub での変更の確認](#github-での変更の確認)
 * [プルリクエストの作成とマージ](#プルリクエストの作成とマージ)
 * [GitHub repo から Local repo への更新](#github-repo-から-local-repo-への更新)
 * [Git Branch とは？](#git-branch-とは)
@@ -29,83 +32,78 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 * [クイズの時間](#クイズの時間)
 * [次のセクション](#次のセクション)
 
-## Git Branch?
-まず, learning_git リポジトリに戻ります
+## Git branch?
+1. まず, `learning_git` リポジトリに戻ります
 
-```sh
-~ % cd Documents/learning_git
-```
+    ```sh
+    cd Documents/learning_git
+    ```
 
-`git branch` と入力して, 現在のブランチと現在のブランチを確認します.
+2. `git branch` コマンドを使用して, リポジトリ内のすべてのブランチと現在使用しているブランチを確認します。
 
-`git branch`
+    ```sh
+    git branch
+
+    ...
+
+    * main
+    ```
+
+### `git branch`
 * [git-branch](http://git-scm.com/docs/git-branch)
 * ブランチ一覧を表示するコマンド
-* アスタリスク（\*）がついているブランチが現在のブランチです
-
-  ```sh
-  git branch
-  ```
-
-  ```sh
-  * main
-  ```
-
-リポジトリにはデフォルトで `main` ブランチが存在します.
+* アスタリスク（*）がついているブランチが現在のブランチです
+* デフォルトのブランチ名が `master` の場合は, 次のコマンドで変更します: `git config --global init.defaultBranch main`
 
 ## 新しいブランチを作成する
 
 まず, `develop` という名前のブランチを作成して移動しましょう．
 
-```sh
-git checkout -b develop
-```
+  ```sh
+  git checkout -b develop
 
-```terminal
-Switched to a new branch 'develop'
-```
+  ...
 
-`git checkout -b <branch name>`
-* リポジトリに新しいブランチを作成して、そのブランチに移動するコマンドです．
+  Switched to a new branch 'develop'
+  ```
+
+### `git checkout -b <branch name>`
+* リポジトリに新しいブランチを作成して, そのブランチに移動するコマンドです．
 * [git-checkout Doc](https://git-scm.com/docs/git-checkout)
 
+## develop ブランチにファイルを追加します
 
-## develop ブランチへの変更
+1. `develop` ブランチ上でファイルを作成します.
 
-`develop` ブランチ上でファイルを作成します.
+    ```sh
+    touch develop_file.md
+    ```
 
-  ```sh
-  touch develop_file.md
-  ```
+1. `git add` と `git commit` を実行して, ローカルリポジトリに保存します.
 
-`git add` と `git commit` を実行して, ローカルリポジトリに保存します.
+    ```sh
+    git add develop_file.md
+    git commit -m "develop only"
+    ```
 
-  ```sh
-  git add develop_file.md
-  ```
+    ```sh
+    [develop 4f98baf] develop only
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 develop_file.md
+    ```
 
-  ```sh
-  git commit -m "develop only"
-  ```
+1. `git status` を実行して, 変更が保存されたことを確認します.
 
-  ```sh
-  [develop 4f98baf] develop only
-  1 file changed, 0 insertions(+), 0 deletions(-)
-  create mode 100644 develop_file.md
-  ```
+    ```sh
+    git status
+    ```
 
-`git status` を実行して, 変更が保存されたことを確認します.
+    ```sh
+    On branch develop
+    nothing to commit, working tree clean
+    ```
 
-  ```sh
-  git status
-  ```
-
-  ```sh
-  On branch develop
-  nothing to commit, working tree clean
-  ```
-
-`git push` を実行して, GitHubリポジトリに変更をプッシュします.
+1. `git push` を実行して, GitHubリポジトリに変更をプッシュします.
 
   ```sh
   git push -u origin develop
@@ -129,17 +127,29 @@ Switched to a new branch 'develop'
   Branch 'develop' set up to track remote branch 'develop' from 'origin'.
   ```
 
+### GitHub Desktop Appで確認する
+GitHubデスクトップアプリで表示して変更を確認しましょう
+
+1. 次のコマンドでアプリを開きます:
+
+    ```shell
+    cd learning_git
+    github .
+    ```
+
+1. アプリが `Add Local Repository` 設定ページを開き, `Add Repository` ボタンをクリックします
+
+1. `History` タブをクリックして, 行った変更を確認します
+    * ![GitHub_Desk_Verify_1](./img/GitHub_Desk_Verify_1.png)
+
 ---
 
-## GitHubでの変更の確認
+## GitHub での変更の確認
 
-`develop` ブランチでのみ新しいファイルが追加されました
+GitHub リポジトリの `Network graph` [ネットワークグラフ] 設定に移動して, 行った変更を確認します
+* `https://github.com/USER/REPO/network`
+* 例: `https://github.com/ahandsel/Git_GitHub_Slides/network`
 
-`develop` ブランチに別のファイルを追加します
-
-次に, `Network graph` を表示します
-
-`https://github.com/USER/REPO/network`
 
 |                                                |                                                                    |                                                                      |
 | ---------------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------- |
@@ -271,7 +281,7 @@ git branch
 |                               |                                                                                           |
 | ----------------------------- | ----------------------------------------------------------------------------------------- |
 | `git checkout -b develop`     | ブランチを切り替えるコマンド                                                              |
-| ブランチを使う理由            | コードの開発、テスト、公開バージョンなどを分離する                                        |
+| ブランチを使う理由            | コードの開発, テスト, 公開バージョンなどを分離する                                        |
 | `Pull Requests` と `git pull` | 「プルリクエスト」とは, 変更を取得するためにターゲットリポジトリをリクエストすることです. |
 
 ---
@@ -347,14 +357,9 @@ Insight: リポジトリの分析ツール
 
 ## クイズの時間
 
-`git checkout -b develop` は何しますか？
-* 新しいブランチ（develop）を作成して、そのブランチに移動するコマンド.
-
-ブランチを使う理由は？
-* コードの開発、テスト、公開バージョンなどを分離するため.
-
-`Pull Request` (プルリクエスト) とは？
-* 変更を取得するためにターゲットリポジトリをリクエストすることです.
+1. `git checkout -b develop` は何しますか？
+1. ブランチを使う理由は？
+1. `Pull Request` (プルリクエスト) とは？
 
 ## 次のセクション
 [巻き戻す - 03_Revert.md](03_Revert.md)
