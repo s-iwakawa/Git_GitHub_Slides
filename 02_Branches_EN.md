@@ -137,7 +137,7 @@ Let's verify the changes by viewing it on the GitHub Desktop App
 
 2. App will open to a `Add Local Repository` setting page, click the `Add Repository` button
 
-3. Click `History` Tab to vew the changes you have made
+3. Click `History` Tab to view the changes you have made
     * ![GitHub_Desk_Verify_1](./img/GitHub_Desk_Verify_1.png)
 
 ---
@@ -324,7 +324,7 @@ GitHub Repository --Code
 
 * A container that holds all the files related to your project, such as code and documentation.
 * All files stored on GitHub are versioned with git
-* Repositories are often abbreviated as "Lipo" README.md
+* Repositories are often abbreviated as "repo"
 * It is a file to display the introduction of the project etc. displayed at the bottom of the repository.
 
 ### GitHub Issues
