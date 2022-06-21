@@ -29,7 +29,7 @@ Here are the steps to do in preparation for the lecture (in order):
   * [Add GitHub.com Login](#add-githubcom-login)
   * [Add GitHub Enterprise Login](#add-github-enterprise-login)
   * [Confirm GitHub Authentications were Successful](#confirm-github-authentications-were-successful)
-  * [Set `main` as default branch](#set-main-as-default-branch)
+  * [Default Branch - main](#default-branch---main)
 * [Next section - Basics and Settings](#next-section---basics-and-settings)
 
 ---
@@ -258,7 +258,11 @@ This is what you want to see:
     ✓ Token: *******************
   ```
 
-### Set `main` as default branch
+### Default Branch - main
+* `main` or `master` is set as the default branch name by git.
+* The past default is `master` but now it is best-practice to use `main` (given the meaning of the world _master_ 😅)
+
+Use the following command to set the default branch name to `main` for your computer.
 
 ```shell
 git config --global init.defaultBranch main
