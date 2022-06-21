@@ -26,6 +26,10 @@ Here are the steps to do in preparation for the lecture (in order):
   * [GitHub CLI for MacOS](#github-cli-for-macos)
   * [GitHub CLI for Windows](#github-cli-for-windows)
 * [Configure Git](#configure-git)
+  * [Add GitHub.com Login](#add-githubcom-login)
+  * [Add GitHub Enterprise Login](#add-github-enterprise-login)
+  * [Confirm GitHub Authentications were Successful](#confirm-github-authentications-were-successful)
+  * [Set `main` as default branch](#set-main-as-default-branch)
 * [Next section - Basics and Settings](#next-section---basics-and-settings)
 
 ---
@@ -208,13 +212,15 @@ Next section is [Configure Git](#configure-git)!
 ---
 
 ## Configure Git
+
+### Add GitHub.com Login
 We will use GitHub CLI's `gh auth login` command to configure the GitHub login
 
 Where to run the commands?
 * For Mac users: Use the [Terminal](https://support.apple.com/guide/terminal/welcome/mac) for both git commands (`git`) and GitHub CLI commands (`gh`)
 * For Windows users: Use the [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe) for both git commands (`git`) and GitHub CLI commands (`gh`)
 
-To set up git for your computer:
+Add GitHub.com login to your computer by going through the following steps:
 1. Run `gh auth login` command
 1. For `What account do you want to log into?` prompt, select `GitHub.com` option
 1. For `What is your preferred protocol for Git operations?` prompt, select `HTTPS` option
@@ -223,11 +229,40 @@ To set up git for your computer:
 1. A browser window will launch
 1. Enter the 9-character code to the GitHub website
 1. Click the `Authorize` button
-1. Confirm settings with the following command:
 
-    ```shell
-    git config --global --list
-    ```
+### Add GitHub Enterprise Login
+1. Run `gh auth login --hostname <hostname>` command
+    * Example hostname: `github.dev.ahandsel.co.jp`
+1. For `What is your preferred protocol for Git operations?` prompt, select `HTTPS` option
+1. For `Authenticate Git with your GitHub credentials? (Y/n)` prompt, type `y`
+1. Copy the 9-character code and hit `enter`
+1. A browser window will launch
+1. Enter the 9-character code to the GitHub website
+1. Click the `Authorize` button
+
+### Confirm GitHub Authentications were Successful
+Confirm settings with the following command: `gh auth status`
+
+This is what you want to see:
+
+  ```shell
+  ❯ gh auth status
+  github.com
+    ✓ Logged in to github.com as ahandsel (/Users/***/.config/gh/hosts.yml)
+    ✓ Git operations for github.com configured to use https protocol.
+    ✓ Token: *******************
+
+  github.dev.ahandsel.co.jp
+    ✓ Logged in to github.dev.ahandsel.co.jp as ahandsel (/Users/***/.config/gh/hosts.yml)
+    ✓ Git operations for github.dev.ahandsel.co.jp configured to use https protocol.
+    ✓ Token: *******************
+  ```
+
+### Set `main` as default branch
+
+```shell
+git config --global init.defaultBranch main
+```
 
 ---
 

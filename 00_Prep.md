@@ -28,6 +28,9 @@ _🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
   * [MacOS - GitHub CLI のインストール](#macos---github-cli-のインストール)
   * [Windows 10 - GitHub CLI のインストール](#windows-10---github-cli-のインストール)
 * [Git を設定する](#git-を設定する)
+  * [Add GitHub.com Login](#add-githubcom-login)
+  * [Add GitHub Enterprise Login](#add-github-enterprise-login)
+  * [GitHub認証が成功したことを確認する](#github認証が成功したことを確認する)
 * [次のセクション](#次のセクション)
 
 ---
@@ -215,6 +218,8 @@ GitHubコマンドライン (GitHub CLI)
 ---
 
 ## Git を設定する
+
+### Add GitHub.com Login
 GitHub CLI の `gh auth login` コマンドを使用して GitHub ログインを構成します
 
 git コマンド (`git`) と GitHub CLI コマンド (`gh`) はこちらを使って実行します:
@@ -230,11 +235,34 @@ git コマンド (`git`) と GitHub CLI コマンド (`gh`) はこちらを使�
 1. ブラウザウィンドウが起動します
 1. GitHub Webサイトに9文字のコードを入力します
 1. `Authorize` ボタンをクリックします
-1. 次のコマンドで設定を確認します。
 
-    ```shell
-    git config --global --list
-    ```
+### Add GitHub Enterprise Login
+1. `gh auth login --hostname <hostname>` コマンドを実行します
+    * ホスト名の例: `github.dev.ahandsel.co.jp`
+1. `What is your preferred protocol for Git operations?` プロンプトで, `HTTPS` オプションを選択します
+1. `Authenticate Git with your GitHub credentials? (Y/n)` プロンプトで, `y`と入力します
+1. 9文字のコードをコピーして, `enter` キーを押します
+1. ブラウザウィンドウが起動します
+1. GitHub Webサイトに9文字のコードを入力します
+1. `Authorize` ボタンをクリックします
+
+### GitHub認証が成功したことを確認する
+次のコマンドで設定を確認します: `gh auth status`
+
+これを見たら成功した証拠です:
+
+  ```shell
+  ❯ gh auth status
+  github.com
+    ✓ Logged in to github.com as ahandsel (/Users/***/.config/gh/hosts.yml)
+    ✓ Git operations for github.com configured to use https protocol.
+    ✓ Token: *******************
+
+  github.dev.ahandsel.co.jp
+    ✓ Logged in to github.dev.ahandsel.co.jp as ahandsel (/Users/***/.config/gh/hosts.yml)
+    ✓ Git operations for github.dev.ahandsel.co.jp configured to use https protocol.
+    ✓ Token: *******************
+  ```
 
 ---
 
