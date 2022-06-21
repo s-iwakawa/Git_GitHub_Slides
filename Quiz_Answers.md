@@ -2,11 +2,26 @@
 
 ## 01_Start.md
 1. Git と GitHub はどのように関係?  
-   * ヒント: `hub` とは, 活動またはネットワークの中心点です。
-2. `git add` と `git commit` のどちらを初め?
-   * ヒント: `commit` とは, 特定の行動（結婚など）を約束することです。
-3. `git push` コマンドは?
-   * ヒント: `git push` コマンドは `git fetch` コマンドの逆の行動を行います。
+    * GitHub は, みんなの Git を集めた __hub__ / コレクション の中心です．
+    * GitHub は人気のある __remote repo__ オプションです
+1. `git add` と `git commit` のどちらを初め?
+    * まず, `git add` を使用して, 個々の変更を集めます
+    * そして, `git commit` を使用して, 変更を包みます
+1. `git push` コマンドは?
+    * __commit__ をリモートリポジトリにアップロードするねは, `git push` を使用します
+    * リポジトリの最新バージョンを取得するねは, `git fetch` を使用します
+
+...
+
+1. How is Git & GitHub related?
+    * GitHub is the __hub__ or the collection of everyone's Git
+    * GitHub is a popular __remote repo__ option
+1. Which do you start with, `git add` or `git commit`?
+    * First, use `git add` to gather the individual changes
+    * Then, use `git commit` to bundle the changes
+1. What is the `git push` command?
+    * Use `git push` to upload the __commit__ to the remote repo
+    * Use `git fetch` to retrieve the latest version of the repo
 
 ## 02_Branches.md
 1. `git checkout -b develop` は何しますか？
