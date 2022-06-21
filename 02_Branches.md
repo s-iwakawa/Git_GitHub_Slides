@@ -6,8 +6,8 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 
 ## Overview
 * [Overview](#overview)
-* [Git branch?](#git-branch)
-  * [`git branch`](#git-branch-1)
+* [git branch コマンド](#git-branch-コマンド)
+  * [`git branch`](#git-branch)
 * [新しいブランチを作成する](#新しいブランチを作成する)
   * [`git checkout -b <branch name>`](#git-checkout--b-branch-name)
 * [develop ブランチにファイルを追加します](#develop-ブランチにファイルを追加します)
@@ -32,7 +32,9 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 * [クイズの時間](#クイズの時間)
 * [次のセクション](#次のセクション)
 
-## Git branch?
+## git branch コマンド
+_git branch command_
+
 1. まず, `learning_git` リポジトリに戻ります
 
     ```sh
@@ -57,6 +59,7 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
   * `git config --global init.defaultBranch main`
 
 ## 新しいブランチを作成する
+_Create a new branch_
 
 まず, `develop` という名前のブランチを作成して移動しましょう．
 
@@ -73,6 +76,7 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 * [git-checkout Doc](https://git-scm.com/docs/git-checkout)
 
 ## develop ブランチにファイルを追加します
+_Add a file to the develop branch_
 
 1. `develop` ブランチ上でファイルを作成します.
 
@@ -106,27 +110,27 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 
 1. `git push` を実行して, GitHubリポジトリに変更をプッシュします.
 
-  ```sh
-  git push -u origin develop
-  ```
+    ```sh
+    git push -u origin develop
+    ```
 
-  ```sh
-  Enumerating objects: 4, done.
-  Counting objects: 100% (4/4), done.
-  Delta compression using up to 4 threads
-  Compressing objects: 100% (2/2), done.
-  Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
-  Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-  remote: This repository moved. Please use the new location:
-  remote:   https://github.com/ahandsel/learning_git_3.git
-  remote:
-  remote: Create a pull request for 'develop' on GitHub by visiting:
-  remote:      https://github.com/ahandsel/learning_git_3/pull/new/develop
-  remote:
-  To https://github.com/ahandsel/learning_git_3.git
-  * [new branch]      develop -> develop
-  Branch 'develop' set up to track remote branch 'develop' from 'origin'.
-  ```
+    ```sh
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+    remote: This repository moved. Please use the new location:
+    remote:   https://github.com/ahandsel/learning_git_3.git
+    remote:
+    remote: Create a pull request for 'develop' on GitHub by visiting:
+    remote:      https://github.com/ahandsel/learning_git_3/pull/new/develop
+    remote:
+    To https://github.com/ahandsel/learning_git_3.git
+    * [new branch]      develop -> develop
+    Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+    ```
 
 ### GitHub Desktop Appで確認する
 GitHubデスクトップアプリで表示して変更を確認しましょう
@@ -146,6 +150,7 @@ GitHubデスクトップアプリで表示して変更を確認しましょう
 ---
 
 ## GitHub での変更の確認
+_See the changes on GitHub_
 
 GitHub リポジトリの `Network graph` [ネットワークグラフ] 設定に移動して, 行った変更を確認します
 * `https://github.com/USER/REPO/network`
@@ -159,6 +164,7 @@ GitHub リポジトリの `Network graph` [ネットワークグラフ] 設定�
 ---
 
 ## プルリクエストの作成とマージ
+_Create & Merge a Pull Request_
 
 `Pull Requests` で, 実際にファイルが変更される前に, 他のユーザーの変更などを確認できます.
 * コードレビューなどに使われます.
@@ -173,6 +179,7 @@ GitHub リポジトリの `Network graph` [ネットワークグラフ] 設定�
 ![Example_Pull_Request](img/Example_Pull_Request.png)
 
 ## GitHub repo から Local repo への更新
+_Update local repo from GitHub repo_
 
 `main` ブランチに移動しましょう.
 
@@ -188,7 +195,8 @@ git checkout main
     (use "git pull" to update your local branch)
 ```
 
-`git pull` コマンドを使用して対応します  
+`git pull` コマンドを使用して対応します
+
 `git pull origin main` で最新のリポジトリのバージョンを GitHub からローカルに pull します
 
 ```sh
@@ -196,20 +204,20 @@ git pull origin main
 ```
 
 ```sh
-  remote: Enumerating objects: 1, done.
-  remote: Counting objects: 100% (1/1), done.
-  remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
-  Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
-  From https://github.com/ahandsel/kintone_dojo
-  * branch            main     -> FETCH_HEAD
-    5f9f89b..1438ca5  main     -> origin/main
-  Updating d775d42..1438ca5
-  Fast-forward
-  2nd_file.md     | 0
-  develop_file.md | 0
-  2 files changed, 0 insertions(+), 0 deletions(-)
-  create mode 100644 2nd_file.md
-  create mode 100644 develop_file.md
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
+From https://github.com/ahandsel/kintone_dojo
+* branch            main     -> FETCH_HEAD
+  5f9f89b..1438ca5  main     -> origin/main
+Updating d775d42..1438ca5
+Fast-forward
+2nd_file.md     | 0
+develop_file.md | 0
+2 files changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 2nd_file.md
+create mode 100644 develop_file.md
 ```
 
 これで `main` ブランチと `develop` ブランチは同じ状態になりました.  
@@ -220,7 +228,7 @@ git branch -d develop
 ```
 
 ```sh
-  Deleted branch develop (was c6e6c83).
+Deleted branch develop (was c6e6c83).
 ```
 
 `git branch` コマンドで確認しましょう

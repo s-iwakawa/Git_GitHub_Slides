@@ -6,15 +6,15 @@ This section goes over Git branches and how to work with your first branch.
 
 ## Overview Overview
 * [Overview Overview](#overview-overview)
-* [Git branch?](#git-branch)
-  * [`git branch`](#git-branch-1)
+* [git branch command](#git-branch-command)
+  * [`git branch`](#git-branch)
 * [Create a new branch](#create-a-new-branch)
   * [`git checkout -b <branch name>`](#git-checkout--b-branch-name)
 * [Add a file to the develop branch](#add-a-file-to-the-develop-branch)
   * [Verify on GitHub Desktop App](#verify-on-github-desktop-app)
 * [See the changes on GitHub](#see-the-changes-on-github)
 * [Create & Merge a Pull Request](#create--merge-a-pull-request)
-* [Update from GitHub repo to Local repo](#update-from-github-repo-to-local-repo)
+* [Update local repo from GitHub repo](#update-local-repo-from-github-repo)
 * [What is Git Branch?](#what-is-git-branch)
   * [What is a branch?](#what-is-a-branch)
   * [Why use a branch?](#why-use-a-branch)
@@ -32,7 +32,7 @@ This section goes over Git branches and how to work with your first branch.
 * [Quiz time](#quiz-time)
 * [Next Section](#next-section)
 
-## Git branch?
+## git branch command
 1. First, go back to the `learning_git` repository
 
     ```sh
@@ -170,10 +170,8 @@ Go to the `Network graph` setting on your GitHub repo to see the changes you hav
 
 ![Example_Pull_Request](./img/Example_Pull_Request.png)
 
-## Update from GitHub repo to Local repo
-
-
-`main`Let's move to the branch.
+## Update local repo from GitHub repo
+`main` Let's move to the branch.
 
 ```sh
 git checkout main
@@ -187,28 +185,29 @@ Currently, GitHub repositories have more up-to-date files than local repositorie
     (use "git pull" to update your local branch)
 ```
 
-`git pull`Use the command to\
-`git pull origin main`pull the latest repository version locally from GitHub
+Use the `git pull` command to handle this.
+
+Pull the latest version of the repo from GitHub with `git pull origin main`
 
 ```sh
 git pull origin main
 ```
 
 ```sh
-  remote: Enumerating objects: 1, done.
-  remote: Counting objects: 100% (1/1), done.
-  remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
-  Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
-  From https://github.com/ahandsel/kintone_dojo
-  * branch            main     -> FETCH_HEAD
-    5f9f89b..1438ca5  main     -> origin/main
-  Updating d775d42..1438ca5
-  Fast-forward
-  2nd_file.md     | 0
-  develop_file.md | 0
-  2 files changed, 0 insertions(+), 0 deletions(-)
-  create mode 100644 2nd_file.md
-  create mode 100644 develop_file.md
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 631 bytes | 210.00 KiB/s, done.
+From https://github.com/ahandsel/kintone_dojo
+* branch            main     -> FETCH_HEAD
+  5f9f89b..1438ca5  main     -> origin/main
+Updating d775d42..1438ca5
+Fast-forward
+2nd_file.md     | 0
+develop_file.md | 0
+2 files changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 2nd_file.md
+create mode 100644 develop_file.md
 ```
 
 Now the `main`branch and `develop`the branch are in the same state,\
