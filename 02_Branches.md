@@ -53,7 +53,8 @@ _🇺🇸 English version: [02_Branches_EN.md](02_Branches_EN.md)_
 * [git-branch](http://git-scm.com/docs/git-branch)
 * ブランチ一覧を表示するコマンド
 * アスタリスク（*）がついているブランチが現在のブランチです
-* デフォルトのブランチ名が `master` の場合は, 次のコマンドで変更します: `git config --global init.defaultBranch main`
+* デフォルトのブランチ名が `master` の場合は, 次のコマンドで変更します:
+  * `git config --global init.defaultBranch main`
 
 ## 新しいブランチを作成する
 

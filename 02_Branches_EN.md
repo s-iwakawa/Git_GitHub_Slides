@@ -51,7 +51,8 @@ This section goes over Git branches and how to work with your first branch.
 * [git-branch](http://git-scm.com/docs/git-branch)
 * Command to display branch list
 * The branch with an asterisk (*) is the current branch
-* If your default branch name is `master`, change it with the following command: `git config --global init.defaultBranch main`
+* If your default branch name is `master`, change it with the following command:
+  * `git config --global init.defaultBranch main`
 
 ## Create a new branch
 First, let's create a branch named `develop` and switch to it.
