@@ -41,7 +41,7 @@ URL例= `https://github.com/`UserName`/`repo``
 | `git add [file]`            | 作業ディレクトリからステージングエリアへfileを追加します             |
 | `git status`                | コミット可能なすべての新規または変更のあるファイルを一覧で表示します |
 | `git add -A`                | 新規及び変更されたすべてのファイルをステージングエリアに追加します   |
-| `git commit -m "[message]"` | メッセージと共に、リポジトリへ変更を記録します                       |
+| `git commit -m "[message]"` | メッセージと共に, リポジトリへ変更を記録します                       |
 | `git rm -r [file]`          | Gitの管理対象からファイルまたはディレクトリを削除する                |
 
 ## Make Changes
