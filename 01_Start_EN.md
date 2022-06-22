@@ -344,7 +344,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 
 ---
 
-#### 待って，ステージングエリアが必要な理由？ 🤔
+#### 待って, ステージングエリアが必要な理由？ 🤔
 * ファイルをステージングする = コミットのためのファイルを準備する
 
 あなたが音楽を作っていると想像してください 🎶
@@ -382,6 +382,8 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 * repo は, プロジェクトの変更を追跡できます。
 
 #### Git フォルダーの中身は何ですか? 🤔
+
+⚡ For Windows, instead of `ls`, use `dir` command
 
 ```sh
 $ pwd
@@ -521,7 +523,7 @@ Git での保存
 1. Git と GitHub はどのように関係していますか？  
    * ヒント: `hub` とは, 活動またはネットワークの中心点です。
 2. `git add` と `git commit` のどちらを初めに使いますか？
-   * ヒント: `commit` とは, 特定の行動（結婚など）を約束することです。
+   * ヒント: `commit` とは, 特定の行動 (結婚など) を約束することです。
 3. `git push` commandは何をしますか？
    * ヒント: `git push` commandは `git fetch` commandの逆の行動を行います。
 
