@@ -48,4 +48,4 @@ Make a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-wit
 
 ### For Windows Users
 * Instead of `ls`, use `dir` command
-* For those who want to configure a Windows Subsystem for Linux (WSL) to run `git` commands from, check out [Windows x WSL Guide](ZZ_Windows_WSL.md) for instructions
+* For those who want to configure a Windows Subsystem for Linux (WSL) to run `git` commands from, check out [Windows x WSL Guide](Windows_WSL.md) for instructions
