@@ -54,7 +54,7 @@ _git branch command_
 ### `git branch`
 * [git-branch](http://git-scm.com/docs/git-branch)
 * ブランチ一覧を表示するコマンド
-* アスタリスク（*）がついているブランチが現在のブランチです
+* アスタリスク (*) がついているブランチが現在のブランチです
 * デフォルトのブランチ名が `master` の場合は, 次のコマンドで変更します:
   * `git config --global init.defaultBranch main`
 
@@ -361,7 +361,7 @@ Insight: リポジトリの分析ツール
 | Branch             | コードの代替タイムライン <br> 例: マスター, 開発, 機能/ xxx |
 | Commit             | ファイルの変更をリポジトリに保存する                        |
 | Pull Request       | 提案している変更を他の人と共有する                          |
-| Merge Pull Request | 実際にブランチ（マスターなど）を変更して更新し              |
+| Merge Pull Request | 実際にブランチ (マスターなど) を変更して更新し              |
 
 ## クイズの時間
 
