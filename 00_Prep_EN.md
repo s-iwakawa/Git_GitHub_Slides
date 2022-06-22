@@ -14,6 +14,7 @@ Here are the steps to do in preparation for the lecture (in order):
   1. [Configure Git](#configure-git)
 
 ## Outline <!-- omit in toc -->
+
 * [GitHub.com Account](#githubcom-account)
   * [Step 1 - Create a GitHub.com Account](#step-1---create-a-githubcom-account)
   * [Step 2 - Set up Two-Factor Authentication](#step-2---set-up-two-factor-authentication)
@@ -37,6 +38,7 @@ Here are the steps to do in preparation for the lecture (in order):
 ## GitHub.com Account
 
 ### Step 1 - Create a GitHub.com Account
+
 Create a GitHub.com account by signing up here:
 * [github.com/join](https://github.com/join)  
 
@@ -46,6 +48,7 @@ Check out unsplash.com for free images to use for your profile pic:
 * [unsplash.com/collections/410090/animals](https://unsplash.com/collections/410090/animals)
 
 ### Step 2 - Set up Two-Factor Authentication
+
 1. Open GitHub.com's `Two-factor authentication` settings: [github.com/settings/security](https://github.com/settings/security)
     * Click on the `Enable two-factor authentication` button
     * Select `Set up using an app` option and click the `Continue` button
@@ -63,12 +66,14 @@ Here is a gif that goes over Step 2:
 * ![GitHub_Settings_TwoFactor.gif](./img/GitHub_Settings_TwoFactor.gif)
 
 ### Resources <!-- omit in toc -->
+
 * GitHub Help Doc: [Configuring two-factor authentication - GitHub Docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)
 * YouTube: [How to setup 2FA with GitHub](https://youtu.be/5DKqXeorDHY)
 
 ---
 
 ## Visual Studio Code (VS Code) + Command Line
+
 Install VS Code from here:
 * [code.visualstudio.com](https://code.visualstudio.com/)
 
@@ -85,6 +90,7 @@ Setup the ability to open VS Code from the command line:
 ---
 
 ## Install Git
+
 * [Install Git for MacOS](#install-git-for-macos)
 * [Install Git for Windows 10](#install-git-for-windows-10)
 
@@ -126,6 +132,7 @@ Setup the ability to open VS Code from the command line:
 | Or do this!                         | `export PATH=/usr/local/bin:$PATH`    |
 
 #### Now you are ready! <!-- omit in toc -->
+
 Next section is [GitHub Desktop App](#github-desktop-app)!
 
 ---
@@ -141,6 +148,7 @@ Next section is [GitHub Desktop App](#github-desktop-app)!
     1. For the last settings page, select the `Launch Git Bash` option and deselect the `View Release Notes` option
 
 #### Screenshots of the Installation Wizard settings <!-- omit in toc -->
+
 The non-default settings are highlighted.
 
   |                                                         |                                                         |
@@ -154,6 +162,7 @@ The non-default settings are highlighted.
   | ![windows_git_step_13.png](img/windows_git_step_13.png) | ![windows_git_step_14.png](img/windows_git_step_14.png) |
 
 #### Now you are ready! <!-- omit in toc -->
+
 Next section is [GitHub Desktop App](#github-desktop-app)!
 
 ---
@@ -178,6 +187,7 @@ GitHub Desktop App's documentation:
 ---
 
 ## GitHub Command Line (GitHub CLI)
+
 * [GitHub CLI for MacOS](#github-cli-for-macos)
 * [GitHub CLI for Windows](#github-cli-for-windows)
 
@@ -198,6 +208,7 @@ GitHub Desktop App's documentation:
 1. Restart the computer before using GitHub CLI
 
 #### Now you are ready! <!-- omit in toc -->
+
 Next section is [Configure Git](#configure-git)!
 
 ### GitHub CLI for Windows
@@ -207,6 +218,7 @@ Next section is [Configure Git](#configure-git)!
 1. Restart the computer before using GitHub CLI
 
 #### Now you are ready! <!-- omit in toc -->
+
 Next section is [Configure Git](#configure-git)!
 
 ---
@@ -214,6 +226,7 @@ Next section is [Configure Git](#configure-git)!
 ## Configure Git
 
 ### Add GitHub.com Login
+
 We will use GitHub CLI's `gh auth login` command to configure the GitHub login
 
 Where to run the commands?
@@ -231,6 +244,7 @@ Add GitHub.com login to your computer by going through the following steps:
 1. Click the `Authorize` button
 
 ### Add GitHub Enterprise Login
+
 1. Run `gh auth login --hostname <hostname>` command
     * Example hostname: `github.dev.ahandsel.co.jp`
 1. For `What is your preferred protocol for Git operations?` prompt, select `HTTPS` option
@@ -241,6 +255,7 @@ Add GitHub.com login to your computer by going through the following steps:
 1. Click the `Authorize` button
 
 ### Confirm GitHub Authentications were Successful
+
 Confirm settings with the following command: `gh auth status`
 
 This is what you want to see:
@@ -259,6 +274,7 @@ This is what you want to see:
   ```
 
 ### Default Branch - main
+
 * `main` or `master` is set as the default branch name by git.
 * The past default is `master` but now it is best-practice to use `main` (given the meaning of the world _master_ 😅)
 
@@ -271,7 +287,9 @@ git config --global init.defaultBranch main
 ---
 
 ## Next section - Basics and Settings
+
 Go to the [Basics & First Repo - 01_Start_EN.md](01_Start_EN.md) section 💪
 
 ## List of Lecture Guides <!-- omit in toc -->
+
 [README_EN.md](README_EN.md) ⚙️
