@@ -357,10 +357,10 @@ Insight: Repository analysis tool
 |                                             |                                                     |
 | ------------------------------------------- | --------------------------------------------------- |
 | Branch                                      | Code alternative timeline\                          |
-| example: Master, Development, Feature / xxx |
+| example: main, Development, Feature / xxx |
 | Commit                                      | Save file changes to repository                     |
 | Pull Request                                | Share your proposed changes with others             |
-| Merge Pull Request                          | Actually change the branch (master etc.) and update |
+| Merge Pull Request                          | Actually change the branch (main etc.) and update |
 
 ## Quiz time
 
