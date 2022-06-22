@@ -188,7 +188,7 @@ Changes to be committed:
  new file:   README.md
 ```
 
-### Gitrepo にファイルを追加
+### Git repo にファイルを追加
 
 `git commit -m "message"`
 * ファイル/フォルダをrepo に追加するcommand
@@ -488,7 +488,7 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 #### ゲームの例-どうぶつの森
 * Genji は島にテントを追加しました。
 * Genji がゲームステータスを GitHub にアップロードしました。
-* Piyoも島に家を追加しました。
+* Piyo も島に家を追加しました。
 * しかし, GitHub にアップロードする前に...
   * GitHub から最新のゲームステータスを取得する必要があります
   * ( Genji がテントを追加したため)
