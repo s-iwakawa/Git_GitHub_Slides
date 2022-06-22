@@ -3,7 +3,7 @@
 _🇺🇸 English version: [README_EN.md](README_EN.md)_
 
 Git と GitHub の簡単な紹介をします．
-内容を説明する 3 つの講義と、開始するための準備ガイドがあります。
+内容を説明する 3 つの講義と, 開始するための準備ガイドがあります。
 
 ## コンテンツの目的
 読者は
@@ -39,3 +39,10 @@ Git と GitHub の簡単な紹介をします．
 
 ## 間違いを見つけましたか?
 修正を加えた[プルリクエスト](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)をお願いします~
+
+## 追加情報
+
+## Windowsユーザーの場合
+* `ls` の代わりに `dir` コマンドを使用します
+* [Windows x WSLガイド](ZZ_Windows_WSL.md) で、Windows Subsystem for Linux (WSL) を構成して `git` コマンドを実行する手順があります.
+

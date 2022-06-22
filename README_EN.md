@@ -43,3 +43,9 @@ Submit a [GitHub Issue](https://github.com/ahandsel/Git_GitHub_Slides/issues) & 
 
 ## Found Mistakes?
 Make a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with the corrections ~
+
+## Additional Notes
+
+### For Windows Users
+* Instead of `ls`, use `dir` command
+* For those who want to configure a Windows Subsystem for Linux (WSL) to run `git` commands from, check out [Windows x WSL Guide](ZZ_Windows_WSL.md) for instructions
