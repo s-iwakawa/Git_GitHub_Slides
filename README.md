@@ -42,6 +42,11 @@ Git と GitHub の簡単な紹介をします．
 
 ## 追加情報
 
+### Kintone Dojo レビュー
+審査のために Kintone Dojo の課題をプルリクエストとして送信する方法の説明:
+
+[コードレビュー - 05_CodeReview.md](05_CodeReview.md)
+
 ## Windowsユーザーの場合
 * `ls` の代わりに `dir` コマンドを使用します
 * [Windows x WSLガイド](Windows_WSL.md) で、Windows Subsystem for Linux (WSL) を構成して `git` コマンドを実行する手順があります.
