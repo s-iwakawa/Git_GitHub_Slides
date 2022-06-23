@@ -31,10 +31,10 @@ _🇺🇸 English version: [05_CodeReview_EN.md](05_CodeReview_EN.md)_
 ## Demo YouTube Videos
 
 ### `kintone_dojo` Task Demo
-* [![kintone_dojo_branch_demo_terminal.png](img/`kintone_dojo_branch_demo_terminal.png)](https://youtu.be/-9amExonLI4)
+* [![kintone_dojo_branch_demo_terminal.png](img/kintone_dojo_branch_demo_terminal.png)](https://youtu.be/-9amExonLI4)
 
 ### GitHub Code Review + GitHub Desktop App
-* [![kintone_dojo_branch_demo_app.png](img/`kintone_dojo_branch_demo_app.png)](https://youtu.be/u1-q8nh5irk)
+* [![kintone_dojo_branch_demo_app.png](img/kintone_dojo_branch_demo_app.png)](https://youtu.be/u1-q8nh5irk)
 
 ## List of Lecture Guides <!-- omit in toc -->
 [README.md](README.md) ⚙️
