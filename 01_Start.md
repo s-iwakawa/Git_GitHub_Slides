@@ -29,8 +29,11 @@ _🇺🇸 English version: [01_Start_EN.md](01_Start_EN.md)_
   * [Hands-on A が完了しました](#hands-on-a-が完了しました)
 * [Git の基本的なコマンドの概要](#git-の基本的なコマンドの概要)
   * [Git での変更の保存方法](#git-での変更の保存方法)
+    * [working directory, `git add`, staging area](#working-directory-git-add-staging-area)
     * [待って, ステージングエリア? 🤔](#待って-ステージングエリア-)
+    * [`git commit`, repository, `git push`](#git-commit-repository-git-push)
     * [Git フォルダーの中身は何ですか? 🤔](#git-フォルダーの中身は何ですか-)
+    * [`git push`, remote repository](#git-push-remote-repository)
   * [リモートリポジトリの操作](#リモートリポジトリの操作)
   * [git push?](#git-push)
     * [ゲームの例-どうぶつの森](#ゲームの例-どうぶつの森)
@@ -62,8 +65,8 @@ _🇺🇸 English version: [01_Start_EN.md](01_Start_EN.md)_
 
 ### バージョン管理の例
 
-| Google Docs                                                  | Kintone                                                |
-| ------------------------------------------------------------ | ------------------------------------------------------ |
+| Google Docs                                               | Kintone                                             |
+| --------------------------------------------------------- | --------------------------------------------------- |
 | ![Google Doc Version History](img/01_Start_GoogleDoc.png) | ![Kintone Record History](img/01_Start_Kintone.png) |
 
 ## GitHub とは…
@@ -74,8 +77,8 @@ _🇺🇸 English version: [01_Start_EN.md](01_Start_EN.md)_
   * `Remote repositories` (リモートリポジトリ) と聞いたら, GitHub だなっと考えてください.
 * 2008年に設立され, 現在はマイクロソフトの子会社です.
 
-|                                                       |                                                  |
-| ----------------------------------------------------- | ------------------------------------------------ |
+|                                                    |                                               |
+| -------------------------------------------------- | --------------------------------------------- |
 | ![New GitHub Account](img/00_Start_GitHub_New.png) | ![New Repo](img/00_Start_GitHub_Repo_New.png) |
 
 ### GitHub 例 - Apple
@@ -243,7 +246,7 @@ nothing to commit, working tree clean
 
 `learning_git` という名前のリポジトリを作成します
 
-READMEでリポジトリを初期化しないでください
+`Initialize this repository with a README.md`のチェックボックスは、選択を外してください
 
 ![Gif_GitHub_Repo_Demo](img/Gif_GitHub_Repo_Demo.gif)
 
@@ -341,7 +344,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 |       |        ↘️  `git push` 🔄 ↘️         |
 |       | [ remote repository (GitHub) 🌐 ] |
 
----
+#### working directory, `git add`, staging area
 
 |       |                                  |
 | :---: | :------------------------------: |
@@ -381,7 +384,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 * アルバム内の必要なすべての曲を `Staging Area` に保存したら, コミットする時間です
 * `git commit -m` する時, "Love Song" ってアルバムのタイトルをコメント追加してコミットします
 
----
+#### `git commit`, repository, `git push`
 
 |       |                                  |
 | :---: | :------------------------------: |
@@ -436,7 +439,7 @@ drwxr-xr-x   7 UserName  staff  224 Jun  9 14:54 objects
 drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 ```
 
----
+#### `git push`, remote repository
 
 |       |                                  |
 | :---: | :------------------------------: |
@@ -455,8 +458,6 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 
 `remote repository` (GitHub) 🌐
 * GitHub のサーバー上のリポジトリであり, コードを他のユーザーが確認できるようにします
-
----
 
 ### リモートリポジトリの操作
 
@@ -494,8 +495,6 @@ drwxr-xr-x   5 UserName  staff  160 Jun  9 14:56 refs
 * [Git - リモートでの作業](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD)
 * [Git - Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 * [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
-
----
 
 ### git push?
 `git push <remote> <branch>` 🔄
