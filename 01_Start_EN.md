@@ -527,6 +527,23 @@ Git での保存
 3. `git push` commandは何をしますか？
     * ヒント: `git push` commandは `git fetch` commandの逆の行動を行います。
 
+<details>
+  <summary>Answers</summary>
+
+1. How is Git & GitHub related?
+    * GitHub is the __hub__ or the collection of everyone's Git
+    * GitHub is a popular __remote repo__ option
+1. Which do you start with, `git add` or `git commit`?
+    * First, use `git add` to gather the individual changes
+    * Then, use `git commit` to bundle the changes
+1. What is the `git push` command?
+    * Use `git push` to upload the __commit__ to the remote repo
+    * Use `git fetch` to retrieve the latest version of the repo
+
+</details>
+
+---
+
 ## Next Section
 [Create & Merge Branches - 02_Branches_EN.md](02_Branches_EN.md)
 

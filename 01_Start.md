@@ -549,6 +549,22 @@ Git での保存
 3. `git push` コマンドは?
    * ヒント: `git push` コマンドは `git fetch` コマンドの逆の行動を行います。
 
+<details>
+  <summary>回答</summary>
+
+1. Git と GitHub はどのように関係?  
+    * GitHub は, みんなの Git を集めた __hub__ / コレクション の中心です．
+    * GitHub は人気のある __remote repo__ オプションです
+1. `git add` と `git commit` のどちらを初め?
+    * まず, `git add` を使用して, 個々の変更を集めます
+    * そして, `git commit` を使用して, 変更を包みます
+1. `git push` コマンドは?
+    * __commit__ をリモートリポジトリにアップロードするねは, `git push` を使用します
+    * リポジトリの最新バージョンを取得するねは, `git fetch` を使用します
+</details>
+
+---
+
 ## 次のセクション
 [ブランチの作成とマージ - 02_Branches.md](02_Branches.md) へ 💪
 
