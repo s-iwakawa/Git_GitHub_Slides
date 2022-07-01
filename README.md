@@ -49,5 +49,5 @@ Git と GitHub の簡単な紹介をします．
 
 ## Windowsユーザーの場合
 * `ls` の代わりに `dir` コマンドを使用します
-* [Windows x WSLガイド](Windows_WSL.md) で、Windows Subsystem for Linux (WSL) を構成して `git` コマンドを実行する手順があります.
+* [Windows x WSLガイド](Windows_WSL.md) で, Windows Subsystem for Linux (WSL) を構成して `git` コマンドを実行する手順があります.
 
