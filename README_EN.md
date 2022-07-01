@@ -36,7 +36,6 @@ Readers walk away with
 
 [Git Cheat Sheet - 04_CheatSheet_EN.md](04_CheatSheet_EN.md)
 * Here's an overview of useful Git command-line (CLI) commands.
-* ⚠️ Pending Translation
 
 ## Got Questions?
 Submit a [GitHub Issue](https://github.com/ahandsel/Git_GitHub_Slides/issues) & I will do my best to answer your question.
