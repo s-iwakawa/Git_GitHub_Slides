@@ -31,6 +31,8 @@ Here are the steps to do in preparation for the lecture (in order):
   * [Add GitHub Enterprise Login](#add-github-enterprise-login)
   * [Confirm GitHub Authentications were Successful](#confirm-github-authentications-were-successful)
   * [Default Branch - main](#default-branch---main)
+* [Optional Setups](#optional-setups)
+  * [Windows - Install cash](#windows---install-cash)
 * [Next section - Basics and Settings](#next-section---basics-and-settings)
 
 ---
@@ -182,7 +184,6 @@ Next section is [GitHub Desktop App](#github-desktop-app)!
 
 GitHub Desktop App's documentation:
 * English: [GitHub Desktop - GitHub Docs](https://docs.github.com/en/desktop)
-* Japanese: [GitHub Desktopのドキュメント](https://docs.github.com/ja/desktop)
 
 ---
 
@@ -283,6 +284,19 @@ Use the following command to set the default branch name to `main` for your comp
 ```shell
 git config --global init.defaultBranch main
 ```
+
+---
+
+## Optional Setups
+
+### Windows - Install cash
+
+1. Install [Node.js](https://nodejs.org/en/about/) on Windows
+    * [Download | Node.js](https://nodejs.org/en/download/)
+1. Verify Node.js installation by running the following command on Command Prompt
+    * `node --version`
+1. Install [dthree/cash](https://github.com/dthree/cash) so you can run Linux commands on Windows Command Prompt
+    * Install command: `npm install cash-global -g`
 
 ---
 

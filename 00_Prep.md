@@ -32,6 +32,8 @@ _🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
   * [Add GitHub Enterprise Login](#add-github-enterprise-login)
   * [GitHub認証が成功したことを確認する](#github認証が成功したことを確認する)
   * [デフォルトブランチ - main](#デフォルトブランチ---main)
+* [随意の設定](#随意の設定)
+  * [Windows - cash をインストール](#windows---cash-をインストール)
 * [次のセクション](#次のセクション)
 
 ---
@@ -274,6 +276,20 @@ git コマンド (`git`) と GitHub CLI コマンド (`gh`) はこちらを使�
 ```shell
 git config --global init.defaultBranch main
 ```
+
+---
+
+## 随意の設定
+
+### Windows - cash をインストール
+
+1. [Node.js](https://nodejs.org/ja/about/) を Windows にインストールします
+    * [Download | Node.js](https://nodejs.org/ja/download/)
+    * Windows に Node.js をインストールガイド - [Windows 10へNode.jsをインストールする - Qiita](https://qiita.com/echolimitless/items/83f8658cf855de04b9ce)
+1. Command Prompt で次のコマンドを実行して, Node.js のインストールを確認します
+    * `node --version`
+1. [dthree/cash](https://github.com/dthree/cash) をインストールして, Windows コマンドプロンプトで Linux コマンドを実行できるようにします。
+    * インストールコマンド: `npm install cash-global -g`
 
 ---
 
