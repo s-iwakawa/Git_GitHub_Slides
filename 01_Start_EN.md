@@ -18,7 +18,7 @@ This section introduces you to Git and GitHub and goes over setting up your firs
 ---
 
 ## What is Git?
-* [Git](https://git-scm.com/) is a software development tool that provides **version control**!
+* [Git](https://git-scm.com/) is a software development tool that provides __version control__!
 * Started in 2005 as a tool to manage Linux kernel development
 * Free and open source distributed version control system
 
@@ -145,7 +145,7 @@ Connect the Local Folder with GitHub
 ### Confirm the Git Status
 
 `git status` command
-* Shows the **working directory** and **staging area**
+* Shows the __working directory__ and __staging area__
 * `Untracked files`: See which files are not being tracked by Git
 * `Changes to be committed`: See which files have changed
 
@@ -521,11 +521,11 @@ Git での保存
 ## Quiz Time
 
 1. Git と GitHub はどのように関係していますか？  
-   * ヒント: `hub` とは, 活動またはネットワークの中心点です。
+    * ヒント: `hub` とは, 活動またはネットワークの中心点です。
 2. `git add` と `git commit` のどちらを初めに使いますか？
-   * ヒント: `commit` とは, 特定の行動 (結婚など) を約束することです。
+    * ヒント: `commit` とは, 特定の行動 (結婚など) を約束することです。
 3. `git push` commandは何をしますか？
-   * ヒント: `git push` commandは `git fetch` commandの逆の行動を行います。
+    * ヒント: `git push` commandは `git fetch` commandの逆の行動を行います。
 
 ## Next Section
 [Create & Merge Branches - 02_Branches_EN.md](02_Branches_EN.md)
