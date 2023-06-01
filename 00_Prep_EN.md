@@ -15,25 +15,26 @@ Here are the steps to do in preparation for the lecture (in order):
 
 ## Outline <!-- omit in toc -->
 
-* [GitHub.com Account](#githubcom-account)
-  * [Step 1 - Create a GitHub.com Account](#step-1---create-a-githubcom-account)
-  * [Step 2 - Set up Two-Factor Authentication](#step-2---set-up-two-factor-authentication)
-* [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
-* [Install Git](#install-git)
-  * [Install Git for MacOS](#install-git-for-macos)
-  * [Install Git for Windows 10](#install-git-for-windows-10)
-* [GitHub Desktop App](#github-desktop-app)
-* [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
-  * [GitHub CLI for MacOS](#github-cli-for-macos)
-  * [GitHub CLI for Windows](#github-cli-for-windows)
-* [Configure Git](#configure-git)
-  * [Add GitHub.com Login](#add-githubcom-login)
-  * [Add GitHub Enterprise Login](#add-github-enterprise-login)
-  * [Confirm GitHub Authentications were Successful](#confirm-github-authentications-were-successful)
-  * [Default Branch - main](#default-branch---main)
-* [Optional Setups](#optional-setups)
-  * [Windows - Install cash](#windows---install-cash)
-* [Next section - Basics and Settings](#next-section---basics-and-settings)
+- [What is Git \& GitHub? -- Prep Guide](#what-is-git--github----prep-guide)
+  - [GitHub.com Account](#githubcom-account)
+    - [Step 1 - Create a GitHub.com Account](#step-1---create-a-githubcom-account)
+    - [Step 2 - Set up Two-Factor Authentication](#step-2---set-up-two-factor-authentication)
+  - [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
+  - [Install Git](#install-git)
+    - [Install Git for MacOS](#install-git-for-macos)
+    - [Install Git for Windows 10](#install-git-for-windows-10)
+  - [GitHub Desktop App](#github-desktop-app)
+  - [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
+    - [GitHub CLI for MacOS](#github-cli-for-macos)
+    - [GitHub CLI for Windows](#github-cli-for-windows)
+  - [Configure Git](#configure-git)
+    - [Add GitHub.com Login](#add-githubcom-login)
+    - [Add GitHub Enterprise Login](#add-github-enterprise-login)
+    - [Confirm GitHub Authentications were Successful](#confirm-github-authentications-were-successful)
+    - [Default Branch - main](#default-branch---main)
+  - [Optional Setups](#optional-setups)
+    - [Windows - Install cash](#windows---install-cash)
+  - [Next section - Basics and Settings](#next-section---basics-and-settings)
 
 ---
 
@@ -56,10 +57,13 @@ Check out unsplash.com for free images to use for your profile pic:
     * Select `Set up using an app` option and click the `Continue` button
 2. Scan the QR Code with a two-factor authentication app
     * Recommended two-factor authentication apps:
-      * [1Password](https://1password.com/)
-      * [Microsoft](https://www.microsoft.com/en-us/account/authenticator)
-      * [Authy](https://authy.com/guides/github/)
-      * [Enpass](https://www.enpass.io/)
+      * company smartphone (Recommended!):
+        * [Microsoft Authenticator](https://www.microsoft.com/ja-jp/security/mobile-authenticator-app)
+      * other choices:
+        * [1Password](https://1password.com/)
+        * [Microsoft](https://www.microsoft.com/en-us/account/authenticator)
+        * [Authy](https://authy.com/guides/github/)
+        * [Enpass](https://www.enpass.io/)
 3. Enter the 6-digit code from the two-factor authentication app
 4. Download the recovery codes and click the `I have saved my recovery codes` button
 5. Finally, click the `Done` button
