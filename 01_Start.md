@@ -104,6 +104,8 @@ GitHub の設定
 
 ### ローカルGitリポジトリを作成する
 
+![図：git init のイメージ](img/01_Start_Git_git-add.png)
+
 ⚠️ 準備ガイド, [準備内容 - 00_Prep.md](00_Prep.md), に記載されている手順をすでに完了していることを確認してください。
 
 ⚡ コマンドはどこで実行しますか?
@@ -139,6 +141,8 @@ GitHub の設定
 ---
 
 ### README.md ファイルの追加
+
+![図：ファイルを作成しているイメージ](img/01_Start_Git_edit-file.png)
 
 1. README.md ファイルを作成します.
 
@@ -189,6 +193,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ### ステージングエリアにファイルを追加
 
+![図：git add のイメージ](img/01_Start_Git_git-add.png)
+
 `git add <file/folder>`
 * ファイル/フォルダーをステージングエリアに追加するコマンド
 
@@ -211,6 +217,8 @@ Changes to be committed:
 ```
 
 ### Gitリポジトリにファイルを追加
+
+![図：git commit のイメージ](img/01_Start_Git_git-commit.png)
 
 `git commit -m "message"`
 * ファイル/フォルダをリポジトリに追加するコマンド
@@ -238,6 +246,8 @@ nothing to commit, working tree clean
 
 ### GitHub リポジトリを作成する
 
+![図：repository を作ったイメージ](img/01_Start_Git_create-repositoy.png)
+
 リポジトリを作成する
 * [github.com/new](https://github.com/new)
 
@@ -248,6 +258,10 @@ nothing to commit, working tree clean
 ![Gif_GitHub_Repo_Demo](img/Gif_GitHub_Repo_Demo.gif)
 
 ### Local Git --> GitHub
+
+![図：git add remote のイメージ](img/01_Start_Git_git-remote.png)
+
+![図：git push のイメージ](img/02_Branches_Push.png)
 
 repository を `push` しましょう！
 GitHub の `Clone or download` ボタンをクリックし, HTTPS リンクをコピーして URL を取得します
