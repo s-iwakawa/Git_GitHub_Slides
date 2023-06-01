@@ -104,7 +104,7 @@ GitHub の設定
 
 ### ローカルGitリポジトリを作成する
 
-![図：git init のイメージ](img/01_Start_Git_git-add.png)
+![図：git init のイメージ](img/01_Start_Git_git-init.png)
 
 ⚠️ 準備ガイド, [準備内容 - 00_Prep.md](00_Prep.md), に記載されている手順をすでに完了していることを確認してください。
 
@@ -142,7 +142,7 @@ GitHub の設定
 
 ### README.md ファイルの追加
 
-![図：ファイルを作成しているイメージ](img/01_Start_Git_edit-file.png)
+![図：ファイルを作成しているイメージ](img/01_Start_Git_create-file.png)
 
 1. README.md ファイルを作成します.
 
@@ -261,7 +261,7 @@ nothing to commit, working tree clean
 
 ![図：git add remote のイメージ](img/01_Start_Git_git-remote.png)
 
-![図：git push のイメージ](img/02_Branches_Push.png)
+![図：git push のイメージ](img/01_Start_Git_git-push.png)
 
 repository を `push` しましょう！
 GitHub の `Clone or download` ボタンをクリックし, HTTPS リンクをコピーして URL を取得します
