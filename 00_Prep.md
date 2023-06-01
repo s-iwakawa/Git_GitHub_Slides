@@ -16,25 +16,26 @@ _🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
 ---
 
 ## 概要 <!-- omit in toc -->
-* [GitHub.comアカウント](#githubcomアカウント)
-  * [Step 1 - GitHub.comアカウントを作成する](#step-1---githubcomアカウントを作成する)
-  * [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
-* [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
-* [Git のインストール](#git-のインストール)
-  * [MacOS - Git のインストール](#macos---git-のインストール)
-  * [Windows 10 - Git のインストール](#windows-10---git-のインストール)
-* [GitHub Desktop App](#github-desktop-app)
-* [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
-  * [MacOS - GitHub CLI のインストール](#macos---github-cli-のインストール)
-  * [Windows 10 - GitHub CLI のインストール](#windows-10---github-cli-のインストール)
-* [Git を設定する](#git-を設定する)
-  * [Add GitHub.com Login](#add-githubcom-login)
-  * [Add GitHub Enterprise Login](#add-github-enterprise-login)
-  * [GitHub認証が成功したことを確認する](#github認証が成功したことを確認する)
-  * [デフォルトブランチ - main](#デフォルトブランチ---main)
-* [随意の設定](#随意の設定)
-  * [Windows - cash をインストール](#windows---cash-をインストール)
-* [次のセクション](#次のセクション)
+- [Git, GitHubとは？ -- 準備ガイド](#git-githubとは----準備ガイド)
+  - [GitHub.comアカウント](#githubcomアカウント)
+    - [Step 1 - GitHub.comアカウントを作成する](#step-1---githubcomアカウントを作成する)
+    - [Step 2 - 2要素認証を設定する](#step-2---2要素認証を設定する)
+  - [Visual Studio Code (VS Code) + Command Line](#visual-studio-code-vs-code--command-line)
+  - [Git のインストール](#git-のインストール)
+    - [MacOS - Git のインストール](#macos---git-のインストール)
+    - [Windows 10 - Git のインストール](#windows-10---git-のインストール)
+  - [GitHub Desktop App](#github-desktop-app)
+  - [GitHub Command Line (GitHub CLI)](#github-command-line-github-cli)
+    - [MacOS - GitHub CLI のインストール](#macos---github-cli-のインストール)
+    - [Windows 10 - GitHub CLI のインストール](#windows-10---github-cli-のインストール)
+  - [Git を設定する](#git-を設定する)
+    - [Add GitHub.com Login](#add-githubcom-login)
+    - [Add GitHub Enterprise Login](#add-github-enterprise-login)
+    - [GitHub認証が成功したことを確認する](#github認証が成功したことを確認する)
+    - [デフォルトブランチ - main](#デフォルトブランチ---main)
+  - [随意の設定](#随意の設定)
+    - [Windows - cash をインストール](#windows---cash-をインストール)
+  - [次のセクション](#次のセクション)
 
 ---
 
@@ -55,14 +56,17 @@ _🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
      * `Enable two-factor authentication` (2要素認証を有効にする) ボタンをクリックします
      * `Set up using an app` (アプリを使用して設定する) オプションを選択し, `Continue` (続行) ボタンをクリックします
 1. 二要素認証アプリでQRコードをスキャンする
-      * おすすめの二要素認証アプリ:
+      * 二要素認証アプリ:
+      * 会社支給スマホ端末(おすすめ):
+        * [Microsoft Authenticator](https://apps.apple.com/jp/app/microsoft-authenticator/id983156458?l=ja&culture=ja-jp&country=JP)
+      * その他:
         * [1Password](https://1password.com/)
         * [Microsoft](https://www.microsoft.com/en-us/account/authenticator)
         * [Authy](https://authy.com/guides/github/)
         * [Enpass](https://www.enpass.io/)
-1. 二要素認証アプリから6桁のコードを入力します
-1. リカバリコードをダウンロードして, `I have saved my recovery codes` (リカバリコードを保存しました) ボタンをクリックします
-1. 最後に, `Done` (完了) ボタンをクリックします
+2. 二要素認証アプリから6桁のコードを入力します
+3. リカバリコードをダウンロードして, `I have saved my recovery codes` (リカバリコードを保存しました) ボタンをクリックします
+4. 最後に, `Done` (完了) ボタンをクリックします
 
 これがステップ2のセクションを案内するgifです
 * ![GitHub_Settings_TwoFactor.gif](./img/GitHub_Settings_TwoFactor.gif)
