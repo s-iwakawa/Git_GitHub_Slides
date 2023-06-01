@@ -90,6 +90,8 @@ Connect the Local Folder with GitHub
 
 ### Create a Local Repository
 
+![Figure：Image of git init](img/01_Start_Git_git-init.png)
+
 ⚠️ Verify that you went through the Prep Guide: [Prep - 00_Prep_EN.md](00_Prep_EN.md)
 
 ⚡ Where to run the commands?
@@ -125,6 +127,8 @@ Connect the Local Folder with GitHub
 ---
 
 ### Add a README.md File
+
+![Figure：Image of creating a file](img/01_Start_Git_create-file.png)
 
 1. Create a README.md file
 
