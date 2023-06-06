@@ -104,7 +104,7 @@ GitHub の設定
 
 ### ローカルGitリポジトリを作成する
 
-![図：git init のイメージ](img/01_Start_Git_git-add.png)
+![図：git init のイメージ](img/01_Start_Git_git-init.png)
 
 ⚠️ 準備ガイド, [準備内容 - 00_Prep.md](00_Prep.md), に記載されている手順をすでに完了していることを確認してください。
 
@@ -193,7 +193,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ### ステージングエリアにファイルを追加
 
-![図：git add のイメージ](img/01_Start_Git_git-init.png)
+![図：git add のイメージ](img/01_Start_Git_git-add.png)
 
 `git add <file/folder>`
 * ファイル/フォルダーをステージングエリアに追加するコマンド
