@@ -193,7 +193,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ### ステージングエリアにファイルを追加
 
-![図：git add のイメージ](img/01_Start_Git_git-add.png)
+![図：git add のイメージ](img/01_Start_Git_git-init.png)
 
 `git add <file/folder>`
 * ファイル/フォルダーをステージングエリアに追加するコマンド

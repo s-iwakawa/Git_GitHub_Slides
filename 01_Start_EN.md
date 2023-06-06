@@ -11,18 +11,19 @@ This section introduces you to Git and GitHub and goes over setting up your firs
 * Overview of Common Git Commands
 
 ## Outline <!-- omit in toc -->
-* [Overview](#overview)
-* [What is Git?](#what-is-git)
-* [What is Version Control?](#what-is-version-control)
-  * [Examples of Version Control](#examples-of-version-control)
-* [What is GitHub?](#what-is-github)
-  * [GitHub Example - Apple](#github-example---apple)
-* [Creating a Repository - Hands-on](#creating-a-repository---hands-on)
-  * [Create a Local Repository](#create-a-local-repository)
-  * [Add a README.md File](#add-a-readmemd-file)
-  * [Confirm the Git Status](#confirm-the-git-status)
-* [Translations Missing!!!](#translations-missing)
-* [Next Section](#next-section)
+- [What is Git \& GitHub? -- Basics \& First Repo](#what-is-git--github----basics--first-repo)
+  - [Overview](#overview)
+  - [What is Git?](#what-is-git)
+  - [What is Version Control?](#what-is-version-control)
+    - [Examples of Version Control](#examples-of-version-control)
+  - [What is GitHub?](#what-is-github)
+    - [GitHub Example - Apple](#github-example---apple)
+  - [Creating a Repository - Hands-on](#creating-a-repository---hands-on)
+    - [Create a Local Repository](#create-a-local-repository)
+    - [Add a README.md File](#add-a-readmemd-file)
+    - [Confirm the Git Status](#confirm-the-git-status)
+  - [Translations Missing!!!](#translations-missing)
+  - [Next Section](#next-section)
 
 ---
 
@@ -90,6 +91,8 @@ Connect the Local Folder with GitHub
 
 ### Create a Local Repository
 
+![図：git add のイメージ](img/01_Start_Git_git-init.png)
+
 ⚠️ Verify that you went through the Prep Guide: [Prep - 00_Prep_EN.md](00_Prep_EN.md)
 
 ⚡ Where to run the commands?
@@ -125,6 +128,8 @@ Connect the Local Folder with GitHub
 ---
 
 ### Add a README.md File
+
+![図：ファイルを作成しているイメージ](img/01_Start_Git_edit-file.png)
 
 1. Create a README.md file
 
