@@ -29,7 +29,6 @@ Here are the steps to do in preparation for the lecture (in order):
     - [GitHub CLI for Windows](#github-cli-for-windows)
   - [Configure Git](#configure-git)
     - [Add GitHub.com Login](#add-githubcom-login)
-    - [Add GitHub Enterprise Login](#add-github-enterprise-login)
     - [Confirm GitHub Authentications were Successful](#confirm-github-authentications-were-successful)
     - [Default Branch - main](#default-branch---main)
   - [Optional Setups](#optional-setups)
@@ -241,17 +240,6 @@ Where to run the commands?
 Add GitHub.com login to your computer by going through the following steps:
 1. Run `gh auth login` command
 1. For `What account do you want to log into?` prompt, select `GitHub.com` option
-1. For `What is your preferred protocol for Git operations?` prompt, select `HTTPS` option
-1. For `Authenticate Git with your GitHub credentials? (Y/n)` prompt, type `y`
-1. Copy the 9-character code and hit `enter`
-1. A browser window will launch
-1. Enter the 9-character code to the GitHub website
-1. Click the `Authorize` button
-
-### Add GitHub Enterprise Login
-
-1. Run `gh auth login --hostname <hostname>` command
-    * Example hostname: `github.dev.ahandsel.co.jp`
 1. For `What is your preferred protocol for Git operations?` prompt, select `HTTPS` option
 1. For `Authenticate Git with your GitHub credentials? (Y/n)` prompt, type `y`
 1. Copy the 9-character code and hit `enter`
