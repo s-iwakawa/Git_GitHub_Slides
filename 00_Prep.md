@@ -30,7 +30,6 @@ _🇺🇸 English version: [00_Prep_EN.md](00_Prep_EN.md)_
     - [Windows 10 - GitHub CLI のインストール](#windows-10---github-cli-のインストール)
   - [Git を設定する](#git-を設定する)
     - [Add GitHub.com Login](#add-githubcom-login)
-    - [Add GitHub Enterprise Login](#add-github-enterprise-login)
     - [GitHub認証が成功したことを確認する](#github認証が成功したことを確認する)
     - [デフォルトブランチ - main](#デフォルトブランチ---main)
   - [随意の設定](#随意の設定)
@@ -236,16 +235,6 @@ git コマンド (`git`) と GitHub CLI コマンド (`gh`) はこちらを使�
 コンピューターに git を設定するには, 次の手順を実行します:
 1. `gh auth login` コマンドを実行します
 1. `What account do you want to log into?` プロンプトで, `GitHub.com` オプションを選択します
-1. `What is your preferred protocol for Git operations?` プロンプトで, `HTTPS` オプションを選択します
-1. `Authenticate Git with your GitHub credentials? (Y/n)` プロンプトで, `y`と入力します
-1. 9文字のコードをコピーして, `enter` キーを押します
-1. ブラウザウィンドウが起動します
-1. GitHub Webサイトに9文字のコードを入力します
-1. `Authorize` ボタンをクリックします
-
-### Add GitHub Enterprise Login
-1. `gh auth login --hostname <hostname>` コマンドを実行します
-    * ホスト名の例: `github.dev.ahandsel.co.jp`
 1. `What is your preferred protocol for Git operations?` プロンプトで, `HTTPS` オプションを選択します
 1. `Authenticate Git with your GitHub credentials? (Y/n)` プロンプトで, `y`と入力します
 1. 9文字のコードをコピーして, `enter` キーを押します
